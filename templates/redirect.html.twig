@@ -1,0 +1,30 @@
+{% extends 'base.html.twig'%}
+
+{% block description %}
+    Sorting page for new Wornak users to appropriate languages
+{% endblock %}
+
+{% block title %}
+Redirection | Wornak
+{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <body>
+    <main role="main" class="container">
+        {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+        {{ form_row(form.language) }} <br>
+
+        <button type="submit" class="btn btn-primary">Start</button>
+        {{ form_end(form) }}
+
+    </main><!-- /.container -->
+    </body>
+{% endblock %}
+
+{% block javascript %}
+{{ parent() }}
+{% endblock %}

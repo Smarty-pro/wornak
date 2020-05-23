@@ -1,0 +1,28 @@
+
+.starter-template {
+ padding: 3rem 1.5rem;
+ text-align: center;
+}
+@media screen and (max-width: 1023px)
+.options__item-link {
+    align-self: center;
+    min-width: 300px;
+}
+@media screen and (max-width: 767px)
+.options__item-link {
+    font-size: 14px;
+}
+@media screen and (max-width: 1200px)
+.options__item-link {
+    font-size: 16px;
+}
+a {
+    background-color: initial;
+}
+*, :after, :before {
+    box-sizing: inherit;
+}
+.options__item-link a:hover {
+    color: #4EDBAE;
+    background: #211b19;
+}
