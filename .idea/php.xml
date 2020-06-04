@@ -130,6 +130,7 @@
       <path value="$PROJECT_DIR$/vendor/sentry/sentry-symfony" />
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/vendor/symfony/twilio-notifier" />
+      <path value="$PROJECT_DIR$/vendor/blackfire/php-sdk" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />

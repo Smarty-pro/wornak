@@ -1,6 +1,12 @@
 {
+    "blackfire/php-sdk": {
+        "version": "v1.22.0"
+    },
     "clue/stream-filter": {
         "version": "v1.4.1"
+    },
+    "composer/ca-bundle": {
+        "version": "1.2.7"
     },
     "doctrine/annotations": {
         "version": "1.0",

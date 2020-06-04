@@ -2,8 +2,7 @@
 
 namespace App\Controller;
 
-use App\Entity\RdForm;
-use App\Form\RdFormType;
+
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -18,14 +17,6 @@ class HomeController extends AbstractController
      */
 	public function rdct(Request $request)
 	{
-        $rdform = new RdForm();
-        $form = $this->createForm(RdFormType::class, $rdform);
-        $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid()) {
-            dump($rdform);
-        }
-        return $this->render('redirect.html.twig', array(
-            'form' => $form->createView(),
-        ));
+        return $this->render('HOME/homepage.html.twig');
 	}
 }

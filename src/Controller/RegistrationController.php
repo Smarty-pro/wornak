@@ -43,17 +43,12 @@ class RegistrationController extends AbstractController
 		//rdct to partial registration form for job seeker
 		return $this->render('REGISTRATION/pg3.html.twig');
 	}
-	/**
-	 * @Route("/registration/job-seeker/full-registration", name="app_registration_full")
-	 */
-	public function func5()
-	{
-		//rdct to full registration form for job seeker
-		return $this->render('REGISTRATION/pg4.html.twig');
-	}
-	/**
-	 * @Route("/registration/job-seeker/full-registration/form", name="app_final_registration_1")
-	 */
+
+    /**
+     * @Route("/registration/job-seeker/full-registration/", name="app_registration_full")
+     * @param Request $request
+     * @return Response
+     */
 	public function func6(Request $request)
 	{
 		$rgform = new RgForm();
@@ -61,7 +56,7 @@ class RegistrationController extends AbstractController
 		$form->handleRequest($request);
 
 		if ($form->isSubmitted() && $form->isValid()) {
-			dump($rgform);
+		    dump($rgform);
 		}
 		return $this->render('REGISTRATION/RgForm.html.twig', array(
             'form' => $form->createView(),

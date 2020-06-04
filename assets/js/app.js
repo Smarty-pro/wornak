@@ -11,7 +11,7 @@ import '../css/2.css';
 import '../css/3.css';
 import '../css/4.css';
 import '../css/5.css';
-
+import '../css/all.css';
 // Need jQuery? Install it with "yarn add jquery", then uncomment to import it.
 
 
