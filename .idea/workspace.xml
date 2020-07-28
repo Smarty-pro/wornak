@@ -1,121 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d2282a49-60d9-402f-94b6-733cc1cde81d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AccessController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/CompanyContact.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/CompanyContactType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/RgFormPartialType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200716170054.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200718174914.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200722124855.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/CompanyContactRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/REGISTRATION/RgFormPartial.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/REGISTRATION/thankyou.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/error.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/job-seeker-zone/FAQ.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/job-seeker-zone/blog.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/job-seeker-zone/homepage.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/job-seeker-zone/search.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Wornak.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Wornak.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/2.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/all.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/all.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/RdForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RdFormType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/notifier.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/notifier.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/JobSeeker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/JobSeeker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/RgForm.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RgFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RgFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200418133304.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Bosanski/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Bosanski/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Bosanski/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Bosanski/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Bosanski/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Bosanski/REGISTRATION/pg3.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/English/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/English/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/English/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/English/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/English/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/English/REGISTRATION/pg3.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Français/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Français/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Français/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Français/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Français/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Français/REGISTRATION/pg3.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Hrvatski/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Hrvatski/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Hrvatski/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Hrvatski/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Hrvatski/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Hrvatski/REGISTRATION/pg3.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/IsiZulu/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/IsiZulu/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/IsiZulu/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/IsiZulu/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/IsiZulu/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/IsiZulu/REGISTRATION/pg3.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Kinyarwanda/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Kinyarwanda/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Kinyarwanda/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Kinyarwanda/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Kinyarwanda/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Kinyarwanda/REGISTRATION/pg3.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Orang Malaysia/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Orang Malaysia/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Orang Malaysia/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Orang Malaysia/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Orang Malaysia/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Orang Malaysia/REGISTRATION/pg3.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Português/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Português/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Português/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Português/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Português/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Português/REGISTRATION/pg3.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/redirect.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/shqiptar/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/shqiptar/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/shqiptar/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/shqiptar/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/shqiptar/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/shqiptar/REGISTRATION/pg3.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Српски/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Српски/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Српски/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Српски/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Српски/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Српски/REGISTRATION/pg3.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Точик/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Точик/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Точик/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Точик/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Точик/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Точик/REGISTRATION/pg3.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/հայերեն/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/հայերեն/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/հայերեն/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/հայերեն/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/հայերեն/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/հայերեն/REGISTRATION/pg3.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/العربية/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/العربية/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/العربية/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/العربية/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/العربية/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/العربية/REGISTRATION/pg3.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/বাংলা/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/বাংলা/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/বাংলা/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/বাংলা/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/বাংলা/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/বাংলা/REGISTRATION/pg3.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/አማርኛ/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/አማርኛ/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/አማርኛ/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/አማርኛ/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/አማርኛ/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/አማርኛ/REGISTRATION/pg3.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ខ្មែរ/HOME/homepage.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ខ្មែរ/REGISTRATION/RgForm.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ខ្មែរ/REGISTRATION/pg0.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ខ្មែរ/REGISTRATION/pg1.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ខ្មែរ/REGISTRATION/pg2.html.twig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/ខ្មែរ/REGISTRATION/pg3.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,16 +79,31 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="alpha &lt;lourhzaladnane@gmail.com&gt;" />
         <option value="Adnane Lourhzal" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/Controller/AccessController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/Controller/HomeController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/package.json" />
@@ -146,8 +114,8 @@
       <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
       <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
-      <path value="$PROJECT_DIR$/vendor/symfony/form" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
@@ -271,21 +239,31 @@
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
       <path value="$PROJECT_DIR$/vendor/symfony/twilio-notifier" />
       <path value="$PROJECT_DIR$/vendor/blackfire/php-sdk" />
+      <path value="$PROJECT_DIR$/vendor/symfony/sendgrid-mailer" />
     </include_path>
   </component>
   <component name="ProjectId" id="1aV93txOlAnbYw3jZsVYofYjl1y" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/var/log/dev.log&#10;/home/alpha/Wornak/public/build/app.js&#10;/home/alpha/Wornak/vendor/symfony/mime/Email.php&#10;/home/alpha/Wornak/public/build/app.css" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Documents/code-symfony-security/start" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="database.sql.templating" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -293,6 +271,21 @@
       <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/assets/css" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="?" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="JobSeeker.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Wornak/Entity/JobSeeker.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.JobSeeker.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -342,7 +335,77 @@
       <workItem from="1590958099551" duration="15000" />
       <workItem from="1591104836358" duration="994000" />
       <workItem from="1591106011721" duration="1649000" />
-      <workItem from="1591182664239" duration="10474000" />
+      <workItem from="1591182664239" duration="14248000" />
+      <workItem from="1591314387214" duration="1063000" />
+      <workItem from="1591316608026" duration="1514000" />
+      <workItem from="1591363390571" duration="3749000" />
+      <workItem from="1591371585085" duration="31643000" />
+      <workItem from="1591535635871" duration="2582000" />
+      <workItem from="1591542251976" duration="5802000" />
+      <workItem from="1591614293028" duration="3607000" />
+      <workItem from="1591622010837" duration="647000" />
+      <workItem from="1591650425385" duration="8431000" />
+      <workItem from="1591710998527" duration="7624000" />
+      <workItem from="1591723065633" duration="1085000" />
+      <workItem from="1591787451557" duration="2707000" />
+      <workItem from="1591807523843" duration="6337000" />
+      <workItem from="1591965586360" duration="1582000" />
+      <workItem from="1592050931036" duration="4233000" />
+      <workItem from="1592249124149" duration="217000" />
+      <workItem from="1592249357288" duration="12593000" />
+      <workItem from="1592341746215" duration="11527000" />
+      <workItem from="1592508230354" duration="103000" />
+      <workItem from="1592853866344" duration="1438000" />
+      <workItem from="1592919085265" duration="6482000" />
+      <workItem from="1593094518963" duration="1834000" />
+      <workItem from="1593114657061" duration="3188000" />
+      <workItem from="1593195792022" duration="952000" />
+      <workItem from="1593285726408" duration="54000" />
+      <workItem from="1593365619756" duration="2497000" />
+      <workItem from="1593383522197" duration="55000" />
+      <workItem from="1593383624482" duration="2464000" />
+      <workItem from="1593455147962" duration="1458000" />
+      <workItem from="1593537235140" duration="79000" />
+      <workItem from="1593537338139" duration="212000" />
+      <workItem from="1593537575025" duration="344000" />
+      <workItem from="1593537939138" duration="41000" />
+      <workItem from="1593537999119" duration="6000" />
+      <workItem from="1593552779375" duration="2000" />
+      <workItem from="1593631083118" duration="1417000" />
+      <workItem from="1593700630426" duration="605000" />
+      <workItem from="1593861899495" duration="1849000" />
+      <workItem from="1594063248805" duration="608000" />
+      <workItem from="1594130462719" duration="1984000" />
+      <workItem from="1594304874945" duration="2864000" />
+      <workItem from="1594466988999" duration="1796000" />
+      <workItem from="1594473299230" duration="1816000" />
+      <workItem from="1594556680963" duration="1420000" />
+      <workItem from="1594571612140" duration="1185000" />
+      <workItem from="1594887588175" duration="604000" />
+      <workItem from="1594889454077" duration="631000" />
+      <workItem from="1594916162498" duration="3161000" />
+      <workItem from="1594975383745" duration="92000" />
+      <workItem from="1594975642410" duration="1809000" />
+      <workItem from="1594983476872" duration="2926000" />
+      <workItem from="1594996624475" duration="6151000" />
+      <workItem from="1595067449629" duration="9143000" />
+      <workItem from="1595162531483" duration="2556000" />
+      <workItem from="1595241786481" duration="3041000" />
+      <workItem from="1595282369961" duration="1121000" />
+      <workItem from="1595334579534" duration="4051000" />
+      <workItem from="1595421187001" duration="5047000" />
+      <workItem from="1595455992257" duration="862000" />
+      <workItem from="1595519042342" duration="87000" />
+      <workItem from="1595519152140" duration="947000" />
+      <workItem from="1595521585305" duration="3908000" />
+      <workItem from="1595534304803" duration="953000" />
+      <workItem from="1595595010359" duration="1677000" />
+      <workItem from="1595673231391" duration="1930000" />
+      <workItem from="1595764863530" duration="2110000" />
+      <workItem from="1595771409961" duration="1961000" />
+      <workItem from="1595793996280" duration="4697000" />
+      <workItem from="1595848220938" duration="9983000" />
+      <workItem from="1595945391089" duration="1171000" />
     </task>
     <task id="LOCAL-00001" summary="nothing special">
       <created>1590252528938</created>
@@ -351,7 +414,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590252528938</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Design of the homepage changed&#10;CDN removed">
+      <created>1591292607796</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591292607796</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +430,32 @@
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Nothing special" />
     <MESSAGE value="nothing special" />
     <MESSAGE value="Design of the homepage changed" />
@@ -368,54 +463,126 @@
     <option name="LAST_COMMIT_MESSAGE" value="Design of the homepage changed&#10;CDN removed" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="177" y="55" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591287427470">
+    <state x="588" y="266" width="584" height="270" key="#Notifications" timestamp="1592313562629">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="177" y="55" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1294.741@72.27.1294.741" timestamp="1591287427470" />
-    <state x="361" y="199" width="705" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590250140637">
+    <state x="588" y="266" width="584" height="270" key="#Notifications/72.27.1294.741@72.27.1294.741" timestamp="1592313562629" />
+    <state x="364" y="27" width="700" height="741" key="#PHP" timestamp="1591468761832">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="361" y="199" width="705" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1294.741@72.27.1294.741" timestamp="1590250140637" />
-    <state x="452" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1590249371503">
+    <state x="364" y="27" width="700" height="741" key="#PHP/72.27.1294.741@72.27.1294.741" timestamp="1591468761832" />
+    <state x="252" y="55" width="824" height="691" key="#Servers" timestamp="1591292832566">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="452" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1294.741@72.27.1294.741" timestamp="1590249371503" />
-    <state x="258" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1591284582204">
+    <state x="252" y="55" width="824" height="691" key="#Servers/72.27.1294.741@72.27.1294.741" timestamp="1591292832566" />
+    <state x="177" y="55" width="998" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594976384192">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="258" y="27" width="912" height="741" key="CommitChangelistDialog2/72.27.1294.741@72.27.1294.741" timestamp="1591284582204" />
-    <state x="502" y="157" width="424" height="491" key="FileChooserDialogImpl" timestamp="1589466907790">
+    <state x="177" y="55" width="998" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1294.741@72.27.1294.741" timestamp="1594976384192" />
+    <state x="346" y="91" width="735" height="458" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog" timestamp="1595526977598">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="502" y="157" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1589466907790" />
-    <state width="853" height="164" key="GridCell.Tab.0.bottom" timestamp="1591288082931">
+    <state x="346" y="91" width="735" height="458" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog/72.27.1294.741@72.27.1294.741" timestamp="1595526977598" />
+    <state x="361" y="199" width="705" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593115854230">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="853" height="164" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1591288082931" />
-    <state width="853" height="164" key="GridCell.Tab.0.center" timestamp="1591288082929">
+    <state x="361" y="199" width="705" height="403" key="#com.intellij.fileTypes.FileTypeChooser/72.27.1294.741@72.27.1294.741" timestamp="1593115854230" />
+    <state x="508" y="78" width="412" height="645" key="#com.intellij.ide.util.MemberChooser" timestamp="1591382934700">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="853" height="164" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1591288082929" />
-    <state width="853" height="164" key="GridCell.Tab.0.left" timestamp="1591288082929">
+    <state x="508" y="78" width="412" height="645" key="#com.intellij.ide.util.MemberChooser/72.27.1294.741@72.27.1294.741" timestamp="1591382934700" />
+    <state x="454" y="193" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1595773379444">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="853" height="164" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1591288082929" />
-    <state width="853" height="164" key="GridCell.Tab.0.right" timestamp="1591288082930">
+    <state x="454" y="193" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog/72.27.1294.741@72.27.1294.741" timestamp="1595773379444" />
+    <state x="72" y="27" width="565" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594142177972">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="853" height="164" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1591288082930" />
-    <state x="513" y="117" width="417" height="568" key="NewPhpClassDialog" timestamp="1590248115045">
+    <state x="72" y="27" width="565" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1294.741@72.27.1294.741" timestamp="1594142177972" />
+    <state x="452" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592947215298">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="513" y="117" width="417" height="568" key="NewPhpClassDialog/72.27.1294.741@72.27.1294.741" timestamp="1590248115045" />
+    <state x="452" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/72.27.1294.741@72.27.1294.741" timestamp="1592947215298" />
+    <state x="455" y="239" width="518" height="324" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1591404087115">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="455" y="239" width="518" height="324" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/72.27.1294.741@72.27.1294.741" timestamp="1591404087115" />
+    <state x="258" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1591292602866">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="258" y="27" width="912" height="741" key="CommitChangelistDialog2/72.27.1294.741@72.27.1294.741" timestamp="1591292602866" />
+    <state x="172" y="127" width="1089" height="541" key="DiffContextDialog" timestamp="1591484418100">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="172" y="127" width="1089" height="541" key="DiffContextDialog/72.27.1294.741@72.27.1294.741" timestamp="1591484418100" />
+    <state x="502" y="157" width="424" height="491" key="FileChooserDialogImpl" timestamp="1595863791805">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="502" y="157" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1595863791805" />
+    <state width="1248" height="205" key="GridCell.Tab.0.bottom" timestamp="1594919370527">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="205" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1594919370527" />
+    <state width="1248" height="205" key="GridCell.Tab.0.center" timestamp="1594919370526">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="205" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1594919370526" />
+    <state width="1248" height="205" key="GridCell.Tab.0.left" timestamp="1594919370526">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="205" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1594919370526" />
+    <state width="1248" height="205" key="GridCell.Tab.0.right" timestamp="1594919370527">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="205" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1594919370527" />
+    <state width="1248" height="205" key="GridCell.Tab.1.bottom" timestamp="1594919370528">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="205" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1594919370528" />
+    <state width="1248" height="205" key="GridCell.Tab.1.center" timestamp="1594919370527">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="205" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1594919370527" />
+    <state width="1248" height="205" key="GridCell.Tab.1.left" timestamp="1594919370527">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="205" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1594919370527" />
+    <state width="1248" height="205" key="GridCell.Tab.1.right" timestamp="1594919370527">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="205" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1594919370527" />
+    <state width="1248" height="205" key="GridCell.Tab.2.bottom" timestamp="1594919370528">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="205" key="GridCell.Tab.2.bottom/72.27.1294.741@72.27.1294.741" timestamp="1594919370528" />
+    <state width="1248" height="205" key="GridCell.Tab.2.center" timestamp="1594919370528">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="205" key="GridCell.Tab.2.center/72.27.1294.741@72.27.1294.741" timestamp="1594919370528" />
+    <state width="1248" height="205" key="GridCell.Tab.2.left" timestamp="1594919370528">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="205" key="GridCell.Tab.2.left/72.27.1294.741@72.27.1294.741" timestamp="1594919370528" />
+    <state width="1248" height="205" key="GridCell.Tab.2.right" timestamp="1594919370528">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="205" key="GridCell.Tab.2.right/72.27.1294.741@72.27.1294.741" timestamp="1594919370528" />
+    <state width="326" height="505" key="HiddenNamespacesPopup" timestamp="1591484716704">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="326" height="505" key="HiddenNamespacesPopup/72.27.1294.741@72.27.1294.741" timestamp="1591484716704" />
+    <state x="513" y="117" width="449" height="582" key="NewPhpClassDialog" timestamp="1595773380496">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="513" y="117" width="449" height="582" key="NewPhpClassDialog/72.27.1294.741@72.27.1294.741" timestamp="1595773380496" />
     <state x="514" y="323" width="399" height="156" key="NewPhpFileDialog" timestamp="1590246110915">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="514" y="323" width="399" height="156" key="NewPhpFileDialog/72.27.1294.741@72.27.1294.741" timestamp="1590246110915" />
-    <state x="208" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1591287216080">
+    <state x="208" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1595519134980">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="208" y="31" width="1022" height="737" key="SettingsEditor/72.27.1294.741@72.27.1294.741" timestamp="1591287216080" />
+    <state x="208" y="31" width="1022" height="737" key="SettingsEditor/72.27.1294.741@72.27.1294.741" timestamp="1595519134980" />
     <state x="592" y="244" width="446" height="314" key="cloudConfig.SelfSettingsDialog" timestamp="1590244526217">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
@@ -424,17 +591,49 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="620" y="275" width="187" height="251" key="com.intellij.database.actions.DdlActions$CreateObject$1/72.27.1294.741@72.27.1294.741" timestamp="1591287395498" />
+    <state x="172" y="127" width="1094" height="541" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1591437572090">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="172" y="127" width="1094" height="541" key="com.intellij.history.integration.ui.views.FileHistoryDialog/72.27.1294.741@72.27.1294.741" timestamp="1591437572090" />
+    <state x="172" y="127" width="1094" height="541" key="com.intellij.history.integration.ui.views.RecentChangeDialog" timestamp="1594306268147">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="172" y="127" width="1094" height="541" key="com.intellij.history.integration.ui.views.RecentChangeDialog/72.27.1294.741@72.27.1294.741" timestamp="1594306268147" />
     <state x="490" y="312" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589285037067">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="490" y="312" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1294.741@72.27.1294.741" timestamp="1589285037067" />
-    <state x="72" y="27" width="618" height="741" key="find.popup" timestamp="1591186166660">
+    <state x="72" y="27" width="618" height="741" key="find.popup" timestamp="1591555403703">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="72" y="27" width="618" height="741" key="find.popup/72.27.1294.741@72.27.1294.741" timestamp="1591186166660" />
-    <state x="383" y="174" key="run.anything.popup" timestamp="1590252041601">
+    <state x="72" y="27" width="618" height="741" key="find.popup/72.27.1294.741@72.27.1294.741" timestamp="1591555403703" />
+    <state x="383" y="174" width="672" height="677" key="run.anything.popup" timestamp="1594307198486">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="383" y="174" key="run.anything.popup/72.27.1294.741@72.27.1294.741" timestamp="1590252041601" />
+    <state x="383" y="174" width="672" height="677" key="run.anything.popup/72.27.1294.741@72.27.1294.741" timestamp="1594307198486" />
+    <state x="382" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1594999734984">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="382" y="89" width="672" height="678" key="search.everywhere.popup/72.27.1294.741@72.27.1294.741" timestamp="1594999734984" />
+    <state x="444" y="311" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1591402085434">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state x="444" y="311" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/72.27.1294.741@72.27.1294.741" timestamp="1591402085434" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Form/RgFormType.php</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/src/Entity/JobSeeker.php</url>
+          <line>98</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block description %}
+    Registration page of Wornak
+{% endblock %}
+
+{% block title %}
+    Registration-Wornak
+{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block nav %}
+{% endblock %}
+
+{% block body %}
+    <main role="main" class="container" >
+        {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+        {{ form_row(form.firstame) }} <br>
+        {{ form_row(form.lastName) }} <br>
+        {{ form_row(form.gender) }} <br>
+        {{ form_row(form.birthdayDate) }} <br>
+        {{ form_row(form.password) }} <br>
+        {{ form_row(form.email) }} <br>
+
+        <button type="submit" class="btn btn-primary">Register</button>
+        {{ form_end(form) }}
+
+    </main><!-- /.container -->
+{% endblock %}
+
+{% block javascript %}
+{{ parent() }}
+{% endblock %}

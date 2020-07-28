@@ -1,9 +1,10 @@
 @import "~bootstrap";
-.required {
-  font-size: 32px;
-}
+
 @import url("https://fonts.googleapis.com/css?family=Barlow:200,300,400,500,600,700,800,900&display=swap");
-#icon1 , #icon2 , #icon3 {
+.thank-you__icon {
+  height: 15em;
+}
+#icon1 , #icon2 , #icon3 , #icon4 {
   color: #000;
   font-size: 24px;
   display: block;
@@ -617,10 +618,6 @@ article p {
 article:hover {
   opacity: 1;
 }
-
-/*
- original code without the navbar
- */
 
 @import 'https://fonts.googleapis.com/css?family=Roboto:400,500';
 
