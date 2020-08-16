@@ -69,6 +69,7 @@ class AccessController extends AbstractController
                 $encoded = $encoder->encodePassword($rgform, $plainPassword);
                 $rgform->setPassword($encoded);
                 $rgform->setActivationToken(md5(uniqid()));
+                $rgform->setUuid(md5(uniqid()));
                 $entityManager->persist($rgform);
                 $entityManager->flush();
 

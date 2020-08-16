@@ -1,0 +1,264 @@
+{% extends 'base.html.twig' %}
+
+{% block description %}
+Test
+{% endblock %}
+
+{% block title %}
+Test
+{% endblock %}
+
+{% block head %}
+{{ parent() }}
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+{% endblock %}
+{# formulaire de l'inscription partielle #}
+{% block nav %}
+{% endblock %}
+
+{% block body %}
+    <div id="map_canvas"></div>
+{% endblock %}
+
+{% block javascript %}
+{{ parent() }}
+<script type="text/javascript">
+function drawMap() {
+    var data = google.visualization.arrayToDataTable([
+        ['Pays', 'CV'],
+        [{v: "AF", f: 'Afghanistan'}, 10],
+        [{v: "AL", f: 'Albania'}, 500],
+        [{v: "DZ", f: 'Algeria'}, 1000],
+        [{v: "Ad", f: 'Andorra'}, 100],
+        [{v: "AO", f: 'Angola'}, 1000],
+        [{v: "AG", f: 'Antigua And Barbuda'}, 250],
+        [{v: "AR", f: 'Argentina'},50],
+        [{v: "AM", f: 'Armenia'},500],
+        [{v: "AU", f: 'Australia'},15],
+        [{v: "AT", f: 'Austria'},60],
+        [{v: "AZ", f: 'Azerbaijan'},68],
+        [{v: "BS", f: 'Bahamas'},77],
+        [{v: "BH", f: 'Bahrain'},778],
+        [{v: "BD", f: 'Bangladesh'},777],
+        [{v: "BB", f: 'Barbados'},7],
+        [{v: "BY", f: 'Belarus'},705],
+        [{v: "BE", f: 'Belgium'},2006],
+        [{v: "BZ", f: 'Belize'},2007],
+        [{v: "BJ", f: 'Benin'},3258],
+        [{v: "BM", f: 'Bermuda'},330],
+        [{v: "BT", f: 'Bhutan'},3],
+        [{v: "BO", f: 'Bolivia'},350],
+        [{v: "BA", f: 'Bosnia And Herzegovina'},43],
+        [{v: "BW", f: 'Botswana'},400],
+        [{v: "BR", f: 'Brazil'}, 400],
+        [{v: "BN", f: 'Brunei'},420],
+        [{v: "BG", f: 'Bulgaria'},507],
+        [{v: "BF", f: 'Burkina Faso'}, 407],
+        [{v: "BI", f: 'Burundi'}, 8],
+        [{v: "CV", f: 'Cabo Verde'}, 43],
+        [{v: "KH", f: 'Cambodia'}, 143],
+        [{v: "CM", f: 'Cameroon'}, 43],
+        [{v: "CA", f: 'Canada'}, 527],
+        [{v: "CF", f: 'Central African Republic'}, 32],
+        [{v: "TD", f: 'Chad'}, 21],
+        [{v: "CL", f: 'Chile'}, 223],
+        [{v: "CN", f: 'China'}, 1043],
+        [{v: "CO", f: 'Colombia'}, 543],
+        [{v: "KM", f: 'Comoros'}, 43],
+        [{v: "CG", f: 'Congo'}, 143],
+        [{v: "CD", f: 'DR Congo'}, 243],
+        [{v: "CR", f: 'Costa Rica'}, 289],
+        [{v: "CI", f: 'Ivory Coast'}, 743],
+        [{v: "HR", f: 'Croatia'}, 943],
+        [{v: "CU", f: 'Cuba'}, 73],
+        [{v: "CY", f: 'Cyprus'}, 43],
+        [{v: "CZ", f: 'Czechia'}, 43],
+        [{v: "DK", f: 'Denmark'}, 43],
+        [{v: "DJ", f: 'Djibouti'}, 43],
+        [{v: "DM", f: 'Dominica'}, 43],
+        [{v: "DO", f: 'Dominican Republic'}, 43],
+        [{v: "EC", f: 'Ecuador'}, 43],
+        [{v: "EG", f: 'Egypt'}, 43],
+        [{v: "SV", f: 'El Salvador'}, 43],
+        [{v: "GQ", f: 'Equatorial Guinea'}, 43],
+        [{v: "ER", f: 'Eritrea'}, 43],
+        [{v: "EE", f: 'Estonia'}, 43],
+        [{v: "SZ", f: 'Swaziland'}, 43],
+        [{v: "ET", f: 'Ethiopia'}, 43],
+        [{v: "FJ", f: 'Fiji'}, 43],
+        [{v: "FI", f: 'Finland'}, 43],
+        [{v: "FR", f: 'France'}, 43],
+        [{v: "GA", f: 'Gabon'}, 43],
+        [{v: "GM", f: 'Gambia'}, 43],
+        [{v: "GE", f: 'Georgia'}, 43],
+        [{v: "DE", f: 'Germany'}, 43],
+        [{v: "GH", f: 'Ghana'}, 43],
+        [{v: "GR", f: 'Greece'}, 43],
+        [{v: "GD", f: 'Grenada'}, 43],
+        [{v: "GT", f: 'Guatemala'}, 43],
+        [{v: "GN", f: 'Guinea'}, 43],
+        [{v: "GW", f: 'Guinea-Bissau'}, 43],
+        [{v: "GY", f: 'Guyana'}, 43],
+        [{v: "HT", f: 'Haiti'}, 43],
+        [{v: "HN", f: 'Honduras'}, 43],
+        [{v: "HU", f: 'Hungary'}, 43],
+        [{v: "IS", f: 'Iceland'}, 43],
+        [{v: "IN", f: 'India'}, 43],
+        [{v: "ID", f: 'Indonesia'}, 43],
+        [{v: "IR", f: 'Iran'}, 43],
+        [{v: "IQ", f: 'Iraq'}, 43],
+        [{v: "IE", f: 'Ireland'}, 43],
+        [{v: "IL", f: 'Israel'}, 43],
+        [{v: "IT", f: 'Italy'}, 43],
+        [{v: "JM", f: 'Jamaica'}, 43],
+        [{v: "JP", f: 'Japan'}, 43],
+        [{v: "JO", f: 'Jordan'}, 43],
+        [{v: "KZ", f: 'Kazakhstan'}, 43],
+        [{v: "KE", f: 'Kenya'}, 43],
+        [{v: "KI", f: 'Kiribati'}, 43],
+        [{v: "KP", f: 'North Korea'}, 43],
+        [{v: "KR", f: 'South Korea'}, 43],
+        [{v: "KW", f: 'Kuwait'}, 43],
+        [{v: "KG", f: 'Kyrgyzstan'}, 43],
+        [{v: "LA", f: 'Laos'}, 43],
+        [{v: "LV", f: 'Latvia'}, 43],
+        [{v: "LB", f: 'Lebanon'}, 43],
+        [{v: "LS", f: 'Lesotho'}, 43],
+        [{v: "LR", f: 'Liberia'}, 43],
+        [{v: "LY", f: 'Libya'}, 43],
+        [{v: "LI", f: 'Liechtenstein'}, 43],
+        [{v: "LT", f: 'Lithuania'}, 43],
+        [{v: "LU", f: 'Luxembourg'}, 43],
+        [{v: "MG", f: 'Madagascar'}, 43],
+        [{v: "MW", f: 'Malawi'}, 43],
+        [{v: "MY", f: 'Malaysia'}, 43],
+        [{v: "MV", f: 'Maldives'}, 43],
+        [{v: "ML", f: 'Mali'}, 43],
+        [{v: "MT", f: 'Malta'}, 43],
+        [{v: "MH", f: 'Marshall Islands'}, 43],
+        [{v: "MR", f: 'Mauritania'}, 43],
+        [{v: "MU", f: 'Mauritius'}, 43],
+        [{v: "MX", f: 'Mexico'}, 43],
+        [{v: "FM", f: 'Micronesia'}, 43],
+        [{v: "MD", f: 'Moldova'}, 43],
+        [{v: "MC", f: 'Monaco'}, 43],
+        [{v: "MN", f: 'Mongolia'}, 43],
+        [{v: "ME", f: 'Montenegro'}, 43],
+        [{v: "MA", f: 'Morocco'}, 43],
+        [{v: "MZ", f: 'Mozambique'}, 43],
+        [{v: "MM", f: 'Myanmar'}, 43],
+        [{v: "NA", f: 'Namibia'}, 43],
+        [{v: "NR", f: 'Nauru'}, 43],
+        [{v: "NP", f: 'Nepal'}, 43],
+        [{v: "NL", f: 'Netherlands'}, 43],
+        [{v: "NZ", f: 'New Zealand'}, 43],
+        [{v: "NI", f: 'Nicaragua'}, 43],
+        [{v: "NE", f: 'Niger'}, 43],
+        [{v: "NG", f: 'Nigeria'}, 43],
+        [{v: "MK", f: 'North Macedonia'}, 43],
+        [{v: "NO", f: 'Norway'}, 43],
+        [{v: "OM", f: 'Oman'}, 43],
+        [{v: "PK", f: 'Pakistan'}, 43],
+        [{v: "PW", f: 'Palau'}, 43],
+        [{v: "PA", f: 'Panama'}, 43],
+        [{v: "PG", f: 'Papua New Guinea'}, 43],
+        [{v: "PY", f: 'Paraguay'}, 43],
+        [{v: "PE", f: 'Peru'}, 43],
+        [{v: "PH", f: 'Philippines'}, 43],
+        [{v: "PL", f: 'Poland'}, 43],
+        [{v: "PT", f: 'Portugal'}, 43],
+        [{v: "QA", f: 'Qatar'}, 43],
+        [{v: "RO", f: 'Romania'}, 43],
+        [{v: "RU", f: 'Russia'}, 43],
+        [{v: "RW", f: 'Rwanda'}, 43],
+        [{v: "KN", f: 'Saint Kitts and Nevis'}, 43],
+        [{v: "LC", f: 'Saint Lucia'}, 43],
+        [{v: "VC", f: 'Saint Vincent and the Grenadines'}, 43],
+        [{v: "WS", f: 'Samoa'}, 43],
+        [{v: "SM", f: 'San Marino'}, 43],
+        [{v: "ST", f: 'Sao Tome and Principe'}, 43],
+        [{v: "SA", f: 'Saudi Arabia'}, 43],
+        [{v: "SN", f: 'Senegal'}, 43],
+        [{v: "RS", f: 'Serbia'}, 43],
+        [{v: "SC", f: 'Seychelles'}, 43],
+        [{v: "SL", f: 'Sierra Leone'}, 43],
+        [{v: "SG", f: 'Singapore'}, 43],
+        [{v: "SK", f: 'Slovakia'}, 43],
+        [{v: "SI", f: 'Slovenia'}, 43],
+        [{v: "SB", f: 'Solomon Islands'}, 43],
+        [{v: "SO", f: 'Somalia'}, 43],
+        [{v: "ZA", f: 'South Africa'}, 43],
+        [{v: "SS", f: 'South Sudan'}, 43],
+        [{v: "ES", f: 'Spain'}, 43],
+        [{v: "LK", f: 'Sri Lanka'}, 43],
+        [{v: "SD", f: 'Sudan'}, 43],
+        [{v: "SR", f: 'Suriname'}, 43],
+        [{v: "SE", f: 'Sweden'}, 43],
+        [{v: "CH", f: 'Switzerland'}, 43],
+        [{v: "SY", f: 'Syria'}, 43],
+        [{v: "TJ", f: 'Tajikistan'}, 43],
+        [{v: "TZ", f: 'Tanzania'}, 43],
+        [{v: "TH", f: 'Thailand'}, 43],
+        [{v: "TG", f: 'Togo'}, 43],
+        [{v: "TO", f: 'Tonga'}, 43],
+        [{v: "TT", f: 'Trinidad and Tobago'}, 43],
+        [{v: "TN", f: 'Tunisia'}, 43],
+        [{v: "TR", f: 'Turkey'}, 43],
+        [{v: "TV", f: 'Tuvalu'}, 43],
+        [{v: "UG", f: 'Uganda'}, 43],
+        [{v: "UA", f: 'Ukraine'}, 43],
+        [{v: "AE", f: 'United Arab Emirates'}, 43],
+        [{v: "GB", f: 'United Kingdom'}, 43],
+        [{v: "US", f: 'United States'}, 43],
+        [{v: "UY", f: 'Uruguay'}, 43],
+        [{v: "UZ", f: 'Uzbekistan'}, 43],
+        [{v: "VU", f: 'Vanuatu'}, 43],
+        [{v: "VA", f: 'Vatican City'}, 43],
+        [{v: "VE", f: 'Venezuela'}, 43],
+        [{v: "VN", f: 'Vietnam'}, 43],
+        [{v: "YE", f: 'Yemen'}, 43],
+        [{v: "ZM", f: 'Zambia'}, 43],
+        [{v: "ZW", f: 'Zimbabwe'}, 43],
+        [{v: "GE", f: 'Abkhazia'}, 43],
+        [{v: "CK", f: 'Cook Islands'}, 43],
+        [{v: "XK", f: 'Kosovo'}, 43],
+        [{v: "NU", f: 'Niue'}, 43],
+        [{v: "CY", f: 'Nothern Cyprus'}, 43],
+        [{v: "EH", f: 'Western Sahara'}, 43],
+        [{v: "SO", f: 'Somaliland'}, 43],
+        [{v: "GE", f: 'South Ossetia'}, 43],
+        [{v: "TW", f: 'Taiwan'}, 43],
+        [{v: "MD", f: 'Trasnistria'}, 43],
+    ]);
+
+
+    var options = {
+        dataMode: 'regions',
+        width: 'auto',
+        height: 'auto',
+        legend: 'none',
+        colorAxis: {colors: ['grey', 'black']} // '#FFFFFF' / '#FFFFFF' possible aussi
+    };
+
+    var container = document.getElementById('map_canvas');
+    var chart = new google.visualization.GeoChart(container);
+
+    function myClickHandler(){
+        var selection = chart.getSelection();
+        var id = selection[0].row;
+        var ISO = data.getValue( id , 0);
+        var ISOmin = ISO.toLowerCase();
+
+
+        var baseURL = "wornak.com";
+        var link = baseURL + "/" + ISOmin;
+        window.open('http://' + link, '_blank');
+    }
+
+    google.visualization.events.addListener(chart, 'select', myClickHandler);
+
+    chart.draw(data, options);
+}
+google.load('visualization', '1', {packages: ['geochart'], callback: drawMap});
+</script>
+{% endblock %}

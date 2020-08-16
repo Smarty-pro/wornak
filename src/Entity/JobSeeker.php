@@ -3,12 +3,12 @@
 namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Security\Core\User\UserInterface;
+
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\JobSeekerRepository")
  */
-class JobSeeker implements UserInterface
+class JobSeeker implements \Symfony\Component\Security\Core\User\UserInterface
 {
     /**
      * @ORM\Id()
@@ -18,9 +18,9 @@ class JobSeeker implements UserInterface
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=180, unique=true)
+     * @ORM\Column(type="string", unique=true)
      */
-    private $username;
+    private $uuid;
 
     /**
      * @ORM\Column(type="json")
@@ -128,14 +128,14 @@ class JobSeeker implements UserInterface
      *
      * @see UserInterface
      */
-    public function getUsername(): string
+    public function getUuid(): string
     {
-        return (string) $this->username;
+        return (string) $this->uuid;
     }
 
-    public function setUsername(string $username): self
+    public function setUuid(string $uuid): self
     {
-        $this->username = $username;
+        $this->uuid = $uuid;
 
         return $this;
     }

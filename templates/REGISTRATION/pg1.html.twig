@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block description %}
+Registration page of Wornak
+{% endblock %}
+
+{% block title %}
+Registration-Wornak
+{% endblock %}
+
+{% block head %}
+{{ parent() }}
+{% endblock %}
+
+{# contact form for company #}
+{% block body %}
+ <main role="main" class="container">
+  {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+  {{ form_row(form.email) }} <br>
+  {{ form_row(form.employeesNumber) }} <br>
+  {{ form_row(form.companyName) }} <br>
+  {{ form_row(form.legalStatus) }} <br>
+  {{ form_row(form.ICE) }} <br>
+  <button type="submit" class="btn btn-primary">Register</button>
+  {{ form_end(form) }}
+
+ </main>
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}

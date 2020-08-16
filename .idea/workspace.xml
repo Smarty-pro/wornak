@@ -26,48 +26,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2282a49-60d9-402f-94b6-733cc1cde81d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Controller/AccessController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/CompanyContact.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/CompanyContactType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Form/RgFormPartialType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200716170054.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200718174914.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200722124855.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CompanyContactRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthenticator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/REGISTRATION/RgFormPartial.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/REGISTRATION/thankyou.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/error.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/job-seeker-zone/FAQ.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/job-seeker-zone/blog.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/job-seeker-zone/homepage.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/job-seeker-zone/search.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Wornak.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Wornak.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200816113413.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/notifier.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/notifier.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AccessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccessController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/JobSeeker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/JobSeeker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/RgForm.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RgFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RgFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Migrations/Version20200418133304.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,6 +57,13 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/Wornak/Wornak-website" />
+      </set>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/Controller/AccessController.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
@@ -277,16 +247,28 @@
       <command value="?" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.watch">
     <configuration name="JobSeeker.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Wornak/Entity/JobSeeker.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="watch" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.watch" />
         <item itemvalue="JavaScript Debug.JobSeeker.php" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -405,7 +387,15 @@
       <workItem from="1595771409961" duration="1961000" />
       <workItem from="1595793996280" duration="4697000" />
       <workItem from="1595848220938" duration="9983000" />
-      <workItem from="1595945391089" duration="1171000" />
+      <workItem from="1595945391089" duration="2070000" />
+      <workItem from="1595974214948" duration="3000" />
+      <workItem from="1596044799840" duration="595000" />
+      <workItem from="1596285946108" duration="1968000" />
+      <workItem from="1596637206853" duration="35000" />
+      <workItem from="1596637293375" duration="2290000" />
+      <workItem from="1596805998262" duration="497000" />
+      <workItem from="1597332477921" duration="1851000" />
+      <workItem from="1597499520526" duration="5976000" />
     </task>
     <task id="LOCAL-00001" summary="nothing special">
       <created>1590252528938</created>
@@ -421,11 +411,18 @@
       <option name="project" value="LOCAL" />
       <updated>1591292607796</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="The registration/login module is operational">
+      <created>1595949767133</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595949767134</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
@@ -460,7 +457,8 @@
     <MESSAGE value="nothing special" />
     <MESSAGE value="Design of the homepage changed" />
     <MESSAGE value="Design of the homepage changed&#10;CDN removed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Design of the homepage changed&#10;CDN removed" />
+    <MESSAGE value="The registration/login module is operational" />
+    <option name="LAST_COMMIT_MESSAGE" value="The registration/login module is operational" />
   </component>
   <component name="WindowStateProjectService">
     <state x="588" y="266" width="584" height="270" key="#Notifications" timestamp="1592313562629">
@@ -495,10 +493,10 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="454" y="193" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog/72.27.1294.741@72.27.1294.741" timestamp="1595773379444" />
-    <state x="72" y="27" width="565" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594142177972">
+    <state x="72" y="27" width="565" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597525815678">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="72" y="27" width="565" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1294.741@72.27.1294.741" timestamp="1594142177972" />
+    <state x="72" y="27" width="565" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1294.741@72.27.1294.741" timestamp="1597525815678" />
     <state x="452" y="155" width="524" height="491" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1592947215298">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
@@ -507,10 +505,10 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="455" y="239" width="518" height="324" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/72.27.1294.741@72.27.1294.741" timestamp="1591404087115" />
-    <state x="258" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1591292602866">
+    <state x="258" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1595949765073">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="258" y="27" width="912" height="741" key="CommitChangelistDialog2/72.27.1294.741@72.27.1294.741" timestamp="1591292602866" />
+    <state x="258" y="27" width="912" height="741" key="CommitChangelistDialog2/72.27.1294.741@72.27.1294.741" timestamp="1595949765073" />
     <state x="172" y="127" width="1089" height="541" key="DiffContextDialog" timestamp="1591484418100">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
@@ -519,54 +517,70 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="502" y="157" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1595863791805" />
-    <state width="1248" height="205" key="GridCell.Tab.0.bottom" timestamp="1594919370527">
+    <state width="1248" height="386" key="GridCell.Tab.0.bottom" timestamp="1596288814638">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="205" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1594919370527" />
-    <state width="1248" height="205" key="GridCell.Tab.0.center" timestamp="1594919370526">
+    <state width="1248" height="386" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1596288814638" />
+    <state width="1248" height="386" key="GridCell.Tab.0.center" timestamp="1596288814637">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="205" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1594919370526" />
-    <state width="1248" height="205" key="GridCell.Tab.0.left" timestamp="1594919370526">
+    <state width="1248" height="386" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1596288814637" />
+    <state width="1248" height="386" key="GridCell.Tab.0.left" timestamp="1596288814637">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="205" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1594919370526" />
-    <state width="1248" height="205" key="GridCell.Tab.0.right" timestamp="1594919370527">
+    <state width="1248" height="386" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1596288814637" />
+    <state width="1248" height="386" key="GridCell.Tab.0.right" timestamp="1596288814637">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="205" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1594919370527" />
-    <state width="1248" height="205" key="GridCell.Tab.1.bottom" timestamp="1594919370528">
+    <state width="1248" height="386" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1596288814637" />
+    <state width="1248" height="386" key="GridCell.Tab.1.bottom" timestamp="1596288814639">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="205" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1594919370528" />
-    <state width="1248" height="205" key="GridCell.Tab.1.center" timestamp="1594919370527">
+    <state width="1248" height="386" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1596288814639" />
+    <state width="1248" height="386" key="GridCell.Tab.1.center" timestamp="1596288814638">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="205" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1594919370527" />
-    <state width="1248" height="205" key="GridCell.Tab.1.left" timestamp="1594919370527">
+    <state width="1248" height="386" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1596288814638" />
+    <state width="1248" height="386" key="GridCell.Tab.1.left" timestamp="1596288814638">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="205" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1594919370527" />
-    <state width="1248" height="205" key="GridCell.Tab.1.right" timestamp="1594919370527">
+    <state width="1248" height="386" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1596288814638" />
+    <state width="1248" height="386" key="GridCell.Tab.1.right" timestamp="1596288814639">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="205" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1594919370527" />
-    <state width="1248" height="205" key="GridCell.Tab.2.bottom" timestamp="1594919370528">
+    <state width="1248" height="386" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1596288814638" />
+    <state width="1248" height="386" key="GridCell.Tab.2.bottom" timestamp="1596288814640">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="205" key="GridCell.Tab.2.bottom/72.27.1294.741@72.27.1294.741" timestamp="1594919370528" />
-    <state width="1248" height="205" key="GridCell.Tab.2.center" timestamp="1594919370528">
+    <state width="1248" height="386" key="GridCell.Tab.2.bottom/72.27.1294.741@72.27.1294.741" timestamp="1596288814640" />
+    <state width="1248" height="386" key="GridCell.Tab.2.center" timestamp="1596288814639">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="205" key="GridCell.Tab.2.center/72.27.1294.741@72.27.1294.741" timestamp="1594919370528" />
-    <state width="1248" height="205" key="GridCell.Tab.2.left" timestamp="1594919370528">
+    <state width="1248" height="386" key="GridCell.Tab.2.center/72.27.1294.741@72.27.1294.741" timestamp="1596288814639" />
+    <state width="1248" height="386" key="GridCell.Tab.2.left" timestamp="1596288814639">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="205" key="GridCell.Tab.2.left/72.27.1294.741@72.27.1294.741" timestamp="1594919370528" />
-    <state width="1248" height="205" key="GridCell.Tab.2.right" timestamp="1594919370528">
+    <state width="1248" height="386" key="GridCell.Tab.2.left/72.27.1294.741@72.27.1294.741" timestamp="1596288814639" />
+    <state width="1248" height="386" key="GridCell.Tab.2.right" timestamp="1596288814640">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state width="1248" height="205" key="GridCell.Tab.2.right/72.27.1294.741@72.27.1294.741" timestamp="1594919370528" />
+    <state width="1248" height="386" key="GridCell.Tab.2.right/72.27.1294.741@72.27.1294.741" timestamp="1596288814640" />
+    <state width="1248" height="386" key="GridCell.Tab.3.bottom" timestamp="1596288814643">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="386" key="GridCell.Tab.3.bottom/72.27.1294.741@72.27.1294.741" timestamp="1596288814643" />
+    <state width="1248" height="386" key="GridCell.Tab.3.center" timestamp="1596288814640">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="386" key="GridCell.Tab.3.center/72.27.1294.741@72.27.1294.741" timestamp="1596288814640" />
+    <state width="1248" height="386" key="GridCell.Tab.3.left" timestamp="1596288814640">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="386" key="GridCell.Tab.3.left/72.27.1294.741@72.27.1294.741" timestamp="1596288814640" />
+    <state width="1248" height="386" key="GridCell.Tab.3.right" timestamp="1596288814641">
+      <screen x="72" y="27" width="1294" height="741" />
+    </state>
+    <state width="1248" height="386" key="GridCell.Tab.3.right/72.27.1294.741@72.27.1294.741" timestamp="1596288814641" />
     <state width="326" height="505" key="HiddenNamespacesPopup" timestamp="1591484716704">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
@@ -603,10 +617,10 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="490" y="312" width="448" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1294.741@72.27.1294.741" timestamp="1589285037067" />
-    <state x="72" y="27" width="618" height="741" key="find.popup" timestamp="1591555403703">
+    <state x="72" y="27" width="618" height="741" key="find.popup" timestamp="1596638196928">
       <screen x="72" y="27" width="1294" height="741" />
     </state>
-    <state x="72" y="27" width="618" height="741" key="find.popup/72.27.1294.741@72.27.1294.741" timestamp="1591555403703" />
+    <state x="72" y="27" width="618" height="741" key="find.popup/72.27.1294.741@72.27.1294.741" timestamp="1596638196928" />
     <state x="383" y="174" width="672" height="677" key="run.anything.popup" timestamp="1594307198486">
       <screen x="72" y="27" width="1294" height="741" />
     </state>

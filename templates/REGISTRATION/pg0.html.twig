@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block description %}
+Registration page of Wornak
+{% endblock %}
+
+{% block title %}
+Registration-Wornak
+{% endblock %}
+
+{% block head %}
+{{ parent() }}
+{% endblock %}
+
+{% block nav %}
+{% endblock %}
+
+{% block body %}
+<main role="main" class="container">
+       <div class="jumbotron">
+           <h1 class="display-4">Select the type of registration you want</h1>
+           <p class="lead">To have the best possible experience, we have established two registration protocols, a partial registration and a full registration. More details below:</p>
+       </div>
+     <div class="options__list">
+         <div class="options__item">
+             <div class="options__item-content">
+                 <div class="options__item-title">Partial registration</div>
+                 <div class="options__item-description">Can't stand filling out dozens of form lines? With this option, you will only fill the bare essentials but while giving up Wornak functionalities and reducing the chances of being contacted by a company</div>
+             </div>
+             <a href="{{ path('app_register') }}?ch=JRP" class="options__item-link">Go !</a>
+         </div>
+         <div class="options__item">
+             <div class="options__item-content">
+                 <div class="options__item-title">Full registration</div>
+                 <div class="options__item-description">Do you want to reveal the best of yourself to employers and take advantage of all the features in Wornak? This way</div>
+             </div>
+
+             <a href="{{ path('app_register') }}?ch=JRF" class="options__item-link">Go !</a>
+         </div>
+     </div>
+ </main><!-- /.container -->
+{% endblock %}
+
+{% block javascript %}
+{% endblock %}
