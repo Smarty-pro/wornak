@@ -17,10 +17,12 @@ Registration-Wornak
  <main role="main" class="container">
   {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
   {{ form_row(form.email) }} <br>
+  {{ form_row(form.password) }}
   {{ form_row(form.employeesNumber) }} <br>
   {{ form_row(form.companyName) }} <br>
-  {{ form_row(form.legalStatus) }} <br>
-  {{ form_row(form.ICE) }} <br>
+  {{ form_row(form.description) }} <br>
+
+
   <button type="submit" class="btn btn-primary">Register</button>
   {{ form_end(form) }}
 

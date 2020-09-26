@@ -2,10 +2,10 @@
 
 namespace App\Controller;
 
-use App\Entity\CompanyContact;
+use App\Entity\Company;
 use App\Entity\JobSeeker;
 use App\Entity\User;
-use App\Form\CompanyContactType;
+use App\Form\CompanyType;
 use App\Form\RgFormPartialType;
 use App\Repository\JobSeekerRepository;
 use Symfony\Component\HttpFoundation\RedirectResponse;
@@ -69,7 +69,7 @@ class AccessController extends AbstractController
                 $encoded = $encoder->encodePassword($rgform, $plainPassword);
                 $rgform->setPassword($encoded);
                 $rgform->setActivationToken(md5(uniqid()));
-                $rgform->setUuid(md5(uniqid()));
+                $rgform->setUuid(uniqid());
                 $entityManager->persist($rgform);
                 $entityManager->flush();
 
@@ -92,13 +92,14 @@ class AccessController extends AbstractController
         }
 
         if (isset($_GET['ch']) && $_GET['ch'] == 'CR') {
-            $rgform = new CompanyContact();
-            $form = $this->createForm(CompanyContactType::class, $rgform);
+            $rgform = new Company();
+            $form = $this->createForm(CompanyType::class, $rgform);
             $form->handleRequest($request);
 
             if ($form->isSubmitted() && $form->isValid()) {
                 $entityManager = $this->getDoctrine()->getManager();
                 $rgform->setActivationToken(md5(uniqid()));
+                $rgform->setUuid(md5(uniqid()));
                 $entityManager->persist($rgform);
                 $entityManager->flush();
                 $mail = $rgform->getEmail();
@@ -162,18 +163,15 @@ class AccessController extends AbstractController
 
     /**
      * @Route("/verify/{token}", name="verification")
-      * @param $token
+     * @param $token
      * @param JobSeekerRepository $jobSeeker
      * @return RedirectResponse
+     * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
      */
     public function verify($token, JobSeekerRepository $jobSeeker)
     {
         $user = $jobSeeker->findOneBy(['activation_token' => $token]);
 
-        if(!$user){
-            // On renvoie une erreur 404
-            throw $this->createNotFoundException('Cet utilisateur n\'existe pas');
-        }
 
         $user->setActivationToken(null);
         $entityManager = $this->getDoctrine()->getManager();
@@ -194,4 +192,5 @@ class AccessController extends AbstractController
     {
        return $this->render('REGISTRATION/thankyou.html.twig');
     }
+    //TODO activation company
 }

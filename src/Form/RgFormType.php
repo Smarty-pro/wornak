@@ -20,9 +20,7 @@ class RgFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('CIN', TextType::class) // check 
             ->add('password', PasswordType::class) //check
-            ->add('username', TextType::class)
             ->add('firstName', TextType::class) //check
             ->add('lastName', TextType::class) //check
             ->add('gender', ChoiceType::class, [
@@ -31,23 +29,12 @@ class RgFormType extends AbstractType
                     'Female' => 'female',
                 ],
             ]) //check
-            ->add('familySituation', ChoiceType::class, [
-                'choices' => [
-                    'Single' => 'single',
-                    'Married' => 'married',
-                    'Widower' => 'widower',
-                ],
-            ]) //check
+
             ->add('birthdayDate', BirthdayType::class) //check
             ->add('address', TextareaType::class) //check
             ->add('email', EmailType::class) //check
             ->add('tel', TelType::class) //check
-            ->add('actualSituation', ChoiceType::class, [
-                'choices' => [
-                    'With job' => 'with job',
-                    'Without job' => 'without job',
-                ],
-            ]) //check
+
             ->add('mobility', ChoiceType::class, [
                 'choices' => [
                     'Local' => 'local',
@@ -63,9 +50,8 @@ class RgFormType extends AbstractType
                 ],
             ])
             ->add('diploma', TextType::class) //check
-            ->add('experience', TextareaType::class) //check
             ->add('skills', TextareaType::class) //check
-            ->add('liscence', TextType::class) //check
+
         ;
     }
     

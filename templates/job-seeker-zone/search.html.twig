@@ -1,0 +1,161 @@
+{% extends 'base.html.twig' %}
+
+{% block description %}
+    Homepage of Wornak
+{% endblock %}
+
+{% block title %}
+    Wornak
+{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+
+{% block body %}
+<body>
+<style>
+    .wornak-search-results {
+        max-width: inherit;
+        margin-left: 0;
+        margin-right: 0;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    }
+    .wornak-search, .wornak-search-result--core {
+        position: relative;
+        padding: 1.5rem;
+        border-bottom: 1px solid #d6d7d9;
+    }
+    .wornak-search-result--core {
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 25px;
+        margin-left: 2%;
+        margin-top: 2%;
+        margin-right: 2%;
+        border: 0.2rem solid gray;
+    }
+    .wornak-search-results--core_title {
+        font-size: 2.4rem;
+        max-width: calc(100% - 65px);
+        line-height: 1.3;
+        display: block;
+        margin: 0;
+        font-weight: normal;
+        color: #0071BC;
+        text-decoration: none;
+        font-family: "Source Code Pro", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    }
+    .wornak-search-result--core__summary {
+        float: left;
+        display: block;
+        margin-right: 2.357%;
+        width: 65.88078%;
+    }
+    .wornak-search-result--core__details {
+        float: left;
+        display: block;
+        width: 31.76157%;
+        margin-right: 0;
+    }
+    .wornak-search-result--core__company {
+        font-size: 1.7rem;
+        line-height: 1.5;
+        margin: 0;
+        font-weight: bold;
+        color: #212121;
+    }
+    .wornak-search-result--core__location {
+        font-size: 1.7rem;
+        font-weight: 400;
+        line-height: 1.5;
+        margin: 0;
+        color: #212121;
+    }
+    .wornak-search-result--core__location-link {
+        color: #212121;
+    }
+    .wornak-search-result--core__details-list {
+        display: block;
+        padding: 0;
+        list-style-type: none;
+        margin: 0;
+    }
+    .wornak-search-result--core__item {
+        color: #5B616B;
+        margin: 0;
+    }
+    li {
+        line-height: 1.5;
+    }
+    .wornak-search-result--core__appt-type {
+        display: inherit;
+    }
+    .open-to {
+        margin-top: 0.5rem;
+    }
+    .wornak-search-result--core__body::after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+    .wornak-search-result--core__footer::after {
+        clear: both;
+        content: "";
+        display: block;
+    }
+    .wornak-search {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding: 0;
+        width: 100%;
+        margin: 0 0;
+
+    }
+
+</style>
+{{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+
+{{ form_row(form.searchContent) }} <br>
+
+<button type="submit" class="btn btn-primary">Search</button>
+{{ form_end(form) }}
+<div class="wornak-search">
+    <div id="wornak-search-results" class="wornak-search-results no-params">
+{% for jobpost in jobposts %}
+        <div class="wornak-search-result--core">
+            <a class="wornak-search-results--core_title" href="#">
+            {{ jobpost.jobTitle }}
+            </a>
+            <div class="wornak-search-result--core__body">
+                <div class="wornak-search-result--core__summary">
+                    <h4 class="wornak-search-result--core__company">
+                    {{ jobpost.company }}
+                    </h4>
+                    <h4 class="wornak-search-result--core__location">
+                        <span class="wornak-search-result--core__location-link">
+                        {{ jobpost.jobZone }}
+                        </span>
+                    </h4>
+                </div>
+                <div class="wornak-search-result--core__details">
+                    <ul class="wornak-search-result--core__details-list">
+                        <li class="wornak-search-result--core__item">Contract Type: {{ jobpost.contractType }}</li>
+                        <li class="wornak-search-result--core__item wornak-search-result--core__appt-type">{{ jobpost.description }}</li>
+                        <li class="wornak-search-result--core__item open-to"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wornak-search-result--core__footer">
+                <p class="wornak-search-result--core__footer-item wornak-search-result--core__closing-date"><i class="fas fa-clock"></i>&nbsp;Open {{ jobpost.publishedAt|date("d/m/Y")}} to {{ jobpost.expDate|date("d/m/Y") }}</p>
+            </div>
+        </div>
+{% endfor %}
+    </div>
+</div>
+</body>
+{% endblock %}
+
+{% block javascript %}
+{{ parent() }}
+{% endblock %}

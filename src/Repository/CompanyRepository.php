@@ -2,7 +2,7 @@
 
 namespace App\Repository;
 
-use App\Entity\JobSeeker;
+use App\Entity\Company;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
@@ -10,16 +10,16 @@ use Symfony\Component\Security\Core\User\PasswordUpgraderInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
- * @method JobSeeker|null find($id, $lockMode = null, $lockVersion = null)
- * @method JobSeeker|null findOneBy(array $criteria, array $orderBy = null)
- * @method JobSeeker[]    findAll()
- * @method JobSeeker[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method Company|null find($id, $lockMode = null, $lockVersion = null)
+ * @method Company|null findOneBy(array $criteria, array $orderBy = null)
+ * @method Company[]    findAll()
+ * @method Company[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class JobSeekerRepository extends ServiceEntityRepository implements PasswordUpgraderInterface
+class CompanyRepository extends ServiceEntityRepository implements PasswordUpgraderInterface
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, JobSeeker::class);
+        parent::__construct($registry, Company::class);
     }
 
     /**
@@ -27,7 +27,7 @@ class JobSeekerRepository extends ServiceEntityRepository implements PasswordUpg
      */
     public function upgradePassword(UserInterface $user, string $newEncodedPassword): void
     {
-        if (!$user instanceof JobSeeker) {
+        if (!$user instanceof Company) {
             throw new UnsupportedUserException(sprintf('Instances of "%s" are not supported.', \get_class($user)));
         }
 
@@ -37,15 +37,15 @@ class JobSeekerRepository extends ServiceEntityRepository implements PasswordUpg
     }
 
     // /**
-    //  * @return JobSeeker[] Returns an array of JobSeeker objects
+    //  * @return Company[] Returns an array of Company objects
     //  */
     /*
     public function findByExampleField($value)
     {
-        return $this->createQueryBuilder('j')
-            ->andWhere('j.exampleField = :val')
+        return $this->createQueryBuilder('c')
+            ->andWhere('c.exampleField = :val')
             ->setParameter('val', $value)
-            ->orderBy('j.id', 'ASC')
+            ->orderBy('c.id', 'ASC')
             ->setMaxResults(10)
             ->getQuery()
             ->getResult()
@@ -54,10 +54,10 @@ class JobSeekerRepository extends ServiceEntityRepository implements PasswordUpg
     */
 
     /*
-    public function findOneBySomeField($value): ?JobSeeker
+    public function findOneBySomeField($value): ?Company
     {
-        return $this->createQueryBuilder('j')
-            ->andWhere('j.exampleField = :val')
+        return $this->createQueryBuilder('c')
+            ->andWhere('c.exampleField = :val')
             ->setParameter('val', $value)
             ->getQuery()
             ->getOneOrNullResult()
