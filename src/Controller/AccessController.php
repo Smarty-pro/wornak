@@ -30,18 +30,18 @@ class AccessController extends AbstractController
      * @param JobSeekerRepository $repo
      * @return Response
      */
-	public function func1()
-	{
+    public function func1()
+    {
 
-		// full registration or partial for job seeker
-		return $this->render('REGISTRATION/pg0.html.twig');
-	}
+        // full registration or partial for job seeker
+        return $this->render('REGISTRATION/pg0.html.twig');
+    }
 
     /**
      * @Route("/registration/employer", name="app_registration_employer")
      * @return Response
      */
-	public function func2()
+    public function func2()
     {
         return $this->render('REGISTRATION/pg3.html.twig');
     }
@@ -68,12 +68,13 @@ class AccessController extends AbstractController
 
             if ($UserForm->isSubmitted() && $UserForm->isValid()) {
                 $entityManager = $this->getDoctrine()->getManager();
-                $plainPassword =  $user->getPassword();
+                $plainPassword = $user->getPassword();
                 $mail = $user->getEmail();
                 $encoded = $encoder->encodePassword($user, $plainPassword);
                 $user->setPassword($encoded);
                 $user->setActivationToken(md5(uniqid()));
-                $login = $user->getLogin();
+                $user->setUuid(uniqid());
+                $login = $user->getUuid();
                 setcookie('l0g14', $login, time() + 3600);
 
                 //dd($user, $jobseeker);
@@ -81,9 +82,9 @@ class AccessController extends AbstractController
                 $entityManager->flush();
 
                 $site = 'https://wornak.com';
-                $link =  $site . $user->getActivationToken();
+                $link = $site . $user->getActivationToken();
                 $email = (new Email())
-                    ->from( 'lourhzaladnane@gmail.com')
+                    ->from('lourhzaladnane@gmail.com')
                     ->to($mail)
                     ->priority(Email::PRIORITY_HIGH)
                     ->subject('Welcome !')
@@ -108,7 +109,7 @@ class AccessController extends AbstractController
                 $entityManager->flush();
 
 
-                $user = $userRepository->findOneBy(array("login" => $_COOKIE['l0g14']));
+                $user = $userRepository->findOneBy(array("uuid" => $_COOKIE['l0g14']));
                 $user->setJobSeeker($jobseeker);
 
                 $entityManager->persist($user);
@@ -132,12 +133,13 @@ class AccessController extends AbstractController
 
             if ($userForm->isSubmitted() && $userForm->isValid()) {
                 $entityManager = $this->getDoctrine()->getManager();
-                $plainPassword =  $user->getPassword();
+                $plainPassword = $user->getPassword();
                 $mail = $user->getEmail();
                 $encoded = $encoder->encodePassword($user, $plainPassword);
                 $user->setPassword($encoded);
                 $user->setActivationToken(md5(uniqid()));
-                $login = $user->getLogin();
+                $user->setUuid(uniqid());
+                $login = $user->getUuid();
                 setcookie('l0g14', $login, time() + 3600);
 
                 //dd($user, $jobseeker);
@@ -145,9 +147,9 @@ class AccessController extends AbstractController
                 $entityManager->flush();
 
                 $site = 'https://wornak.com';
-                $link =  $site . $user->getActivationToken();
+                $link = $site . $user->getActivationToken();
                 $email = (new Email())
-                    ->from( 'lourhzaladnane@gmail.com')
+                    ->from('lourhzaladnane@gmail.com')
                     ->to($mail)
                     ->priority(Email::PRIORITY_HIGH)
                     ->subject('Welcome !')
@@ -167,7 +169,7 @@ class AccessController extends AbstractController
                 $entityManager->flush();
 
 
-                $user = $userRepository->findOneBy(array("login" => $_COOKIE['l0g14']));
+                $user = $userRepository->findOneBy(array("uuid" => $_COOKIE['l0g14']));
                 $user->setCompanies($company);
 
                 $entityManager->persist($user);
@@ -187,18 +189,19 @@ class AccessController extends AbstractController
 
             if ($form->isSubmitted() && $form->isValid()) {
                 $entityManager = $this->getDoctrine()->getManager();
-                $plainPassword =  $user->getPassword();
+                $plainPassword = $user->getPassword();
                 $mail = $user->getEmail();
                 $encoded = $encoder->encodePassword($user, $plainPassword);
                 $user->setPassword($encoded);
                 $user->setActivationToken(md5(uniqid()));
+                $user->setUuid(uniqid());
                 $entityManager->persist($user);
                 $entityManager->flush();
 
                 $site = 'https://wornak.com';
-                $link =  $site . $user->getActivationToken();
+                $link = $site . $user->getActivationToken();
                 $email = (new Email())
-                    ->from( 'lourhzaladnane@gmail.com')
+                    ->from('lourhzaladnane@gmail.com')
                     ->to($mail)
                     ->priority(Email::PRIORITY_HIGH)
                     ->subject('Welcome !')
@@ -248,32 +251,26 @@ class AccessController extends AbstractController
      */
     public function thanks()
     {
-       return $this->render('/REGISTRATION/thank.html.twig');
+        return $this->render('/REGISTRATION/thank.html.twig');
     }
 
     /**
-     * @Route("/test", name="app_test")
-     * @param Request $request
+     * @Route("/redirect", name="app_redirect")
+     * @param UserRepository $repo
      */
-    public function test(Request $request)
+    public function rdct(UserRepository $repo)
     {
-        $user = new User();
-        $jobseeker = new JobSeeker();
-        $user->setLogin('test');
-        $user->setEmail('test@test.test');
-        $user->setPassword('test');
-        $jobseeker->setFirstName('testy');
-        $jobseeker->setLastName('testy');
-        $jobseeker->setAddress('test');
-        $jobseeker->setBirthdayDate(new \DateTime());
-        $jobseeker->setDiploma('test');
-        $jobseeker->setGender('test');
-        $jobseeker->setHandicap(false);
-        $jobseeker->setMobility('test');
-        $user->setJobseeker($jobseeker);
-        $entityManager = $this->getDoctrine()->getManager();
-        $entityManager->persist($user);
-        $entityManager->persist($jobseeker);
-        $entityManager->flush();
+        $user = $repo->findOneBy(['uuid' => $_COOKIE['ud']]);
+        $jobseeker = $user->getJobseeker();
+        $company = $user->getCompanies();
+
+        if ($user && $jobseeker) {
+            return $this->redirectToRoute('app_jos');
+        }
+
+        if ($user && $company) {
+            return $this->redirectToRoute('app_em');
+        }
+        return $this->redirectToRoute('app_login');
     }
-} //TODO adapt the controller to support the new format of users
+}

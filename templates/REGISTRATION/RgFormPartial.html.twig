@@ -18,7 +18,6 @@
 {% block body %}
     <main role="main" class="container" >
         {{ form_start(UserForm, {'attr': {'novalidate': 'novalidate'}}) }}
-        {{ form_row(UserForm.login) }} <br>
         {{ form_row(UserForm.email) }} <br>
         {{ form_row(UserForm.tel) }} <br>
         {{ form_row(UserForm.password) }} <br>

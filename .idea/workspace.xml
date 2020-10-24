@@ -25,61 +25,18 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2282a49-60d9-402f-94b6-733cc1cde81d" name="Default Changelist" comment="The AccessModule has been optimized">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phploc.phar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/JobSeeker.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200928165601.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200928165727.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200930103649.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200930151219.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200930151726.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201016163405.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201016163613.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201019205506.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201019210820.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201019212027.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201019212918.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201019213104.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201020205136.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201021125118.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201021141342.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201022204043.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201023174906.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201023202748.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201024105044.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/GroupRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Wornak.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Wornak.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="d2282a49-60d9-402f-94b6-733cc1cde81d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201024121152.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201024121813.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201024130354.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201024145140.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jobseeker.php.swo" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jobseeker.php.swp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/2.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Wornak-brand.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/Wornak-brand.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Wornak.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/Wornak.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AccessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccessController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/JoSZoneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/JoSZoneController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Company.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/CompanyType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CompanyType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/JobSeeker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/JobSeeker.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/RgFormPartialType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RgFormPartialType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RgFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RgFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/CompanyRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/CompanyRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/RgForm.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/RgForm.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/RgFormPartial.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/RgFormPartial.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/pg1.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/RgFormC.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/pg2.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/pg3.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/thankyou.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/thank.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/pg3.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/pg3.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,8 +57,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="Smarty-Pro" />
         <option value="alpha &lt;lourhzaladnane@gmail.com&gt;" />
+        <option value="Smarty-Pro" />
         <option value="Adnane Lourhzal" />
       </list>
     </option>
@@ -506,7 +463,8 @@
       <workItem from="1603368650602" duration="10003000" />
       <workItem from="1603448587870" duration="3872000" />
       <workItem from="1603472124871" duration="11996000" />
-      <workItem from="1603535454384" duration="2091000" />
+      <workItem from="1603535454384" duration="8059000" />
+      <workItem from="1603550804239" duration="682000" />
     </task>
     <task id="LOCAL-00001" summary="nothing special">
       <created>1590252528938</created>
@@ -536,7 +494,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601119998880</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="The AccessModule has been optimized">
+      <created>1603537640123</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603537640123</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,11 +580,11 @@
     </state>
     <state x="0" y="27" width="653" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1366.741@0.27.1366.741" timestamp="1601118454626" />
     <state x="72" y="27" width="565" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1294.741@72.27.1294.741" timestamp="1603484338970" />
-    <state x="196" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1601119996829">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="258" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1603537639107">
+      <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="196" y="27" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1601119996829" />
-    <state x="258" y="27" width="912" height="741" key="CommitChangelistDialog2/72.27.1294.741@72.27.1294.741" timestamp="1595949765073" />
+    <state x="258" y="27" width="912" height="741" key="CommitChangelistDialog2/72.27.1294.741@72.27.1294.741" timestamp="1603537639107" />
     <state x="422" y="278" width="456" height="249" key="ComposerInitDialogKey" timestamp="1600618110615">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -714,11 +679,11 @@
       <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state width="554" height="446" key="SwitcherDM/72.27.1294.741@72.27.1294.741" timestamp="1603479980464" />
-    <state x="255" y="133" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1601649156883">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="314" y="133" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1603537649104">
+      <screen x="72" y="27" width="1294" height="741" />
     </state>
     <state x="255" y="133" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1601649156883" />
-    <state x="314" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1294.741@72.27.1294.741" timestamp="1597587026921" />
+    <state x="314" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1294.741@72.27.1294.741" timestamp="1603537649104" />
     <state x="100" y="127" width="1166" height="541" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1600264046833">
       <screen x="0" y="27" width="1366" height="741" />
     </state>

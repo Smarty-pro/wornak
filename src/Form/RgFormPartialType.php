@@ -23,7 +23,6 @@ class RgFormPartialType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('login', TextType::class)
             ->add('email', EmailType::class)
             ->add('tel', TelType::class)
             ->add('password', PasswordType::class)

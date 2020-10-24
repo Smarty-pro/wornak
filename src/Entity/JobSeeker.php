@@ -20,11 +20,6 @@ class JobSeeker
     private $id;
 
     /**
-     * @ORM\Column(type="integer", nullable=true)
-     */
-    private $uuid;
-
-    /**
      * @ORM\OneToMany(targetEntity="App\Entity\User", mappedBy="jobseeker")
      */
     private $users;
@@ -89,18 +84,6 @@ class JobSeeker
     public function getId(): ?int
     {
         return $this->id;
-    }
-
-    public function getUuid(): ?int
-    {
-        return $this->uuid;
-    }
-
-    public function setUuid(?int $uuid): self
-    {
-        $this->uuid = $uuid;
-
-        return $this;
     }
 
     /**
