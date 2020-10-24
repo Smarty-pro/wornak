@@ -17,16 +17,14 @@
 
 {% block body %}
     <main role="main" class="container" >
-        {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
-        {{ form_row(form.firstame) }} <br>
-        {{ form_row(form.lastName) }} <br>
-        {{ form_row(form.gender) }} <br>
-        {{ form_row(form.birthdayDate) }} <br>
-        {{ form_row(form.password) }} <br>
-        {{ form_row(form.email) }} <br>
+        {{ form_start(UserForm, {'attr': {'novalidate': 'novalidate'}}) }}
+        {{ form_row(UserForm.login) }} <br>
+        {{ form_row(UserForm.email) }} <br>
+        {{ form_row(UserForm.tel) }} <br>
+        {{ form_row(UserForm.password) }} <br>
 
-        <button type="submit" class="btn btn-primary">Register</button>
-        {{ form_end(form) }}
+        <button type="submit" class="btn btn-primary">Submit</button>
+        {{ form_end(UserForm) }}
 
     </main><!-- /.container -->
 {% endblock %}

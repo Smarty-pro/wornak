@@ -8,9 +8,13 @@ use App\Entity\User;
 use App\Form\CompanyType;
 use App\Form\RgFormPartialType;
 use App\Repository\JobSeekerRepository;
+use App\Repository\UserRepository;
+use phpDocumentor\Reflection\Types\This;
+use Symfony\Component\HttpFoundation\Cookie;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -21,11 +25,14 @@ use Symfony\Component\Mime\Email;
 
 class AccessController extends AbstractController
 {
-	/**
-	*@Route("/registration/job-seeker", name="app_registration_job-seeker")
-	*/
+    /**
+     * @Route("/registration/job-seeker", name="app_registration_job-seeker")
+     * @param JobSeekerRepository $repo
+     * @return Response
+     */
 	public function func1()
 	{
+
 		// full registration or partial for job seeker
 		return $this->render('REGISTRATION/pg0.html.twig');
 	}
@@ -36,15 +43,7 @@ class AccessController extends AbstractController
      */
 	public function func2()
     {
-        return $this->render('REGISTRATION/pg2.html.twig');
-    }
-
-    /**
-     * @Route("/registration/employer/company", name="app_registration_particular")
-     */
-	public function func3()
-    {
-        return $this->render('REGISTRATION/pg1.html.twig');
+        return $this->render('REGISTRATION/pg3.html.twig');
     }
 
     /**
@@ -52,29 +51,37 @@ class AccessController extends AbstractController
      * @param Request $request
      * @param UserPasswordEncoderInterface $encoder
      * @param MailerInterface $mailer
+     * @param UserRepository $userRepository
      * @return RedirectResponse|Response
      * @throws TransportExceptionInterface
      */
-    public function register(Request $request, UserPasswordEncoderInterface $encoder, MailerInterface $mailer)
+    public function register(Request $request, UserPasswordEncoderInterface $encoder, MailerInterface $mailer, UserRepository $userRepository)
     {
         if (isset($_GET['ch']) && $_GET['ch'] == 'JRF') {
-            $rgform = new JobSeeker();
-            $form = $this->createForm(RgFormType::class, $rgform);
-            $form->handleRequest($request);
+            $user = new User();
+            $jobseeker = new JobSeeker();
+            $UserForm = $this->createForm(RgFormPartialType::class, $user);
+            $JobseekerForm = $this->createForm(RgFormType::class, $jobseeker);
+            $JobseekerForm->handleRequest($request);
+            $UserForm->handleRequest($request);
 
-            if ($form->isSubmitted() && $form->isValid()) {
+
+            if ($UserForm->isSubmitted() && $UserForm->isValid()) {
                 $entityManager = $this->getDoctrine()->getManager();
-                $plainPassword =  $rgform->getPassword();
-                $mail = $rgform->getEmail();
-                $encoded = $encoder->encodePassword($rgform, $plainPassword);
-                $rgform->setPassword($encoded);
-                $rgform->setActivationToken(md5(uniqid()));
-                $rgform->setUuid(uniqid());
-                $entityManager->persist($rgform);
+                $plainPassword =  $user->getPassword();
+                $mail = $user->getEmail();
+                $encoded = $encoder->encodePassword($user, $plainPassword);
+                $user->setPassword($encoded);
+                $user->setActivationToken(md5(uniqid()));
+                $login = $user->getLogin();
+                setcookie('l0g14', $login, time() + 3600);
+
+                //dd($user, $jobseeker);
+                $entityManager->persist($user);
                 $entityManager->flush();
 
                 $site = 'https://wornak.com';
-                $link =  $site . $rgform->getActivationToken();
+                $link =  $site . $user->getActivationToken();
                 $email = (new Email())
                     ->from( 'lourhzaladnane@gmail.com')
                     ->to($mail)
@@ -84,28 +91,61 @@ class AccessController extends AbstractController
 
                 $mailer->send($email);
 
+                return $this->render('REGISTRATION/RgForm.html.twig', array(
+                    'form' => $JobseekerForm->createView(),
+                ));
+            }
+
+            if ($JobseekerForm->isSubmitted() && $JobseekerForm->isValid() && isset($_COOKIE['l0g14'])) {
+                $entityManager = $this->getDoctrine()->getManager();
+                /*
+                dump($_COOKIE['tempud']);
+                dump($user);
+                dump($jobseeker);
+                dump($uuid);
+                */
+                $entityManager->persist($jobseeker);
+                $entityManager->flush();
+
+
+                $user = $userRepository->findOneBy(array("login" => $_COOKIE['l0g14']));
+                $user->setJobSeeker($jobseeker);
+
+                $entityManager->persist($user);
+                $entityManager->flush();
+
                 return $this->redirectToRoute('app_access_thanks');
             }
-            return $this->render('REGISTRATION/RgForm.html.twig', array(
-                'form' => $form->createView(),
+
+            return $this->render('REGISTRATION/RgFormPartial.html.twig', array(
+                'UserForm' => $UserForm->createView(),
             ));
         }
 
         if (isset($_GET['ch']) && $_GET['ch'] == 'CR') {
-            $rgform = new Company();
-            $form = $this->createForm(CompanyType::class, $rgform);
-            $form->handleRequest($request);
+            $user = new User();
+            $company = new Company();
+            $userForm = $this->createForm(RgFormPartialType::class, $user);
+            $companyForm = $this->createForm(CompanyType::class, $company);
+            $userForm->handleRequest($request);
+            $companyForm->handleRequest($request);
 
-            if ($form->isSubmitted() && $form->isValid()) {
+            if ($userForm->isSubmitted() && $userForm->isValid()) {
                 $entityManager = $this->getDoctrine()->getManager();
-                $rgform->setActivationToken(md5(uniqid()));
-                $rgform->setUuid(md5(uniqid()));
-                $entityManager->persist($rgform);
+                $plainPassword =  $user->getPassword();
+                $mail = $user->getEmail();
+                $encoded = $encoder->encodePassword($user, $plainPassword);
+                $user->setPassword($encoded);
+                $user->setActivationToken(md5(uniqid()));
+                $login = $user->getLogin();
+                setcookie('l0g14', $login, time() + 3600);
+
+                //dd($user, $jobseeker);
+                $entityManager->persist($user);
                 $entityManager->flush();
-                $mail = $rgform->getEmail();
 
                 $site = 'https://wornak.com';
-                $link =  $site . $rgform->getActivationToken();
+                $link =  $site . $user->getActivationToken();
                 $email = (new Email())
                     ->from( 'lourhzaladnane@gmail.com')
                     ->to($mail)
@@ -115,30 +155,48 @@ class AccessController extends AbstractController
 
                 $mailer->send($email);
 
+                return $this->render('REGISTRATION/RgFormC.html.twig', array(
+                    'form' => $companyForm->createView(),
+                ));
+            }
+
+            if ($companyForm->isSubmitted() && $companyForm->isValid() && isset($_COOKIE['l0g14'])) {
+                $entityManager = $this->getDoctrine()->getManager();
+
+                $entityManager->persist($company);
+                $entityManager->flush();
+
+
+                $user = $userRepository->findOneBy(array("login" => $_COOKIE['l0g14']));
+                $user->setCompanies($company);
+
+                $entityManager->persist($user);
+                $entityManager->flush();
+
                 return $this->redirectToRoute('app_access_thanks');
             }
-            return $this->render('REGISTRATION/pg1.html.twig', array(
-                'form' => $form->createView(),
+            return $this->render('REGISTRATION/RgFormPartial.html.twig', array(
+                'UserForm' => $userForm->createView(),
             ));
         }
 
         if (isset($_GET['ch']) && $_GET['ch'] == 'JRP') {
-            $rgform = new User();
-            $form = $this->createForm(RgFormPartialType::class, $rgform);
+            $user = new User();
+            $form = $this->createForm(RgFormPartialType::class, $user);
             $form->handleRequest($request);
 
             if ($form->isSubmitted() && $form->isValid()) {
                 $entityManager = $this->getDoctrine()->getManager();
-                $plainPassword =  $rgform->getPassword();
-                $mail = $rgform->getEmail();
-                $encoded = $encoder->encodePassword($rgform, $plainPassword);
-                $rgform->setPassword($encoded);
-                $rgform->setActivationToken(md5(uniqid()));
-                $entityManager->persist($rgform);
+                $plainPassword =  $user->getPassword();
+                $mail = $user->getEmail();
+                $encoded = $encoder->encodePassword($user, $plainPassword);
+                $user->setPassword($encoded);
+                $user->setActivationToken(md5(uniqid()));
+                $entityManager->persist($user);
                 $entityManager->flush();
 
                 $site = 'https://wornak.com';
-                $link =  $site . $rgform->getActivationToken();
+                $link =  $site . $user->getActivationToken();
                 $email = (new Email())
                     ->from( 'lourhzaladnane@gmail.com')
                     ->to($mail)
@@ -151,7 +209,7 @@ class AccessController extends AbstractController
                 return $this->redirectToRoute('app_access_thanks');
             }
             return $this->render('REGISTRATION/RgFormPartial.html.twig', array(
-                'form' => $form->createView(),
+                'UserForm' => $form->createView(),
             ));
         }
 
@@ -166,7 +224,7 @@ class AccessController extends AbstractController
      * @param $token
      * @param JobSeekerRepository $jobSeeker
      * @return RedirectResponse
-     * @throws \Symfony\Component\HttpKernel\Exception\NotFoundHttpException
+     * @throws NotFoundHttpException
      */
     public function verify($token, JobSeekerRepository $jobSeeker)
     {
@@ -178,7 +236,7 @@ class AccessController extends AbstractController
         $entityManager->persist($user);
         $entityManager->flush();
 
-        $this->addFlash('message', 'Utilisateur activé avec succès');
+        $this->addFlash('message', 'User activated');
 
 
         return $this->redirectToRoute('app_central_homepage');
@@ -190,7 +248,32 @@ class AccessController extends AbstractController
      */
     public function thanks()
     {
-       return $this->render('REGISTRATION/thankyou.html.twig');
+       return $this->render('/REGISTRATION/thank.html.twig');
     }
-    //TODO activation company
-}
+
+    /**
+     * @Route("/test", name="app_test")
+     * @param Request $request
+     */
+    public function test(Request $request)
+    {
+        $user = new User();
+        $jobseeker = new JobSeeker();
+        $user->setLogin('test');
+        $user->setEmail('test@test.test');
+        $user->setPassword('test');
+        $jobseeker->setFirstName('testy');
+        $jobseeker->setLastName('testy');
+        $jobseeker->setAddress('test');
+        $jobseeker->setBirthdayDate(new \DateTime());
+        $jobseeker->setDiploma('test');
+        $jobseeker->setGender('test');
+        $jobseeker->setHandicap(false);
+        $jobseeker->setMobility('test');
+        $user->setJobseeker($jobseeker);
+        $entityManager = $this->getDoctrine()->getManager();
+        $entityManager->persist($user);
+        $entityManager->persist($jobseeker);
+        $entityManager->flush();
+    }
+} //TODO adapt the controller to support the new format of users

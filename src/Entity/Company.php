@@ -2,13 +2,14 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Security\Core\User\UserInterface;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\CompanyRepository")
  */
-class Company implements UserInterface
+class Company
 {
     /**
      * @ORM\Id()
@@ -18,25 +19,19 @@ class Company implements UserInterface
     private $id;
 
     /**
-     * @ORM\Column(type="string", length=180, unique=true)
+     * @ORM\Column(type="integer", nullable=true)
      */
     private $uuid;
 
     /**
+     * @ORM\OneToMany(targetEntity="App\Entity\User", mappedBy="companies")
+     */
+    private $users;
+
+    /**
      * @ORM\Column(type="json")
      */
-    private $roles = [];
-
-    /**
-     * @var string The hashed password
-     * @ORM\Column(type="string")
-     */
-    private $password;
-
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $email;
+    private array $roles = [];
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -53,22 +48,23 @@ class Company implements UserInterface
      */
     private $description;
 
-    /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $activationToken;
+
+    public function __construct()
+    {
+        $this->users = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getUuid(): ?string
+    public function getUuid(): ?int
     {
         return $this->uuid;
     }
 
-    public function setUuid(string $uuid): self
+    public function setUuid(?int $uuid): self
     {
         $this->uuid = $uuid;
 
@@ -76,13 +72,34 @@ class Company implements UserInterface
     }
 
     /**
-     * A visual identifier that represents this user.
-     *
-     * @see UserInterface
+     * @return Collection|User[]
      */
-    public function getUsername(): string
+    public function getUsers(): Collection
     {
-        return (string) $this->uuid;
+        return $this->users;
+    }
+
+    public function addUser(User $user): self
+    {
+        if (!$this->users->contains($user)) {
+            $this->users[] = $user;
+            $user->setCompanies($this);
+        }
+
+        return $this;
+    }
+
+    public function removeUser(User $user): self
+    {
+        if ($this->users->contains($user)) {
+            $this->users->removeElement($user);
+            // set the owning side to null (unless already changed)
+            if ($user->getCompanies() === $this) {
+                $user->setCompanies(null);
+            }
+        }
+
+        return $this;
     }
 
     /**
@@ -101,50 +118,6 @@ class Company implements UserInterface
     public function setRoles(array $roles): self
     {
         $this->roles = $roles;
-
-        return $this;
-    }
-
-    /**
-     * @see UserInterface
-     */
-    public function getPassword(): string
-    {
-        return (string) $this->password;
-    }
-
-    public function setPassword(string $password): self
-    {
-        $this->password = $password;
-
-        return $this;
-    }
-
-    /**
-     * @see UserInterface
-     */
-    public function getSalt()
-    {
-        // not needed when using the "bcrypt" algorithm in security.yaml
-    }
-
-    /**
-     * @see UserInterface
-     */
-    public function eraseCredentials()
-    {
-        // If you store any temporary, sensitive data on the user, clear it here
-        // $this->plainPassword = null;
-    }
-
-    public function getEmail(): ?string
-    {
-        return $this->email;
-    }
-
-    public function setEmail(string $email): self
-    {
-        $this->email = $email;
 
         return $this;
     }
@@ -173,18 +146,6 @@ class Company implements UserInterface
         return $this;
     }
 
-    public function getLegalStatus(): ?string
-    {
-        return $this->legalStatus;
-    }
-
-    public function setLegalStatus(string $legalStatus): self
-    {
-        $this->legalStatus = $legalStatus;
-
-        return $this;
-    }
-
     public function getDescription(): ?string
     {
         return $this->description;
@@ -193,18 +154,6 @@ class Company implements UserInterface
     public function setDescription(string $description): self
     {
         $this->description = $description;
-
-        return $this;
-    }
-
-    public function getActivationToken(): ?string
-    {
-        return $this->activationToken;
-    }
-
-    public function setActivationToken(?string $activationToken): self
-    {
-        $this->activationToken = $activationToken;
 
         return $this;
     }

@@ -3,6 +3,7 @@
 namespace App\Form;
 
 use App\Entity\JobSeeker;
+use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -20,7 +21,6 @@ class RgFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('password', PasswordType::class) //check
             ->add('firstName', TextType::class) //check
             ->add('lastName', TextType::class) //check
             ->add('gender', ChoiceType::class, [
@@ -32,9 +32,6 @@ class RgFormType extends AbstractType
 
             ->add('birthdayDate', BirthdayType::class) //check
             ->add('address', TextareaType::class) //check
-            ->add('email', EmailType::class) //check
-            ->add('tel', TelType::class) //check
-
             ->add('mobility', ChoiceType::class, [
                 'choices' => [
                     'Local' => 'local',

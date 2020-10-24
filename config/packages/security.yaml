@@ -2,11 +2,10 @@ security:
     encoders:
         App\Entity\JobSeeker:
             algorithm: auto
-        App\Entity\User:
-            algorithm: auto
         App\Entity\Company:
             algorithm: auto
-
+        App\Entity\User:
+            algorithm: auto
 
 
 
@@ -16,7 +15,7 @@ security:
         # used to reload user from session & other features (e.g. switch_user)
         app_user_provider:
             entity:
-                class: App\Entity\JobSeeker
+                class: App\Entity\User
                 property: uuid
         # used to reload user from session & other features (e.g. switch_user)
         # used to reload user from session & other features (e.g. switch_user)

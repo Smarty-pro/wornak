@@ -18,22 +18,18 @@ Registration-Wornak
 {% block body %}
 <main role="main" class="container" >
         {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
-            {{ form_row(form.password) }} <br>
             {{ form_row(form.firstName) }} <br>
             {{ form_row(form.lastName) }} <br>
             {{ form_row(form.gender) }} <br>
             {{ form_row(form.birthdayDate) }} <br>
             {{ form_row(form.address) }} <br>
-            {{ form_row(form.email) }} <br>
-            {{ form_row(form.tel) }} <br>
             {{ form_row(form.mobility) }} <br>
             {{ form_row(form.handicap) }} <br>
             {{ form_row(form.diploma) }} <br>
             {{ form_row(form.skills) }} <br>
 
-            <button type="submit" class="btn btn-primary">Create</button>
+           <button type="submit" class="btn btn-primary">Submit</button>
         {{ form_end(form) }}
-
  </main><!-- /.container -->
 {% endblock %}
 

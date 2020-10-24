@@ -4,6 +4,8 @@
 namespace App\Controller;
 
 
+use App\Entity\User;
+use App\Form\RgFormPartialType;
 use App\Repository\JobPostRepository;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -55,5 +57,6 @@ class JoSZoneController extends AbstractController
             'form' => $form->createView(),
         ]);
     }
+
 
 }

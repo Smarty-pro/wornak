@@ -15,7 +15,6 @@ class CompanyType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('email', TextType::class)
             ->add('employeesNumber', ChoiceType::class, [
                 'choices' => [
                     '0-100' => '0-100',
@@ -25,7 +24,6 @@ class CompanyType extends AbstractType
             ])
             ->add('companyName', TextType::class)
             ->add('description', TextType::class)
-            ->add('password', PasswordType::class)
         ;
     }
 
