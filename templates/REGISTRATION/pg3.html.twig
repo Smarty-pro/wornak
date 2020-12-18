@@ -16,20 +16,44 @@ Registration-Wornak
 {% endblock %}
 
 {% block body %}
-<main role="main" class="container">
-    <div class="options__item">
-        <div class="options__item-content">
-            <div class="options__item-title">Are you a Particular ?</div>
+    <style>
+        body {
+            background: url("{{ asset('/images/810.jpg') }}");
+        }
+    </style>
+
+    <body>
+    <main role="main" class="container">
+        <div class="options__item">
+            <div class="options__item-content">
+                <div class="options__item-title">Are you a Particular ?</div>
+            </div>
+            <a href="{{ path('app_register') }}?ch" class="options__item-link">Yes !</a>
         </div>
-        <a href="{{ path('app_register') }}?ch" class="options__item-link">Yes !</a>
-    </div>
-    <div class="options__item">
-        <div class="options__item-content">
-            <div class="options__item-title">Are you a Company ?</div>
+        <div class="options__item">
+            <div class="options__item-content">
+                <div class="options__item-title">Are you a Company ?</div>
+            </div>
+
+            <a href="{{ path('app_register') }}?ch=CR" class="options__item-link">Yes !</a>
         </div>
 
-        <a href="{{ path('app_register') }}?ch=CR" class="options__item-link">Yes !</a>
-    </div>
-
-</main><!-- /.container -->
+    </main><!-- /.container -->
+    <footer>
+        <div class="container">
+            <p>&copy; Wornak 2020. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#">Privacy</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">Terms</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    </body>
 {% endblock %}

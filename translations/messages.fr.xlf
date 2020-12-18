@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="en" target-language="fr" datatype="plaintext" original="file.ext">
+    <header>
+      <tool tool-id="symfony" tool-name="Symfony"/>
+    </header>
+    <body>
+      <trans-unit id="vHLXJLi" resname="Wornak is a site that will reveal your potential to all recruiters, but of course if you register">
+        <source>Wornak is a site that will reveal your potential to all recruiters, but of course if you register</source>
+        <target>Wornak est un site qui révélera votre potentiel à tous les recruteurs, mais bien sûr si vous vous inscrivez</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

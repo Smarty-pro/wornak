@@ -27,10 +27,9 @@ class AccessController extends AbstractController
 {
     /**
      * @Route("/registration/job-seeker", name="app_registration_job-seeker")
-     * @param JobSeekerRepository $repo
      * @return Response
      */
-    public function func1()
+    public function func1(): Response
     {
 
         // full registration or partial for job seeker
@@ -41,7 +40,7 @@ class AccessController extends AbstractController
      * @Route("/registration/employer", name="app_registration_employer")
      * @return Response
      */
-    public function func2()
+    public function func2(): Response
     {
         return $this->render('REGISTRATION/pg3.html.twig');
     }
@@ -225,13 +224,12 @@ class AccessController extends AbstractController
     /**
      * @Route("/verify/{token}", name="verification")
      * @param $token
-     * @param JobSeekerRepository $jobSeeker
+     * @param UserRepository $repo
      * @return RedirectResponse
-     * @throws NotFoundHttpException
      */
-    public function verify($token, JobSeekerRepository $jobSeeker)
+    public function verify($token, UserRepository $repo)
     {
-        $user = $jobSeeker->findOneBy(['activation_token' => $token]);
+        $user = $repo->findOneBy(['activation_token' => $token]);
 
 
         $user->setActivationToken(null);
@@ -257,6 +255,7 @@ class AccessController extends AbstractController
     /**
      * @Route("/redirect", name="app_redirect")
      * @param UserRepository $repo
+     * @return RedirectResponse
      */
     public function rdct(UserRepository $repo)
     {

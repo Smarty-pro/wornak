@@ -9,76 +9,666 @@ Wornak
 {% endblock %}
 
 {% block head %}
-{{ parent() }}
+    {{ parent() }}
+    <!-- Bootstrap core CSS -->
+    <link href="{{ asset('bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{ asset('fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('simple-line-icons/css/simple-line-icons.css') }}">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="{{ asset('device-mockups/device-mockups.min.css') }}">
+
 {% endblock %}
 
 
 {% block body %}
-<body>
-<!-- about -->
-<div class="about">
-    <a class="bg_links social portfolio" href="#" target="_blank">
-        <span class="icon"></span>
-    </a>
-    <a class="bg_links social dribbble" href="#" target="_blank">
-        <span class="icon"></span>
-    </a>
-    <a class="bg_links social linkedin" href="#" target="_blank">
-        <span class="icon"></span>
-    </a>
-    <a class="bg_links logo"></a>
-</div>
-<!-- end about -->
+    <body id="page-top">
+    <style>
+        /*!
+        * Start Bootstrap - New Age v5.0.8 (https://startbootstrap.com/themes/new-age)
+        * Copyright 2013-2020 Start Bootstrap
+        * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-new-age/blob/master/LICENSE)
+        */
 
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
 
-<nav>
-    <div class="menubar">
-        <a href="#" class="home"><img src="{{ asset('images/Wornak.png') }}" height="80" width="80" alt="Wornak">Wornak</a>
-        <div class="icons">
-            <div class="secondary-icons">
-                <div class="icon-second">
-                    <a href="{{ path('app_login') }}" title="sign-in"><i class="fas fa-sign-in-alt" id="icon1"></i></a>
+        body {
+            font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+        }
+
+        a {
+            color: #fdcc52;
+            transition: all .35s;
+        }
+
+        a:hover, a:focus {
+            color: #fcbd20;
+        }
+
+        hr {
+            max-width: 100px;
+            margin: 25px auto 0;
+            border-width: 1px;
+            border-color: rgba(34, 34, 34, 0.1);
+        }
+
+        hr.light {
+            border-color: white;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+            font-weight: 200;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        section {
+            padding: 100px 0;
+        }
+
+        section h2 {
+            font-size: 50px;
+        }
+
+        #mainNav {
+            border-color: rgba(34, 34, 34, 0.05);
+            background-color: white;
+            transition: all .35s;
+            font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+            font-weight: 200;
+            letter-spacing: 1px;
+        }
+
+        #mainNav .navbar-brand {
+            color: #fdcc52;
+            font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+            font-weight: 200;
+            letter-spacing: 1px;
+        }
+
+        #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
+            color: #fcbd20;
+        }
+
+        #mainNav .navbar-toggler {
+            font-size: 12px;
+            padding: 8px 10px;
+            color: #222222;
+        }
+
+        #mainNav .navbar-nav > li > a {
+            font-size: 11px;
+            font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        #mainNav .navbar-nav > li > a.active {
+            color: #fdcc52 !important;
+            background-color: transparent;
+        }
+
+        #mainNav .navbar-nav > li > a.active:hover {
+            background-color: transparent;
+        }
+
+        #mainNav .navbar-nav > li > a,
+        #mainNav .navbar-nav > li > a:focus {
+            color: #222222;
+        }
+
+        #mainNav .navbar-nav > li > a:hover,
+        #mainNav .navbar-nav > li > a:focus:hover {
+            color: #fdcc52;
+        }
+
+        @media (min-width: 992px) {
+            #mainNav {
+                border-color: transparent;
+                background-color: transparent;
+            }
+
+            #mainNav .navbar-brand {
+                color: fade(white, 70%);
+            }
+
+            #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
+                color: white;
+            }
+
+            #mainNav .navbar-nav > li > a,
+            #mainNav .navbar-nav > li > a:focus {
+                color: rgba(255, 255, 255, 0.7);
+            }
+
+            #mainNav .navbar-nav > li > a:hover,
+            #mainNav .navbar-nav > li > a:focus:hover {
+                color: white;
+            }
+
+            #mainNav.navbar-shrink {
+                border-color: rgba(34, 34, 34, 0.1);
+                background-color: white;
+            }
+
+            #mainNav.navbar-shrink .navbar-brand {
+                color: #222222;
+            }
+
+            #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
+                color: #fdcc52;
+            }
+
+            #mainNav.navbar-shrink .navbar-nav > li > a,
+            #mainNav.navbar-shrink .navbar-nav > li > a:focus {
+                color: #222222;
+            }
+
+            #mainNav.navbar-shrink .navbar-nav > li > a:hover,
+            #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
+                color: #fdcc52;
+            }
+        }
+
+        header.mastheader {
+            position: relative;
+            width: 100%;
+            padding-top: 150px;
+            padding-bottom: 100px;
+            color: white;
+            background: url("{{ asset('/images/bg-pattern.png') }}"), #7b4397;
+            background: url("{{ asset('/images/bg-pattern.png') }}"), linear-gradient(to left, #7b4397, #dc2430);
+        }
+
+        header.mastheader .header-content {
+            max-width: 500px;
+            margin-bottom: 100px;
+            text-align: center;
+        }
+
+        header.mastheader .header-content h1 {
+            font-size: 30px;
+        }
+
+        header.mastheader .device-container {
+            max-width: 325px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        header.mastheader .device-container .screen img {
+            border-radius: 3px;
+        }
+
+        @media (min-width: 992px) {
+            header.mastheader {
+                height: 100vh;
+                min-height: 775px;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            header.mastheader .header-content {
+                margin-bottom: 0;
+                text-align: left;
+            }
+
+            header.mastheader .header-content h1 {
+                font-size: 50px;
+            }
+
+            header.mastheader .device-container {
+                max-width: 325px;
+            }
+        }
+
+        section.download {
+            position: relative;
+            padding: 150px 0;
+        }
+
+        section.download h2 {
+            font-size: 50px;
+            margin-top: 0;
+        }
+
+        section.download .badges .badge-link {
+            display: block;
+            margin-bottom: 25px;
+        }
+
+        section.download .badges .badge-link:last-child {
+            margin-bottom: 0;
+        }
+
+        section.download .badges .badge-link img {
+            height: 60px;
+        }
+
+        @media (min-width: 768px) {
+            section.download .badges .badge-link {
+                display: inline-block;
+                margin-bottom: 0;
+            }
+        }
+
+        @media (min-width: 768px) {
+            section.download h2 {
+                font-size: 70px;
+            }
+        }
+
+        section.features .section-heading {
+            margin-bottom: 100px;
+        }
+
+        section.features .section-heading h2 {
+            margin-top: 0;
+        }
+
+        section.features .section-heading p {
+            margin-bottom: 0;
+        }
+
+        section.features .device-container,
+        section.features .feature-item {
+            max-width: 325px;
+            margin: 0 auto;
+        }
+
+        section.features .device-container {
+            margin-bottom: 100px;
+        }
+
+        @media (min-width: 992px) {
+            section.features .device-container {
+                margin-bottom: 0;
+            }
+        }
+
+        section.features .feature-item {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+
+        section.features .feature-item h3 {
+            font-size: 30px;
+        }
+
+        section.features .feature-item i {
+            font-size: 80px;
+            display: block;
+            margin-bottom: 15px;
+            background: linear-gradient(to left, #013440, #4D818C);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        section.cta {
+            position: relative;
+            padding: 250px 0;
+            background-image: url("{{ asset('images/bg-cta.jpg') }}");
+            background-position: center;
+            background-size: cover;
+        }
+
+        section.cta .cta-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        section.cta .cta-content h2 {
+            font-size: 50px;
+            max-width: 450px;
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: white;
+        }
+
+        @media (min-width: 768px) {
+            section.cta .cta-content h2 {
+                font-size: 80px;
+            }
+        }
+
+        section.cta .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        section.contact {
+            text-align: center;
+        }
+
+        section.contact h2 {
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        section.contact h2 i {
+            color: #dd4b39;
+        }
+
+        section.contact ul.list-social {
+            margin-bottom: 0;
+        }
+
+        section.contact ul.list-social li a {
+            font-size: 40px;
+            line-height: 80px;
+            display: block;
+            width: 80px;
+            height: 80px;
+            color: white;
+            border-radius: 100%;
+        }
+
+        section.contact ul.list-social li.social-twitter a {
+            background-color: #1da1f2;
+        }
+
+        section.contact ul.list-social li.social-twitter a:hover {
+            background-color: #0d95e8;
+        }
+
+        section.contact ul.list-social li.social-facebook a {
+            background-color: #3b5998;
+        }
+
+        section.contact ul.list-social li.social-facebook a:hover {
+            background-color: #344e86;
+        }
+
+        section.contact ul.list-social li.social-google-plus a {
+            background: linear-gradient(to left, #7b4397, #dc2430)
+        }
+
+        section.contact ul.list-social li.social-google-plus a:hover {
+            background-color: #d73925;
+        }
+
+        footer {
+            padding: 25px 0;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.3);
+            background-color: #222222;
+        }
+
+        footer p {
+            font-size: 12px;
+            margin: 0;
+        }
+
+        footer ul {
+            margin-bottom: 0;
+        }
+
+        footer ul li a {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li a.active {
+            text-decoration: none;
+        }
+
+        .bg-primary {
+            background: #fdcc52;
+            background: linear-gradient(#fdcc52, #fdc539);
+        }
+
+        .text-primary {
+            color: #fdcc52;
+        }
+
+        .no-gutter > [class*='col-'] {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .btn-outline {
+            color: white;
+            border: 1px solid;
+            border-color: white;
+        }
+
+        .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
+            color: white;
+            border-color: #fdcc52;
+            background-color: #fdcc52;
+        }
+
+        .btn {
+            border-radius: 300px;
+            font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .btn-xl {
+            font-size: 11px;
+            padding: 15px 45px;
+        }
+    </style>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <img src="{{ asset('images/WornakIcon.png') }}" width="41" height="25" alt="" loading="lazy">
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="{{ path('app_login') }}">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#register">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-7 my-auto">
+                    <div class="header-content mx-auto">
+                        <h1 class="mb-5">{% trans %}Wornak is a site that will reveal your potential to all recruiters, but of course if you register{% endtrans %}</h1>
+                        <a href="#register" class="btn btn-outline btn-xl js-scroll-trigger">Register Now for Free!</a>
+                    </div>
                 </div>
-                <div class="icon-second">
-                    <a href="{{ path('app_registration_job-seeker') }}" title="Registration for job seeker" ><i class="fas fa-address-card" id="icon2"></i></a>
-                </div>
-                <div class="icon-second">
-                    <a href="{{ path('app_registration_employer') }}" title="Business" ><i class="fas fa-briefcase" id="icon3"></i></a>
+                <div class="col-lg-5 my-auto">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="{{ asset('') }}" class="img-fluid" alt="">
+                                </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <i class="icon-menu"><span></span></i>
         </div>
-    </div>
-    <ul class="menu">
+    </header>
 
-        <li class="menu-link"><a href="#" class="text-item">About</a></li>
-        <li class="menu-link sub">
-            <a href="#" class="text-item">Clients<span class="icon"></span></a>
-            <ul class="submenu">
-                <li class="sub-item"><a href="#">Burger King</a></li>
-                <li class="sub-item"><a href="#">Southwest Airlines</a></li>
-                <li class="sub-item"><a href="#">Levi Strauss</a></li>
+    <section class="download bg-primary text-center" id="register">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="section-heading">Discover the feeling of pride in yourself !</h2>
+                    <p>Our site is available anywhere ! Register now to get started!</p>
+                    <div class="badges">
+                        <a class="btn btn-outline-dark btn-xl" href="{{ path('app_registration_job-seeker') }}">Jobseeker</a>
+                        <a class="btn btn-outline-dark btn-xl"
+                           href="{{ path('app_registration_employer') }}">Company</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-heading text-center">
+                <h2>Unlimited Jobs, Unlimited Possibilities</h2>
+                <p class="text-muted">Check out what you can do with Wornak</p>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 my-auto">
+                    <div class="device-container">
+                        <div class="device-mockup iphone6_plus portrait white">
+                            <div class="device">
+                                <div class="screen">
+                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                    <img src="{{ asset('') }}" class="img-fluid" alt="">
+                                </div>
+                                <div class="button">
+                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8 my-auto">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="icon-user text-primary"></i>
+                                    <h3>Spotted !</h3>
+                                    <p class="text-muted">You will be part of a database consulted by recruiters
+                                        regularly</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="icon-screen-smartphone"></i>
+                                    <h3>Accessible !</h3>
+                                    <p class="text-muted">Wornak is accessible from all devices with a web browser</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="icon-present text-primary"></i>
+                                    <h3>Free to Use !</h3>
+                                    <p class="text-muted">You will be indebted to Wornak ... 0. We wouldn't dare not
+                                        even extract a little of your money</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="feature-item">
+                                    <i class="icon-lock text-primary"></i>
+                                    <h3>Private</h3>
+                                    <p class="text-muted">We would not dare to divulge your precious data either</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="cta-content">
+            <div class="container">
+                <h2>You only live once,<br> but if you do it right, once is enough..</h2>
+                <h3 style="color: #FFFFFF"> --Mae West</h3> <br>
+                <a href="#register" class="btn btn-outline btn-xl js-scroll-trigger">Let's do it RIGHT!</a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+
+    <section class="contact bg-primary" id="contact">
+        <div class="container">
+            <h2>We
+                <i class="fas fa-heart"></i>
+                new friends!</h2>
+            <ul class="list-inline list-social">
+                <li class="list-inline-item social-twitter">
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item social-facebook">
+                    <a href="https://facebook.com/Wornak-102707224981043">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item social-google-plus">
+                    <a href="https://instagram.com/wornak_int">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
             </ul>
-        </li>
-        <li class="menu-link sub">
-            <a href="#" class="text-item">Services<span class="icon"></span></a>
-            <ul class="submenu">
-                <li class="sub-item"><a href="#">Print Design</a></li>
-                <li class="sub-item"><a href="#">Web Design</a></li>
-                <li class="sub-item"><a href="#">Mobile App Development</a></li>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Wornak 2020. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#">Privacy</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">Terms</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">FAQ</a>
+                </li>
             </ul>
-        </li>
-        <li class="menu-link"><a href="#" class="text-item">Contact</a></li>
-    </ul>
-</nav>
+        </div>
+    </footer>
 
-<article>
-    <h1>test test test test test test test</h1>
-    <p>test test test test test test test test</p>
-</article>
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ asset('jquery/jquery.min.js') }}"></script>
 
-</body>
+    <!-- Plugin JavaScript -->
+    <script src="{{ asset('jquery-easing/jquery.easing.min.js') }}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{{ asset('js/new-age.min.js') }}"></script>
+    </body>
 {% endblock %}
 
 {% block javascript %}

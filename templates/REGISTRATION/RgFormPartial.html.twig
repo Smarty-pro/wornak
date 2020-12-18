@@ -16,7 +16,14 @@
 {% endblock %}
 
 {% block body %}
-    <main role="main" class="container" >
+    <style>
+        body {
+            background-image: url("{{ asset('/images/810.jpg') }}");
+        }
+
+    </style>
+    <body>
+    <main role="main" class="container">
         {{ form_start(UserForm, {'attr': {'novalidate': 'novalidate'}}) }}
         {{ form_row(UserForm.email) }} <br>
         {{ form_row(UserForm.tel) }} <br>
@@ -26,6 +33,7 @@
         {{ form_end(UserForm) }}
 
     </main><!-- /.container -->
+    </body>
 {% endblock %}
 
 {% block javascript %}

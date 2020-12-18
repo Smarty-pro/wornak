@@ -17,14 +17,22 @@ class HomeController extends AbstractController
 	public function homepage()
 	{
         return $this->render('HOME/homepage.html.twig');
-	}
+    }
 
     /**
      * @Route("/blog")
      */
-	public function blog()
+    public function blog()
     {
         //TODO
         return $this->render('HOME/blog.html.twig');
+    }
+
+    /**
+     * @Route("/test")
+     */
+    public function test()
+    {
+        return $this->render('REGISTRATION/world-map.html.twig');
     }
 }

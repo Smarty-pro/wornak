@@ -17,7 +17,9 @@ Test
 {% endblock %}
 
 {% block body %}
+    <body>
     <div id="map_canvas"></div>
+    </body>
 {% endblock %}
 
 {% block javascript %}
@@ -223,12 +225,12 @@ function drawMap() {
         [{v: "CK", f: 'Cook Islands'}, 43],
         [{v: "XK", f: 'Kosovo'}, 43],
         [{v: "NU", f: 'Niue'}, 43],
-        [{v: "CY", f: 'Nothern Cyprus'}, 43],
-        [{v: "EH", f: 'Western Sahara'}, 43],
+        [{v: "CY", f: 'Northern Cyprus'}, 43],
+        [{v: "EH", f: 'Morocco'}, 43],
         [{v: "SO", f: 'Somaliland'}, 43],
         [{v: "GE", f: 'South Ossetia'}, 43],
         [{v: "TW", f: 'Taiwan'}, 43],
-        [{v: "MD", f: 'Trasnistria'}, 43],
+        [{v: "MD", f: 'Transnistria'}, 43],
     ]);
 
 
@@ -237,7 +239,8 @@ function drawMap() {
         width: 'auto',
         height: 'auto',
         legend: 'none',
-        colorAxis: {colors: ['grey', 'black']} // '#FFFFFF' / '#FFFFFF' possible aussi
+        colorAxis: {colors: ['grey', 'black']}, // '#FFFFFF' / '#FFFFFF' possible aussi
+        animation: {"startup": true}
     };
 
     var container = document.getElementById('map_canvas');
@@ -248,15 +251,18 @@ function drawMap() {
         var id = selection[0].row;
         var ISO = data.getValue( id , 0);
         var ISOmin = ISO.toLowerCase();
+    }
 
 
         var baseURL = "wornak.com";
         var link = baseURL + "/" + ISOmin;
         window.open('http://' + link, '_blank');
+
     }
 
-    google.visualization.events.addListener(chart, 'select', myClickHandler);
 
+    }
+    google.visualization.events.addListener(chart, 'select', myClickHandler);
     chart.draw(data, options);
 }
 google.load('visualization', '1', {packages: ['geochart'], callback: drawMap});

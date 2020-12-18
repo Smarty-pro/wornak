@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% block description %}
+    Blog of Wornak
+{% endblock %}
+
+{% block title %}
+    Post a JobPost | Wornak
+{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <body>
+    {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
+
+    {{ form_row(form.jobTitle) }} <br>
+    {{ form_row(form.description) }} <br>
+    {{ form_row(form.jobZone) }} <br>
+    {{ form_row(form.training) }} <br>
+    {{ form_row(form.contractType) }} <br>
+    {{ form_row(form.tags) }} <br>
+    {{ form_row(form.expDate) }} <br>
+    {{ form_row(form.salary) }} <br>
+    {{ form_row(form.sector) }} <br>
+    {{ form_row(form.studyLevelRequired) }} <br>
+
+
+    <button type="submit" class="btn btn-primary">Search</button>
+    {{ form_end(form) }}
+    <footer>
+        <div class="container">
+            <p>&copy; Wornak 2020. All Rights Reserved.</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="#">Privacy</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">Terms</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#">FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    </body>
+{% endblock %}
+
+{% block javascript %}
+{{ parent() }}
+{% endblock %}

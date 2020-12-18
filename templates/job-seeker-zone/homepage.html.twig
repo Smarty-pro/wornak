@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Home | Wornak
+{% endblock %}
+
+{% block description %}
+    Job seeker's  Home
+{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <body>
+    <button type="button" class="btn" style="border-radius: 100%"><a href="{{ path('app_search_jos') }}"><i
+                    class="fas fa-search"></i></a></button>
+    </body>
+{% endblock %}

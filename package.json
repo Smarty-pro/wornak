@@ -1,11 +1,11 @@
 {
     "devDependencies": {
-        "@symfony/webpack-encore": "^0.28.2",
-        "core-js": "^3.0.0",
-        "node-sass": "^4.14.1",
-        "regenerator-runtime": "^0.13.2",
-        "video.js": "^7.8.3",
-        "webpack-notifier": "^1.6.0"
+      "@symfony/stimulus-bridge": "^1.1.0",
+      "@symfony/webpack-encore": "^0.32.0",
+      "core-js": "^3.0.0",
+      "stimulus": "^2.0.0",
+      "regenerator-runtime": "^0.13.2",
+      "webpack-notifier": "^1.6.0"
     },
     "license": "UNLICENSED",
     "private": true,
@@ -14,15 +14,5 @@
         "dev": "encore dev",
         "watch": "encore dev --watch",
         "build": "encore production --progress"
-    },
-    "dependencies": {
-        "@sentry/browser": "^5.15.5",
-        "bootstrap": "^4.4.1",
-        "bootstrap-icons": "^1.0.0-alpha3",
-        "d3": "^5.16.0",
-        "jquery": "^3.5.1",
-        "popper.js": "^1.16.1",
-        "sass-loader": "^7.0.1",
-        "sweetalert2": "^9.14.4"
     }
 }

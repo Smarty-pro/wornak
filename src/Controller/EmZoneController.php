@@ -3,11 +3,13 @@
 
 namespace App\Controller;
 
-use App\Entity\Company;
-use App\Form\CompanyType;
+use App\Entity\JobPost;
+use App\Form\JobPostType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\Exception\LogicException;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
@@ -19,28 +21,36 @@ class EmZoneController extends AbstractController
 {
     /**
      * @Route("/home-em", name="app_em")
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return Response
      */
-    public function home()
+    public function home(): Response
     {
         return $this->render('employer-zone/homepage.html.twig');
     }
 
     /**
-     * @Route("/jobPost", name="app_jobpost_em")
+     * @Route("/jobpost", name="app_jobpost_em")
      * @param Request $request
-     * @return \Symfony\Component\HttpFoundation\Response
-     * @throws \Symfony\Component\Form\Exception\LogicException
+     * @return Response
+     * @throws LogicException
      */
-    public function jobPost(Request $request)
+    public function jobPost(Request $request): Response
     {
-        $company = new Company();
-        $form = $this->createForm(CompanyType::class, $company);
+        $user = $this->getUser();
+        $jobPost = new JobPost();
+        $form = $this->createForm(JobPostType::class, $jobPost);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
-            $entityManager->persist($company);
+
+            $jobPost->setReference(md5(uniqid()));
+            $company = $user->getCompanyName();
+            $jobPost->setCompany($company);
+            $date = date("d-m-Y H:i");
+            $jobPost->setPublishedAt($date);
+
+            $entityManager->persist($jobPost);
             $entityManager->flush();
         }
 

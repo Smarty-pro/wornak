@@ -26,17 +26,201 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2282a49-60d9-402f-94b6-733cc1cde81d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201024121152.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201024121813.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201024130354.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201024145140.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/controllers/hello_controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/app-store-badge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/bg-cta.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/bg-pattern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/demo-screen-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/google-play-badge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/edition/gold.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/edition/rose.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/sport/black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/sport/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/sport/green.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/sport/red.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/sport/white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/watch/metal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/watch/steel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/device-mockups.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/device-mockups.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/device-mockups2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/device-mockups2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s3/s3_land_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s3/s3_land_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s3/s3_port_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s3/s3_port_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s5/galaxy_s5_land_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s5/galaxy_s5_land_gold.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s5/galaxy_s5_land_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s5/galaxy_s5_port_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s5/galaxy_s5_port_gold.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s5/galaxy_s5_port_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_tab4/galaxy_tab4_land_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_tab4/galaxy_tab4_land_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_tab4_small/galaxy_tab4_black_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_tab4_small/galaxy_tab4_white_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/imac/imac.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad/ipad_land_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad/ipad_land_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad/ipad_port_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad/ipad_port_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air/ipad_air_gray_land.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air/ipad_air_gray_port.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air/ipad_air_silver_land.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air/ipad_air_silver_port.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air_2/ipad_air_2_gold_land.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air_2/ipad_air_2_gold_port.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air_2/ipad_air_2_gray_land.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air_2/ipad_air_2_gray_port.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air_2/ipad_air_2_silver_land.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air_2/ipad_air_2_silver_port.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_pro/ipad_pro_land_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_pro/ipad_pro_land_gold.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_pro/ipad_pro_land_silver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_pro/ipad_pro_port_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_pro/ipad_pro_port_gold.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_pro/ipad_pro_port_silver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone5/iphone5_land_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone5/iphone5_land_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone5/iphone5_port_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone5/iphone5_port_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6/iphone_6_land_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6/iphone_6_land_gold.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6/iphone_6_land_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6/iphone_6_port_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6/iphone_6_port_gold.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6/iphone_6_port_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6_plus/iphone_6_plus_black_land.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6_plus/iphone_6_plus_black_port.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6_plus/iphone_6_plus_gold_land.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6_plus/iphone_6_plus_gold_port.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6_plus/iphone_6_plus_white_land.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6_plus/iphone_6_plus_white_port.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_land_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_land_gold.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_land_rose.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_land_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_port_black.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_port_gold.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_port_rose.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_port_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_x/iphone_x_black_land.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_x/iphone_x_black_port.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_x/iphone_x_white_land.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_x/iphone_x_white_port.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/lumia920/lumia920_land.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/lumia920/lumia920_port.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/lumia_930/lumia_930_dark_land.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/lumia_930/lumia_930_dark_port.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/lumia_930/lumia_930_light_land.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/lumia_930/lumia_930_light_port.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/macbook/macbook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/macbook_2015/gold.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/macbook_2015/grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/macbook_2015/silver.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/nexus7/nexus7_land.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/nexus7/nexus7_port.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/nexus_6/nexus_6_land.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/nexus_6/nexus_6_port.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/samsung_tv/samsung_tv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/device-mockups/surface/surface.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/810.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Wornak2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/WornakIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/app-store-badge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/bg-cta.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/bg-pattern.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/google-play-badge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/jquery-easing/jquery.easing.compatibility.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/jquery-easing/jquery.easing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/jquery-easing/jquery.easing.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/jquery/jquery.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/jquery/jquery.slim.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/jquery/jquery.slim.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/jquery/jquery.slim.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/new-age.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/new-age.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/simple-line-icons/css/simple-line-icons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/simple-line-icons/fonts/Simple-Line-Icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/simple-line-icons/fonts/Simple-Line-Icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/simple-line-icons/fonts/Simple-Line-Icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/simple-line-icons/fonts/Simple-Line-Icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/simple-line-icons/fonts/Simple-Line-Icons.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception/error.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception/error404.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translations/messages.fr.xlf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translations/messages.fr.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translations/security.fr.xlf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/translations/validators.fr.xlf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Wornak.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Wornak.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/console" beforeDir="false" afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/notifier.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/notifier.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/routing.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/webpack_encore.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/webpack_encore.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/Wornak-brand.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/Wornak.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/job-img.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AccessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccessController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Company.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/JobSeeker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/JobSeeker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RgFormPartialType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RgFormPartialType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/EmZoneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EmZoneController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/JoSZoneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/JoSZoneController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/JobPostType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/JobPostType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/HOME/blog.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/HOME/blog.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/HOME/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/HOME/homepage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/RgForm.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/RgForm.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/RgFormC.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/RgFormC.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/RgFormPartial.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/RgFormPartial.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/pg0.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/pg0.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/pg3.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/pg3.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/thank.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/thank.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/world-map.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/world-map.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/employer-zone/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employer-zone/homepage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/employer-zone/jobpostForm.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employer-zone/jobpostForm.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/error.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/error.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job-seeker-zone/FAQ.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job-seeker-zone/FAQ.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job-seeker-zone/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job-seeker-zone/homepage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job-seeker-zone/search.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job-seeker-zone/search.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,12 +241,13 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="alpha &lt;lourhzaladnane@gmail.com&gt;" />
         <option value="Smarty-Pro" />
+        <option value="alpha &lt;lourhzaladnane@gmail.com&gt;" />
         <option value="Adnane Lourhzal" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -87,7 +272,6 @@
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
-      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
       <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
@@ -105,9 +289,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
       <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
-      <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
       <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
-      <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
       <path value="$PROJECT_DIR$/vendor/symfony/mailer" />
       <path value="$PROJECT_DIR$/vendor/symfony/validator" />
       <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
@@ -133,7 +315,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/debug-pack" />
       <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
-      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
       <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
       <path value="$PROJECT_DIR$/vendor/symfony/monolog-bridge" />
@@ -191,7 +372,6 @@
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
       <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
-      <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
       <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
       <path value="$PROJECT_DIR$/vendor/clue/stream-filter" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
@@ -218,6 +398,13 @@
       <path value="$PROJECT_DIR$/vendor/symfony/sendgrid-mailer" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/webimpress/safe-writer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
     </include_path>
   </component>
   <component name="ProjectId" id="1aV93txOlAnbYw3jZsVYofYjl1y" />
@@ -238,17 +425,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/var/log/dev.log&#10;/home/alpha/Wornak/public/build/app.js&#10;/home/alpha/Wornak/vendor/symfony/doctrine-bridge/Form/Type/EntityType.php&#10;/home/alpha/Wornak/vendor/symfony/mime/Email.php&#10;/home/alpha/Wornak/public/build/app.css" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Documents/code-symfony-security/start" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="file.status.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Entity" />
       <recent name="$PROJECT_DIR$/public/images" />
+      <recent name="$PROJECT_DIR$/assets/css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception" />
       <recent name="$PROJECT_DIR$/assets/css" />
     </key>
   </component>
@@ -280,7 +471,7 @@
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>$PROJECT_DIR$/../.subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -464,7 +655,36 @@
       <workItem from="1603448587870" duration="3872000" />
       <workItem from="1603472124871" duration="11996000" />
       <workItem from="1603535454384" duration="8059000" />
-      <workItem from="1603550804239" duration="682000" />
+      <workItem from="1603550804239" duration="4424000" />
+      <workItem from="1603625711444" duration="4227000" />
+      <workItem from="1603634590491" duration="7353000" />
+      <workItem from="1603703745570" duration="811000" />
+      <workItem from="1603705264588" duration="3225000" />
+      <workItem from="1603717589432" duration="1716000" />
+      <workItem from="1603836633939" duration="425000" />
+      <workItem from="1603837215952" duration="2374000" />
+      <workItem from="1603897783771" duration="6788000" />
+      <workItem from="1603988137827" duration="1104000" />
+      <workItem from="1603989877925" duration="619000" />
+      <workItem from="1603997185708" duration="4369000" />
+      <workItem from="1604003915306" duration="1330000" />
+      <workItem from="1604006250037" duration="3203000" />
+      <workItem from="1604071395191" duration="4647000" />
+      <workItem from="1604158970324" duration="5572000" />
+      <workItem from="1604179541314" duration="10798000" />
+      <workItem from="1605735753294" duration="1273000" />
+      <workItem from="1605798263392" duration="69000" />
+      <workItem from="1605800196141" duration="2612000" />
+      <workItem from="1605806782100" duration="219000" />
+      <workItem from="1605807130770" duration="338000" />
+      <workItem from="1605875484872" duration="3027000" />
+      <workItem from="1605953317492" duration="2317000" />
+      <workItem from="1606061461146" duration="6720000" />
+      <workItem from="1608158582682" duration="1056000" />
+      <workItem from="1608227418974" duration="85000" />
+      <workItem from="1608238902835" duration="3346000" />
+      <workItem from="1608298212549" duration="5028000" />
+      <workItem from="1608313782526" duration="410000" />
     </task>
     <task id="LOCAL-00001" summary="nothing special">
       <created>1590252528938</created>
@@ -501,7 +721,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603537640123</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Lot of bugs has been fixed&#10;AccessModule Operational">
+      <created>1603551604696</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1603551604696</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -543,171 +770,10 @@
     <MESSAGE value="The registration/login module is operational" />
     <MESSAGE value="The jobpost module is operationnal with other few changes" />
     <MESSAGE value="The AccessModule has been optimized" />
-    <option name="LAST_COMMIT_MESSAGE" value="The AccessModule has been optimized" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="328" y="27" width="700" height="741" key="#PHP" timestamp="1601122548619">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="328" y="27" width="700" height="741" key="#PHP/0.27.1366.741@0.27.1366.741" timestamp="1601122548619" />
-    <state x="72" y="250" width="1284" height="301" key="#SQL_Dialects" timestamp="1599148782982">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state x="72" y="250" width="1284" height="301" key="#SQL_Dialects/72.27.1294.741@72.27.1294.741" timestamp="1599148782982" />
-    <state x="177" y="55" width="998" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594976384192">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state x="177" y="55" width="998" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1294.741@72.27.1294.741" timestamp="1594976384192" />
-    <state x="35" y="91" width="1321" height="656" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog" timestamp="1601590044910">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="35" y="91" width="1321" height="656" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog/0.27.1366.741@0.27.1366.741" timestamp="1601590044910" />
-    <state x="346" y="91" width="735" height="458" key="#com.intellij.featureStatistics.actions.ShowFeatureUsageStatisticsDialog/72.27.1294.741@72.27.1294.741" timestamp="1595526977598" />
-    <state x="305" y="199" width="705" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600605743498">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="305" y="199" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.741@0.27.1366.741" timestamp="1600605743498" />
-    <state x="504" y="69" width="419" height="664" key="#com.intellij.ide.util.MemberChooser" timestamp="1603478396708">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state x="504" y="69" width="419" height="664" key="#com.intellij.ide.util.MemberChooser/72.27.1294.741@72.27.1294.741" timestamp="1603478396708" />
-    <state x="454" y="193" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1595773379444">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state x="454" y="193" width="525" height="423" key="#com.intellij.ide.util.TreeClassChooserDialog/72.27.1294.741@72.27.1294.741" timestamp="1595773379444" />
-    <state x="72" y="27" width="653" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603484338970">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state x="0" y="27" width="653" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1366.741@0.27.1366.741" timestamp="1601118454626" />
-    <state x="72" y="27" width="565" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/72.27.1294.741@72.27.1294.741" timestamp="1603484338970" />
-    <state x="258" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1603537639107">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state x="196" y="27" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1601119996829" />
-    <state x="258" y="27" width="912" height="741" key="CommitChangelistDialog2/72.27.1294.741@72.27.1294.741" timestamp="1603537639107" />
-    <state x="422" y="278" width="456" height="249" key="ComposerInitDialogKey" timestamp="1600618110615">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="422" y="278" width="456" height="249" key="ComposerInitDialogKey/0.27.1366.741@0.27.1366.741" timestamp="1600618110615" />
-    <state x="502" y="157" width="424" height="491" key="FileChooserDialogImpl" timestamp="1595863791805">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state x="502" y="157" width="424" height="491" key="FileChooserDialogImpl/72.27.1294.741@72.27.1294.741" timestamp="1595863791805" />
-    <state width="1248" height="386" key="GridCell.Tab.0.bottom" timestamp="1596288814638">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.0.bottom/72.27.1294.741@72.27.1294.741" timestamp="1596288814638" />
-    <state width="1248" height="386" key="GridCell.Tab.0.center" timestamp="1596288814637">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.0.center/72.27.1294.741@72.27.1294.741" timestamp="1596288814637" />
-    <state width="1248" height="386" key="GridCell.Tab.0.left" timestamp="1596288814637">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.0.left/72.27.1294.741@72.27.1294.741" timestamp="1596288814637" />
-    <state width="1248" height="386" key="GridCell.Tab.0.right" timestamp="1596288814637">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.0.right/72.27.1294.741@72.27.1294.741" timestamp="1596288814637" />
-    <state width="1248" height="386" key="GridCell.Tab.1.bottom" timestamp="1596288814639">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.1.bottom/72.27.1294.741@72.27.1294.741" timestamp="1596288814639" />
-    <state width="1248" height="386" key="GridCell.Tab.1.center" timestamp="1596288814638">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.1.center/72.27.1294.741@72.27.1294.741" timestamp="1596288814638" />
-    <state width="1248" height="386" key="GridCell.Tab.1.left" timestamp="1596288814638">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.1.left/72.27.1294.741@72.27.1294.741" timestamp="1596288814638" />
-    <state width="1248" height="386" key="GridCell.Tab.1.right" timestamp="1596288814639">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.1.right/72.27.1294.741@72.27.1294.741" timestamp="1596288814638" />
-    <state width="1248" height="386" key="GridCell.Tab.2.bottom" timestamp="1596288814640">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.2.bottom/72.27.1294.741@72.27.1294.741" timestamp="1596288814640" />
-    <state width="1248" height="386" key="GridCell.Tab.2.center" timestamp="1596288814639">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.2.center/72.27.1294.741@72.27.1294.741" timestamp="1596288814639" />
-    <state width="1248" height="386" key="GridCell.Tab.2.left" timestamp="1596288814639">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.2.left/72.27.1294.741@72.27.1294.741" timestamp="1596288814639" />
-    <state width="1248" height="386" key="GridCell.Tab.2.right" timestamp="1596288814640">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.2.right/72.27.1294.741@72.27.1294.741" timestamp="1596288814640" />
-    <state width="1248" height="386" key="GridCell.Tab.3.bottom" timestamp="1596288814643">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.3.bottom/72.27.1294.741@72.27.1294.741" timestamp="1596288814643" />
-    <state width="1248" height="386" key="GridCell.Tab.3.center" timestamp="1596288814640">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.3.center/72.27.1294.741@72.27.1294.741" timestamp="1596288814640" />
-    <state width="1248" height="386" key="GridCell.Tab.3.left" timestamp="1596288814640">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.3.left/72.27.1294.741@72.27.1294.741" timestamp="1596288814640" />
-    <state width="1248" height="386" key="GridCell.Tab.3.right" timestamp="1596288814641">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="1248" height="386" key="GridCell.Tab.3.right/72.27.1294.741@72.27.1294.741" timestamp="1596288814641" />
-    <state x="243" y="143" width="824" height="515" key="IDE.errors.dialog" timestamp="1601158220864">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="243" y="143" key="IDE.errors.dialog/0.27.1366.741@0.27.1366.741" timestamp="1601158220864" />
-    <state x="302" y="143" width="824" height="515" key="IDE.errors.dialog/72.27.1294.741@72.27.1294.741" timestamp="1597769082154" />
-    <state x="513" y="117" width="449" height="582" key="NewPhpClassDialog" timestamp="1597764240865">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state x="513" y="117" width="449" height="582" key="NewPhpClassDialog/72.27.1294.741@72.27.1294.741" timestamp="1597764240865" />
-    <state x="514" y="27" width="328" height="741" key="RollbackChangesDialog" timestamp="1603361777584">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="514" y="27" width="328" height="741" key="RollbackChangesDialog/0.27.1366.741@0.27.1366.741" timestamp="1603361777584" />
-    <state x="144" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1601649536913">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="144" y="31" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1601649536913" />
-    <state x="208" y="31" width="1022" height="737" key="SettingsEditor/72.27.1294.741@72.27.1294.741" timestamp="1595519134980" />
-    <state width="554" height="446" key="SwitcherDM" timestamp="1603479980464">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state width="554" height="446" key="SwitcherDM/72.27.1294.741@72.27.1294.741" timestamp="1603479980464" />
-    <state x="314" y="133" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1603537649104">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state x="255" y="133" width="800" height="543" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1601649156883" />
-    <state x="314" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1294.741@72.27.1294.741" timestamp="1603537649104" />
-    <state x="100" y="127" width="1166" height="541" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1600264046833">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="100" y="127" width="1166" height="541" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.27.1366.741@0.27.1366.741" timestamp="1600264046833" />
-    <state x="462" y="310" width="431" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603108949623">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="462" y="310" width="431" height="181" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.27.1366.741@0.27.1366.741" timestamp="1603108949623" />
-    <state x="72" y="27" width="618" height="741" key="find.popup" timestamp="1596638196928">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state x="72" y="27" width="618" height="741" key="find.popup/72.27.1294.741@72.27.1294.741" timestamp="1596638196928" />
-    <state x="383" y="174" width="673" height="677" key="run.anything.popup" timestamp="1603480289632">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state x="328" y="174" width="710" height="677" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1601640702003" />
-    <state x="383" y="174" width="673" height="677" key="run.anything.popup/72.27.1294.741@72.27.1294.741" timestamp="1603480289632" />
-    <state x="382" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1599073531899">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state x="382" y="89" width="672" height="678" key="search.everywhere.popup/72.27.1294.741@72.27.1294.741" timestamp="1599073531899" />
-    <state x="444" y="311" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1597757425377">
-      <screen x="72" y="27" width="1294" height="741" />
-    </state>
-    <state x="444" y="311" width="540" height="179" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/72.27.1294.741@72.27.1294.741" timestamp="1597757425377" />
+    <MESSAGE value="Lot of bugs has been fixed&#10;AccessModule Operational" />
+    <MESSAGE value="Migration from Symfony 5.0.7 to Symfony 5.2.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Migration from Symfony 5.0.7 to Symfony 5.2.0" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
