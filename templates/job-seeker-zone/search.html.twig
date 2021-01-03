@@ -142,12 +142,21 @@
                     <ul class="wornak-search-result--core__details-list">
                         <li class="wornak-search-result--core__item">Contract Type: {{ jobpost.contractType }}</li>
                         <li class="wornak-search-result--core__item wornak-search-result--core__appt-type">{{ jobpost.description }}</li>
-                        <li class="wornak-search-result--core__item open-to"></li>
+                        <li class="wornak-search-result--core__item open-to">
+                            {% for tags in jobpost.tags %}
+                                <span class="usajobs-search__uhp-icon" rel="tooltip"
+                                      data-title="Jobs open to U.S. citizens, nationals or those who owe allegiance to the U.S.">
+                                {{ jobpost.slug }}
+                            </span>
+                            {% endfor %}
+                        </li>
                     </ul>
                 </div>
             </div>
             <div class="wornak-search-result--core__footer">
-                <p class="wornak-search-result--core__footer-item wornak-search-result--core__closing-date"><i class="fas fa-clock"></i>&nbsp;Open {{ jobpost.publishedAt|date("d/m/Y")}} to {{ jobpost.expDate|date("d/m/Y") }}</p>
+                <p class="wornak-search-result--core__footer-item wornak-search-result--core__closing-date"><i
+                            class="fas fa-clock"></i>&nbsp;Open {{ jobpost.publishedAt|date("d/m/Y") }}
+                    to {{ jobpost.expDate|date("d/m/Y") }}</p>
             </div>
         </div>
 {% endfor %}

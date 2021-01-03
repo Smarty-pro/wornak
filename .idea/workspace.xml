@@ -25,202 +25,58 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2282a49-60d9-402f-94b6-733cc1cde81d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/controllers/hello_controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/app-store-badge.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/bg-cta.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/bg-pattern.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/demo-screen-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/google-play-badge.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/edition/gold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/edition/rose.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/sport/black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/sport/blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/sport/green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/sport/red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/sport/white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/watch/metal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/apple_watch/watch/steel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/device-mockups.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/device-mockups.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/device-mockups2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/device-mockups2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s3/s3_land_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s3/s3_land_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s3/s3_port_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s3/s3_port_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s5/galaxy_s5_land_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s5/galaxy_s5_land_gold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s5/galaxy_s5_land_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s5/galaxy_s5_port_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s5/galaxy_s5_port_gold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_s5/galaxy_s5_port_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_tab4/galaxy_tab4_land_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_tab4/galaxy_tab4_land_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_tab4_small/galaxy_tab4_black_small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/galaxy_tab4_small/galaxy_tab4_white_small.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/imac/imac.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad/ipad_land_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad/ipad_land_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad/ipad_port_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad/ipad_port_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air/ipad_air_gray_land.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air/ipad_air_gray_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air/ipad_air_silver_land.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air/ipad_air_silver_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air_2/ipad_air_2_gold_land.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air_2/ipad_air_2_gold_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air_2/ipad_air_2_gray_land.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air_2/ipad_air_2_gray_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air_2/ipad_air_2_silver_land.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_air_2/ipad_air_2_silver_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_pro/ipad_pro_land_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_pro/ipad_pro_land_gold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_pro/ipad_pro_land_silver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_pro/ipad_pro_port_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_pro/ipad_pro_port_gold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/ipad_pro/ipad_pro_port_silver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone5/iphone5_land_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone5/iphone5_land_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone5/iphone5_port_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone5/iphone5_port_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6/iphone_6_land_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6/iphone_6_land_gold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6/iphone_6_land_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6/iphone_6_port_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6/iphone_6_port_gold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6/iphone_6_port_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6_plus/iphone_6_plus_black_land.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6_plus/iphone_6_plus_black_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6_plus/iphone_6_plus_gold_land.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6_plus/iphone_6_plus_gold_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6_plus/iphone_6_plus_white_land.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_6_plus/iphone_6_plus_white_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_land_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_land_gold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_land_rose.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_land_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_port_black.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_port_gold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_port_rose.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_se/iphone_se_port_white.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_x/iphone_x_black_land.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_x/iphone_x_black_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_x/iphone_x_white_land.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/iphone_x/iphone_x_white_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/lumia920/lumia920_land.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/lumia920/lumia920_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/lumia_930/lumia_930_dark_land.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/lumia_930/lumia_930_dark_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/lumia_930/lumia_930_light_land.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/lumia_930/lumia_930_light_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/macbook/macbook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/macbook_2015/gold.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/macbook_2015/grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/macbook_2015/silver.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/nexus7/nexus7_land.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/nexus7/nexus7_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/nexus_6/nexus_6_land.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/nexus_6/nexus_6_port.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/samsung_tv/samsung_tv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/device-mockups/surface/surface.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/810.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Wornak2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/WornakIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/app-store-badge.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/bg-cta.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/bg-pattern.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/google-play-badge.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/jquery-easing/jquery.easing.compatibility.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/jquery-easing/jquery.easing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/jquery-easing/jquery.easing.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/jquery/jquery.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/jquery/jquery.slim.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/jquery/jquery.slim.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/jquery/jquery.slim.min.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/new-age.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/new-age.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/simple-line-icons/css/simple-line-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/simple-line-icons/fonts/Simple-Line-Icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/simple-line-icons/fonts/Simple-Line-Icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/simple-line-icons/fonts/Simple-Line-Icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/simple-line-icons/fonts/Simple-Line-Icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/simple-line-icons/fonts/Simple-Line-Icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception/error.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception/error404.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/messages.fr.xlf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/messages.fr.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/security.fr.xlf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/validators.fr.xlf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Wornak.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Wornak.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="d2282a49-60d9-402f-94b6-733cc1cde81d" name="Default Changelist" comment="Migration from Symfony 5.0.7 to Symfony 5.2.0">
+      <change afterPath="$PROJECT_DIR$/Wornak.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/bootstrap/animate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/jquery/tilt.jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200910132146.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200910133838.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200912122137.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200917212647.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200918212327.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200920131433.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200920131746.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200926130042.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201220152725.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201226103637.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201226110807.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201226111005.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201227211936.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201227214525.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201227214734.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/AdminRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/JobSeekerRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/WornakAuthenticator.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/HOME/pdf.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/console" beforeDir="false" afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/controllers.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/notifier.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/notifier.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/routing.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/routing.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/translation.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/webpack_encore.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/webpack_encore.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Wornak-brand.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Wornak.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/job-img.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AccessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccessController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/EmZoneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EmZoneController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/JoSZoneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/JoSZoneController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/JobPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/JobPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Tag.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/CompanyType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CompanyType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/JobPostType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/JobPostType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/HOME/blog.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/HOME/blog.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/TagRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/HOME/blog.html.twig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/HOME/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/HOME/homepage.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/RgForm.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/RgForm.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/RgFormC.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/RgFormC.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/RgFormPartial.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/RgFormPartial.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/pg0.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/pg0.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/pg3.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/pg3.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/thank.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/thank.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/world-map.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/world-map.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/employer-zone/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employer-zone/homepage.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/employer-zone/jobpostForm.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employer-zone/jobpostForm.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/error.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/error.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/job-seeker-zone/FAQ.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job-seeker-zone/FAQ.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/job-seeker-zone/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job-seeker-zone/homepage.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/job-seeker-zone/search.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job-seeker-zone/search.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -429,7 +285,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.toDoOptions" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -452,7 +308,7 @@
     <configuration name="JobSeeker.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Wornak/Entity/JobSeeker.php" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="watch" type="js.build_tools.npm" temporary="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
@@ -684,7 +540,21 @@
       <workItem from="1608227418974" duration="85000" />
       <workItem from="1608238902835" duration="3346000" />
       <workItem from="1608298212549" duration="5028000" />
-      <workItem from="1608313782526" duration="410000" />
+      <workItem from="1608313782526" duration="10143000" />
+      <workItem from="1608400761515" duration="7699000" />
+      <workItem from="1608494846737" duration="4421000" />
+      <workItem from="1608756215421" duration="3249000" />
+      <workItem from="1608978535153" duration="115000" />
+      <workItem from="1608978718920" duration="2733000" />
+      <workItem from="1608997047115" duration="3939000" />
+      <workItem from="1609103782020" duration="2119000" />
+      <workItem from="1609276079170" duration="4811000" />
+      <workItem from="1609362094900" duration="3444000" />
+      <workItem from="1609366868369" duration="4932000" />
+      <workItem from="1609431050008" duration="874000" />
+      <workItem from="1609434139759" duration="1298000" />
+      <workItem from="1609630945809" duration="2246000" />
+      <workItem from="1609673568337" duration="5763000" />
     </task>
     <task id="LOCAL-00001" summary="nothing special">
       <created>1590252528938</created>
@@ -728,7 +598,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603551604696</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Migration from Symfony 5.0.7 to Symfony 5.2.0">
+      <created>1608314246916</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608314246916</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

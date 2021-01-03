@@ -4,17 +4,14 @@
 namespace App\Controller;
 
 
-use App\Entity\User;
-use App\Form\RgFormPartialType;
+use App\Entity\SearchBar;
+use App\Form\SearchBarType;
 use App\Repository\JobPostRepository;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\Form\Exception\LogicException;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use App\Entity\SearchBar;
-use App\Form\SearchBarType;
 
 /**
  * Class JoSZoneController
@@ -26,7 +23,7 @@ class JoSZoneController extends AbstractController
     /**
      * @Route("/jos", name="app_jos")
      */
-    public function home()
+    public function home(): Response
     {
         return $this->render('job-seeker-zone/homepage.html.twig');
     }
@@ -37,7 +34,7 @@ class JoSZoneController extends AbstractController
      * @param Request $request
      * @return Response
      */
-    public function search(JobPostRepository $repository, Request $request)
+    public function search(JobPostRepository $repository, Request $request): Response
     {
         $search = new SearchBar();
         $form = $this->createForm(SearchBarType::class, $search);

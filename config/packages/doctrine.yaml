@@ -2,7 +2,7 @@ doctrine:
     dbal:
         # configure these for your database server
         driver: 'pdo_mysql'
-        server_version: '5.7'
+        server_version: 'mariadb-10.4.10'
         charset: utf8mb4
         host: 127.0.0.1
         port: 3305

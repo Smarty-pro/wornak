@@ -52,11 +52,6 @@ class JobPost
     private $contractType;
 
     /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $tags;
-
-    /**
      * @ORM\Column(type="datetime")
      */
     private $publishedAt;
@@ -80,6 +75,7 @@ class JobPost
      * @ORM\Column(type="string", length=255)
      */
     private $StudyLevelRequired;
+
 
     public function getId(): ?int
     {
@@ -134,18 +130,6 @@ class JobPost
         return $this;
     }
 
-    public function getPostDate(): ?\DateTimeInterface
-    {
-        return $this->postDate;
-    }
-
-    public function setPostDate(\DateTimeInterface $postDate): self
-    {
-        $this->postDate = $postDate;
-
-        return $this;
-    }
-
     public function getJobZone(): ?string
     {
         return $this->jobZone;
@@ -178,18 +162,6 @@ class JobPost
     public function setContractType(string $contractType): self
     {
         $this->contractType = $contractType;
-
-        return $this;
-    }
-
-    public function getTags(): ?string
-    {
-        return $this->tags;
-    }
-
-    public function setTags(string $tags): self
-    {
-        $this->tags = $tags;
 
         return $this;
     }

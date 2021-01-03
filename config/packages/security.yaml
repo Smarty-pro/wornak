@@ -1,11 +1,13 @@
 security:
     encoders:
-        App\Entity\JobSeeker:
-            algorithm: auto
-        App\Entity\Company:
-            algorithm: auto
-        App\Entity\User:
-            algorithm: auto
+      App\Entity\JobSeeker:
+        algorithm: auto
+      App\Entity\Company:
+        algorithm: auto
+      App\Entity\User:
+        algorithm: auto
+      App\Entity\Admin:
+        algorithm: auto
 
 
 

@@ -5,6 +5,7 @@ namespace App\Controller;
 
 use App\Entity\JobPost;
 use App\Form\JobPostType;
+use DateTime;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Form\Exception\LogicException;
@@ -44,18 +45,25 @@ class EmZoneController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
 
+
             $jobPost->setReference(md5(uniqid()));
-            $company = $user->getCompanyName();
+            $company = $user->getCompanies()->getCompanyName();
             $jobPost->setCompany($company);
-            $date = date("d-m-Y H:i");
+            $date = new DateTime('NOW');
             $jobPost->setPublishedAt($date);
 
             $entityManager->persist($jobPost);
             $entityManager->flush();
+            return $this->redirectToRoute('app_em');
         }
 
         return $this->render('employer-zone/jobpostForm.html.twig', [
             'form' => $form->createView(),
         ]);
+    }
+
+    public function search(): Response
+    {
+
     }
 }

@@ -4,9 +4,13 @@ namespace App\Controller;
 
 
 
+use Dompdf\Dompdf;
+use Dompdf\Options;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+
+// Include Dompdf required namespaces
 
 class HomeController extends AbstractController
 {
@@ -14,25 +18,40 @@ class HomeController extends AbstractController
      * @Route("/", name="app_central_homepage")
      * @return Response
      */
-	public function homepage()
-	{
-        return $this->render('HOME/homepage.html.twig');
-    }
-
-    /**
-     * @Route("/blog")
-     */
-    public function blog()
+    public function homepage(): Response
     {
-        //TODO
-        return $this->render('HOME/blog.html.twig');
+        return $this->render('HOME/homepage.html.twig');
     }
 
     /**
      * @Route("/test")
      */
-    public function test()
+    public function test(): Response
     {
-        return $this->render('REGISTRATION/world-map.html.twig');
+        // Configure Dompdf according to your needs
+        $pdfOptions = new Options();
+        $pdfOptions->set('defaultFont', 'Arial');
+
+        // Instantiate Dompdf with our options
+        $dompdf = new Dompdf($pdfOptions);
+
+        // Retrieve the HTML generated in our twig file
+        $html = $this->renderView('HOME/pdf.html.twig');
+
+        // Load HTML to Dompdf
+        $dompdf->loadHtml($html);
+
+        // (Optional) Setup the paper size and orientation 'portrait' or 'portrait'
+        $dompdf->setPaper('A4', 'portrait');
+
+        // Render the HTML as PDF
+        $dompdf->render();
+
+        // Output the generated PDF to Browser (inline view)
+        $dompdf->stream("mypdf.pdf", [
+            "Attachment" => false
+        ]);
+
+        // return $this->render('REGISTRATION/world-map.html.twig');
     }
 }
