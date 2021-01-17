@@ -19,14 +19,18 @@ class JobPostRepository extends ServiceEntityRepository
         parent::__construct($registry, JobPost::class);
     }
 
-    public function findLike($var)
+    public function findLike($var, $location)
     {
         //$em = $this->getDoctrine()->getEntityManager();
         //$query = $em->createQuery("SELECT n FROM Tablename WHERE n.title LIKE '% :searchterm %'") ->setParameter('searchterm', $searchterm);
         //$entities = $query->getResult();
         return $this->createQueryBuilder('job_post')
             ->where('job_post.jobTitle LIKE :title')
-            ->setParameter('title', '%'.$var.'%')
+            ->andWhere('job_post.jobZone LIKE :location')
+            ->setParameters([
+                'title' => '%' . $var . '%',
+                'location' => '%' . $location . '%'
+            ])
             ->getQuery()
             ->getResult()
         ;

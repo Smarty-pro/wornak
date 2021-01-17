@@ -76,9 +76,33 @@ class JobSeeker
      */
     private $skills;
 
+    /**
+     * @ORM\OneToMany(targetEntity=SearchBar::class, mappedBy="user")
+     */
+    private $searchs;
+
+    /**
+     * @ORM\ManyToMany(targetEntity=Company::class, mappedBy="consulteds")
+     */
+    private $companies;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $studyLevel;
+
+    /**
+     * @ORM\ManyToMany(targetEntity=JobPost::class, inversedBy="jobSeekers")
+     */
+    private $jobPosts;
+
+
     public function __construct()
     {
         $this->users = new ArrayCollection();
+        $this->searchs = new ArrayCollection();
+        $this->companies = new ArrayCollection();
+        $this->jobPosts = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -241,6 +265,99 @@ class JobSeeker
     public function setSkills(?string $skills): self
     {
         $this->skills = $skills;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|SearchBar[]
+     */
+    public function getSearchs(): Collection
+    {
+        return $this->searchs;
+    }
+
+    public function addSearch(SearchBar $search): self
+    {
+        if (!$this->searchs->contains($search)) {
+            $this->searchs[] = $search;
+            $search->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeSearch(SearchBar $search): self
+    {
+        if ($this->searchs->removeElement($search)) {
+            // set the owning side to null (unless already changed)
+            if ($search->getUser() === $this) {
+                $search->setUser(null);
+            }
+        }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Company[]
+     */
+    public function getCompanies(): Collection
+    {
+        return $this->companies;
+    }
+
+    public function addCompany(Company $company): self
+    {
+        if (!$this->companies->contains($company)) {
+            $this->companies[] = $company;
+            $company->addConsulted($this);
+        }
+
+        return $this;
+    }
+
+    public function removeCompany(Company $company): self
+    {
+        if ($this->companies->removeElement($company)) {
+            $company->removeConsulted($this);
+        }
+
+        return $this;
+    }
+
+    public function getStudyLevel(): ?string
+    {
+        return $this->studyLevel;
+    }
+
+    public function setStudyLevel(string $studyLevel): self
+    {
+        $this->studyLevel = $studyLevel;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|JobPost[]
+     */
+    public function getJobPosts(): Collection
+    {
+        return $this->jobPosts;
+    }
+
+    public function addJobPost(JobPost $jobPost): self
+    {
+        if (!$this->jobPosts->contains($jobPost)) {
+            $this->jobPosts[] = $jobPost;
+        }
+
+        return $this;
+    }
+
+    public function removeJobPost(JobPost $jobPost): self
+    {
+        $this->jobPosts->removeElement($jobPost);
 
         return $this;
     }

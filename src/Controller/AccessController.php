@@ -5,28 +5,26 @@ namespace App\Controller;
 use App\Entity\Company;
 use App\Entity\JobSeeker;
 use App\Entity\User;
+use App\Event\AccountActivatedEvent;
 use App\Form\CompanyType;
 use App\Form\RgFormPartialType;
-use App\Repository\JobSeekerRepository;
+use App\Form\RgFormType;
 use App\Repository\UserRepository;
-use phpDocumentor\Reflection\Types\This;
-use Symfony\Component\HttpFoundation\Cookie;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
-use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use App\Form\RgFormType;
-use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Email;
+use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
 class AccessController extends AbstractController
 {
     /**
-     * @Route("/registration/job-seeker", name="app_registration_job-seeker")
+     * @Route("/register/job-seeker", name="app_registration_job-seeker")
      * @return Response
      */
     public function func1(): Response
@@ -37,7 +35,7 @@ class AccessController extends AbstractController
     }
 
     /**
-     * @Route("/registration/employer", name="app_registration_employer")
+     * @Route("/register/employer", name="app_registration_employer")
      * @return Response
      */
     public function func2(): Response
@@ -73,6 +71,7 @@ class AccessController extends AbstractController
                 $user->setPassword($encoded);
                 $user->setActivationToken(md5(uniqid()));
                 $user->setUuid(uniqid());
+                $user->setIsVerified(false);
                 $login = $user->getUuid();
                 setcookie('l0g14', $login, time() + 3600);
 
@@ -222,23 +221,22 @@ class AccessController extends AbstractController
     }
 
     /**
-     * @Route("/verify/{token}", name="verification")
+     * @Route("/verify/{token}", name="app_verify")
      * @param $token
      * @param UserRepository $repo
+     * @param EventDispatcherInterface $eventDispatcher
      * @return RedirectResponse
      */
-    public function verify($token, UserRepository $repo)
+    public function verify($token, UserRepository $repo, EventDispatcherInterface $eventDispatcher): RedirectResponse
     {
-        $user = $repo->findOneBy(['activation_token' => $token]);
-
+        $user = $repo->findOneBy(['activationToken' => $token]);
 
         $user->setActivationToken(null);
         $entityManager = $this->getDoctrine()->getManager();
         $entityManager->persist($user);
         $entityManager->flush();
 
-        $this->addFlash('message', 'User activated');
-
+        $eventDispatcher->dispatch(new AccountActivatedEvent($user));
 
         return $this->redirectToRoute('app_central_homepage');
     }
@@ -247,7 +245,7 @@ class AccessController extends AbstractController
      * @Route("/thanks")
      * @return Response
      */
-    public function thanks()
+    public function thanks(): Response
     {
         return $this->render('/REGISTRATION/thank.html.twig');
     }
@@ -257,7 +255,7 @@ class AccessController extends AbstractController
      * @param UserRepository $repo
      * @return RedirectResponse
      */
-    public function rdct(UserRepository $repo)
+    public function rdct(UserRepository $repo): RedirectResponse
     {
         $user = $repo->findOneBy(['uuid' => $_COOKIE['ud']]);
         $jobseeker = $user->getJobseeker();

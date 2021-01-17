@@ -47,7 +47,7 @@ Wornak
         }
 
         a:hover, a:focus {
-            color: #fcbd20;
+            color: #011627;
         }
 
         hr {
@@ -84,7 +84,7 @@ Wornak
 
         #mainNav {
             border-color: rgba(34, 34, 34, 0.05);
-            background-color: white;
+            /*background-color: white;*/
             transition: all .35s;
             font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
             font-weight: 200;
@@ -474,12 +474,6 @@ Wornak
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <img src="{{ asset('images/WornakIcon.png') }}" width="41" height="25" alt="" loading="lazy">
             </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                Menu
-                <i class="fas fa-bars"></i>
-            </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -492,7 +486,7 @@ Wornak
             </div>
         </div>
     </nav>
-
+    {# TODO create a login button for mobile users #}
     <header class="masthead">
         <div class="container h-100">
             <div class="row h-100">
@@ -643,10 +637,10 @@ Wornak
             <p>&copy; Wornak 2020. All Rights Reserved.</p>
             <ul class="list-inline">
                 <li class="list-inline-item">
-                    <a href="#">Privacy</a>
+                    <a href="{{ path('app_home_privacy') }}">Privacy</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#">Terms</a>
+                    <a href="{{ path('app_home_terms') }}">Terms</a>
                 </li>
                 <li class="list-inline-item">
                     <a href="#">FAQ</a>

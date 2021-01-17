@@ -1224,14 +1224,6 @@
 
                     {{ form_end(UserForm) }}
 
-                    <div class="text-center p-t-12">
-						<span class="txt1">
-							Forgot
-						</span>
-                        <a class="txt2" href="#">
-                            Username / Password?
-                        </a>
-                    </div>
                 </form>
             </div>
         </div>
@@ -1308,10 +1300,10 @@
             <p>&copy; Wornak 2020. All Rights Reserved.</p>
             <ul class="list-inline">
                 <li class="list-inline-item">
-                    <a href="#">Privacy</a>
+                    <a href="{{ path('app_home_privacy') }}">Privacy</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#">Terms</a>
+                    <a href="{{ path('app_home_terms') }}">Terms</a>
                 </li>
                 <li class="list-inline-item">
                     <a href="#">FAQ</a>

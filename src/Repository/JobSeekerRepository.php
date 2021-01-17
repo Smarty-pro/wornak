@@ -4,6 +4,8 @@ namespace App\Repository;
 
 use App\Entity\JobSeeker;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\OptimisticLockException;
+use Doctrine\ORM\ORMException;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\User\PasswordUpgraderInterface;
@@ -24,6 +26,10 @@ class JobSeekerRepository extends ServiceEntityRepository implements PasswordUpg
 
     /**
      * Used to upgrade (rehash) the user's password automatically over time.
+     * @param UserInterface $user
+     * @param string $newEncodedPassword
+     * @throws ORMException
+     * @throws OptimisticLockException
      */
     public function upgradePassword(UserInterface $user, string $newEncodedPassword): void
     {
@@ -34,6 +40,21 @@ class JobSeekerRepository extends ServiceEntityRepository implements PasswordUpg
         $user->setPassword($newEncodedPassword);
         $this->_em->persist($user);
         $this->_em->flush();
+    }
+
+    public function findLike($location, $training, $studyLevel)
+    {
+        return $this->createQueryBuilder('job_seeker')
+            ->where('job_seeker.address LIKE :location')
+            ->andWhere('job_seeker.studyLevel LIKE :studyLevel')
+            ->andWhere('job_seeker.skills LIKE :training')
+            ->setParameters([
+                'location' => '%' . $location . '%',
+                'studyLevel' => '%' . $studyLevel . '%',
+                'training' => '%' . $training . '%'
+            ])
+            ->getQuery()
+            ->getResult();
     }
 
     // /**

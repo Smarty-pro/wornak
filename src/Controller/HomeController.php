@@ -3,14 +3,12 @@
 namespace App\Controller;
 
 
-
 use Dompdf\Dompdf;
 use Dompdf\Options;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-// Include Dompdf required namespaces
 
 class HomeController extends AbstractController
 {
@@ -53,5 +51,28 @@ class HomeController extends AbstractController
         ]);
 
         // return $this->render('REGISTRATION/world-map.html.twig');
+    }
+
+    /**
+     * @Route("/privacy")
+     * @return Response
+     */
+    public function privacy(): Response
+    {
+        return $this->render('HOME/privacy.html.twig');
+    }
+
+    /**
+     * @Route("/terms")
+     * @return Response
+     */
+    public function terms(): Response
+    {
+        return $this->render('HOME/terms.html.twig');
+    }
+
+    public function forgot(): Response
+    {
+        return $this->render('HOME/forgot.html.twig');
     }
 }

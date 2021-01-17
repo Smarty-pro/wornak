@@ -1,10 +1,10 @@
 {% extends 'base.html.twig' %}
 {% block title %}
-    FAQ
+    Home
 {% endblock %}
 
 {% block description %}
-    FAQ
+    Home of the Employer Zone
 {% endblock %}
 
 {% block head %}
@@ -18,10 +18,10 @@
             <p>&copy; Wornak 2020. All Rights Reserved.</p>
             <ul class="list-inline">
                 <li class="list-inline-item">
-                    <a href="#">Privacy</a>
+                    <a href="{{ path('app_home_privacy') }}">Privacy</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#">Terms</a>
+                    <a href="{{ path('app_home_terms') }}">Terms</a>
                 </li>
                 <li class="list-inline-item">
                     <a href="#">FAQ</a>

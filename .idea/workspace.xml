@@ -25,58 +25,81 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2282a49-60d9-402f-94b6-733cc1cde81d" name="Default Changelist" comment="Migration from Symfony 5.0.7 to Symfony 5.2.0">
-      <change afterPath="$PROJECT_DIR$/Wornak.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/bootstrap/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/jquery/tilt.jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200910132146.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200910133838.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200912122137.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200917212647.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200918212327.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200920131433.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200920131746.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20200926130042.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201220152725.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201226103637.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201226110807.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201226111005.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201227211936.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201227214525.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20201227214734.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/AdminRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/JobSeekerRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/WornakAuthenticator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/HOME/pdf.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+    <list default="true" id="d2282a49-60d9-402f-94b6-733cc1cde81d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/Chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/chart-area-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/chart-bar-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/chart-pie-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/datatables-demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Alert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/FindBar.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Event/AccountActivatedEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Event/ApplicationEvent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/AccountNotificationSubscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/EventSubscriber/ApplicationSubscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/FindBarType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210107192750.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210108192114.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210109115926.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210109123243.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210109133328.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210109134609.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210109150012.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210109153838.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210109201100.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210109230206.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210111164522.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210111190025.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210115112051.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210116172715.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/AlertRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/FindBarRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/HOME/forgot.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/HOME/privacy.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/HOME/terms.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/employer-zone/alerts.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/employer-zone/results.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/employer-zone/search.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/job-seeker-zone/alerts.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/job-seeker-zone/job.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/job-seeker-zone/results.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/6dd22fee-0c62-46b7-8ddb-035a45d2c411.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/6dd22fee-0c62-46b7-8ddb-035a45d2c411.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controllers.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/1.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AccessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccessController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/EmZoneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EmZoneController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/JoSZoneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/JoSZoneController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Company.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/JobPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/JobPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Tag.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/CompanyType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CompanyType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/JobSeeker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/JobSeeker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/SearchBar.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/SearchBar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/JobPostType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/JobPostType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repository/TagRepository.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/HOME/blog.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/SearchBarType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/SearchBarType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/GroupRepository.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/JobPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/JobPostRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/JobSeekerRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/JobSeekerRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/HOME/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/HOME/homepage.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/RgForm.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/RgForm.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/RgFormC.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/RgFormC.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/RgFormPartial.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/RgFormPartial.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/pg0.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/pg0.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/pg3.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/pg3.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/thank.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/thank.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/employer-zone/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employer-zone/homepage.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/employer-zone/jobpostForm.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employer-zone/jobpostForm.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job-seeker-zone/FAQ.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/HOME/FAQ.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job-seeker-zone/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job-seeker-zone/homepage.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/job-seeker-zone/search.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job-seeker-zone/search.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +127,14 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SIGN_OFF_COMMIT" value="true" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -278,24 +309,26 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TERMINAL_CUSTOM_COMMANDS_GOT_IT" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/var/log/dev.log&#10;/home/alpha/Wornak/public/build/app.js&#10;/home/alpha/Wornak/vendor/symfony/doctrine-bridge/Form/Type/EntityType.php&#10;/home/alpha/Wornak/vendor/symfony/mime/Email.php&#10;/home/alpha/Wornak/public/build/app.css" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/var/log/dev.log&#10;/home/alpha/Wornak/public/build/app.js&#10;/home/alpha/Wornak/vendor/symfony/doctrine-bridge/Form/Type/EntityType.php&#10;/home/alpha/Wornak/vendor/symfony/mime/Email.php&#10;/home/alpha/Wornak/public/build/app.css&#10;/home/alpha/Wornak/public/build/manifest.json&#10;/home/alpha/Wornak/vendor/doctrine/orm/lib/Doctrine/ORM/EntityRepository.php" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Entity" />
-      <recent name="$PROJECT_DIR$/public/images" />
-      <recent name="$PROJECT_DIR$/assets/css" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates/bundles/TwigBundle/Exception" />
+      <recent name="$PROJECT_DIR$/assets/css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/HOME" />
+      <recent name="$PROJECT_DIR$/src/Entity" />
+      <recent name="$PROJECT_DIR$/public/images" />
       <recent name="$PROJECT_DIR$/assets/css" />
     </key>
   </component>
@@ -304,24 +337,13 @@
       <command value="?" />
     </option>
   </component>
-  <component name="RunManager" selected="npm.watch">
-    <configuration name="JobSeeker.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Wornak/Entity/JobSeeker.php" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="watch" type="js.build_tools.npm" temporary="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="watch" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
+  <component name="RunManager">
+    <configuration name="chart-area-demo.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/public/js/chart-area-demo.js" working-dir="$PROJECT_DIR$/public/js">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.watch" />
-        <item itemvalue="JavaScript Debug.JobSeeker.php" />
+        <item itemvalue="Node.js.chart-area-demo.js" />
       </list>
     </recent_temporary>
   </component>
@@ -555,6 +577,23 @@
       <workItem from="1609434139759" duration="1298000" />
       <workItem from="1609630945809" duration="2246000" />
       <workItem from="1609673568337" duration="5763000" />
+      <workItem from="1609682974869" duration="4126000" />
+      <workItem from="1610028523578" duration="13457000" />
+      <workItem from="1610104171045" duration="2126000" />
+      <workItem from="1610106420771" duration="6710000" />
+      <workItem from="1610114928970" duration="13549000" />
+      <workItem from="1610141902969" duration="20072000" />
+      <workItem from="1610230498156" duration="3190000" />
+      <workItem from="1610305584341" duration="3948000" />
+      <workItem from="1610312835781" duration="305000" />
+      <workItem from="1610313482251" duration="2533000" />
+      <workItem from="1610358415739" duration="6694000" />
+      <workItem from="1610369498966" duration="10392000" />
+      <workItem from="1610567441344" duration="881000" />
+      <workItem from="1610635797669" duration="9812000" />
+      <workItem from="1610707364821" duration="13481000" />
+      <workItem from="1610807113575" duration="19956000" />
+      <workItem from="1610886735751" duration="8054000" />
     </task>
     <task id="LOCAL-00001" summary="nothing special">
       <created>1590252528938</created>
@@ -649,8 +688,21 @@
     <MESSAGE value="The AccessModule has been optimized" />
     <MESSAGE value="Lot of bugs has been fixed&#10;AccessModule Operational" />
     <MESSAGE value="Migration from Symfony 5.0.7 to Symfony 5.2.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Migration from Symfony 5.0.7 to Symfony 5.2.0" />
+    <MESSAGE value="This commit, I focused in the essentials parts of the two dashboards (EM, JOS):&#10;- JOS: ADDED Alerts/ Jobs Search/ Jobs Results.&#10;- EM: ADDED Alerts/ Job seekers Search/ Job seekers Results." />
+    <option name="LAST_COMMIT_MESSAGE" value="This commit, I focused in the essentials parts of the two dashboards (EM, JOS):&#10;- JOS: ADDED Alerts/ Jobs Search/ Jobs Results.&#10;- EM: ADDED Alerts/ Job seekers Search/ Job seekers Results." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/templates/job-seeker-zone/search.html.twig</url>
+          <line>123</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

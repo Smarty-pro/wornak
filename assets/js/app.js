@@ -19,39 +19,6 @@ import * as Sentry from '@sentry/browser';
 Sentry.init({ dsn: 'https://52d4e4c3aa0b431faea51a3e1752fc0e@o392274.ingest.sentry.io/5249757' });
 
 
-var iconMenu = document.querySelector('.icon-menu'),
-    menu = document.querySelector('.menu'),
-    menuLink = document.querySelectorAll('.menu-link.sub');
-
-iconMenu.addEventListener('click', openMenu);
-
-menuLink.forEach(function(el) {
-    el.addEventListener('click', openSubmenu);
-});
-
-function openMenu() {
-
-    if(menu.classList.contains('open')) {
-        menu.classList.add('close');
-        iconMenu.classList.remove('icon-closed');
-
-        setTimeout(function(){ menu.classList.remove('open'); }, 1300);
-
-    } else {
-        menu.classList.remove('close');
-        menu.classList.add('open');
-        iconMenu.classList.add('icon-closed');
-    }
-}
-
-function openSubmenu(event) {
-
-    if (event.currentTarget.classList.contains("active")) {
-        event.currentTarget.classList.remove("active");
-    } else {
-        event.currentTarget.classList.add("active");
-    }
-}
 function drawMap() {
     var data = google.visualization.arrayToDataTable([
         ['Pays', 'Nombre de CV'],
@@ -134,4 +101,36 @@ function drawMap() {
 
     chart.draw(data, options);
 }
+
 google.load('visualization', '1', {packages: ['geochart'], callback: drawMap});
+
+//*******************************************************************************************************************
+
+function drawChart() {
+    var dataTable = new google.visualization.DataTable();
+    dataTable.addColumn({type: 'date', id: 'Date'});
+    dataTable.addColumn({type: 'number', id: 'Won/Loss'});
+    dataTable.addRows([
+
+        [new Date(2020, 9, 4), 1],
+        [new Date(2020, 9, 5), 0],
+        [new Date(2020, 9, 12), 2],
+        [new Date(2020, 9, 13), 5],
+        [new Date(2020, 9, 19), 3],
+        [new Date(2020, 9, 23), 8],
+        [new Date(2020, 9, 24), 0],
+        [new Date(2020, 9, 30), 4]
+    ]);
+
+    var chart = new google.visualization.Calendar(document.getElementById('calendar_basic'));
+
+    var options = {
+        title: "Red Sox Attendance",
+        height: 350,
+    };
+
+    chart.draw(dataTable, options);
+}
+
+google.load('visualization', '1', {packages: ['calendar'], callback: drawChart});
+

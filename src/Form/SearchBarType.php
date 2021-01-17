@@ -14,6 +14,7 @@ class SearchBarType extends AbstractType
     {
         $builder
             ->add('searchContent', TextType::class)
+            ->add('location', TextType::class)
         ;
     }
 

@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -34,7 +36,7 @@ class JobPost
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $reference;
+    private $uid;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -75,6 +77,17 @@ class JobPost
      * @ORM\Column(type="string", length=255)
      */
     private $StudyLevelRequired;
+
+    /**
+     * @ORM\ManyToMany(targetEntity=JobSeeker::class, mappedBy="jobPosts")
+     */
+    private $jobSeekers;
+
+
+    public function __construct()
+    {
+        $this->jobSeekers = new ArrayCollection();
+    }
 
 
     public function getId(): ?int
@@ -118,14 +131,14 @@ class JobPost
         return $this;
     }
 
-    public function getReference(): ?string
+    public function getUid(): ?string
     {
-        return $this->reference;
+        return $this->uid;
     }
 
-    public function setReference(string $reference): self
+    public function setUid(string $uid): self
     {
-        $this->reference = $reference;
+        $this->uid = $uid;
 
         return $this;
     }
@@ -222,6 +235,33 @@ class JobPost
     public function setStudyLevelRequired(string $StudyLevelRequired): self
     {
         $this->StudyLevelRequired = $StudyLevelRequired;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|JobSeeker[]
+     */
+    public function getJobSeekers(): Collection
+    {
+        return $this->jobSeekers;
+    }
+
+    public function addJobSeeker(JobSeeker $jobSeeker): self
+    {
+        if (!$this->jobSeekers->contains($jobSeeker)) {
+            $this->jobSeekers[] = $jobSeeker;
+            $jobSeeker->addJobPost($this);
+        }
+
+        return $this;
+    }
+
+    public function removeJobSeeker(JobSeeker $jobSeeker): self
+    {
+        if ($this->jobSeekers->removeElement($jobSeeker)) {
+            $jobSeeker->removeJobPost($this);
+        }
 
         return $this;
     }

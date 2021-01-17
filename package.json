@@ -7,12 +7,18 @@
       "regenerator-runtime": "^0.13.2",
       "webpack-notifier": "^1.6.0"
     },
-    "license": "UNLICENSED",
-    "private": true,
-    "scripts": {
-        "dev-server": "encore dev-server",
-        "dev": "encore dev",
-        "watch": "encore dev --watch",
-        "build": "encore production --progress"
-    }
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "dev-server": "encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "build": "encore production --progress"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.6.0",
+    "@sentry/browser": "^5.29.2",
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1"
+  }
 }

@@ -1341,44 +1341,10 @@ Registration-Wornak
             <p>&copy; Wornak 2020. All Rights Reserved.</p>
             <ul class="list-inline">
                 <li class="list-inline-item">
-                    <a href="#">Privacy</a>
+                    <a href="{{ path('app_home_privacy') }}">Privacy</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="#">Terms</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#">FAQ</a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-    </body>
-    {#
-    <body>
-    <main role="main" class="container">
-        {{ form_start(form, {'attr': {'novalidate': 'novalidate'}}) }}
-        {{ form_row(form.firstName) }} <br>
-        {{ form_row(form.lastName) }} <br>
-        {{ form_row(form.gender) }} <br>
-        {{ form_row(form.birthdayDate) }} <br>
-        {{ form_row(form.address) }} <br>
-        {{ form_row(form.mobility) }} <br>
-        {{ form_row(form.handicap) }} <br>
-        {{ form_row(form.diploma) }} <br>
-        {{ form_row(form.skills) }} <br>
-
-        <button type="submit" class="btn btn-primary">Submit</button>
-        {{ form_end(form) }}
-    </main><!-- /.container -->
-    <footer>
-        <div class="container">
-            <p>&copy; Wornak 2020. All Rights Reserved.</p>
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <a href="#">Privacy</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#">Terms</a>
+                    <a href="{{ path('app_home_terms') }}">Terms</a>
                 </li>
                 <li class="list-inline-item">
                     <a href="#">FAQ</a>
@@ -1386,8 +1352,7 @@ Registration-Wornak
             </ul>
         </div>
     </footer>
-    </body> #}
-{% endblock %}
+    {% endblock %}
 
 {% block javascript %}
 {{ parent() }}

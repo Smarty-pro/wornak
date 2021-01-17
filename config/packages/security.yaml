@@ -26,11 +26,12 @@ security:
         # used to reload user from session & other features (e.g. switch_user)
 
     firewalls:
-        dev:
+      dev:
             pattern: ^/(_(profiler|wdt)|css|images|js)/
             security: false
         main:
-          anonymous: lazy
+          anonymous: true
+          lazy: true
           provider: app_user_provider
           logout:
             path: app_logout

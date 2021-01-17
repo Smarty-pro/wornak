@@ -4,7 +4,6 @@ namespace App\Form;
 
 use App\Entity\JobPost;
 use App\Entity\Tag;
-use Symfony\Bridge\Doctrine\Form\Type\EntityType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
@@ -23,12 +22,6 @@ class JobPostType extends AbstractType
             ->add('jobZone', TextType::class)
             ->add('training', TextType::class)
             ->add('contractType', TextType::class)
-            ->add('tag', EntityType::class, [
-                'class' => Tag::class,
-                'choice_label' => 'name',
-                'expanded' => true,
-                'multiple' => true,
-            ])
             ->add('expDate', DateTimeType::class)
             ->add('salary', MoneyType::class)
             ->add('sector', ChoiceType::class, [
