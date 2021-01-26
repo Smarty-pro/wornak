@@ -82,11 +82,6 @@ class JobSeeker
     private $searchs;
 
     /**
-     * @ORM\ManyToMany(targetEntity=Company::class, mappedBy="consulteds")
-     */
-    private $companies;
-
-    /**
      * @ORM\Column(type="string", length=255)
      */
     private $studyLevel;
@@ -111,7 +106,6 @@ class JobSeeker
     {
         $this->users = new ArrayCollection();
         $this->searchs = new ArrayCollection();
-        $this->companies = new ArrayCollection();
         $this->requests = new ArrayCollection();
     }
 
@@ -304,33 +298,6 @@ class JobSeeker
             if ($search->getUser() === $this) {
                 $search->setUser(null);
             }
-        }
-
-        return $this;
-    }
-
-    /**
-     * @return Collection|Company[]
-     */
-    public function getCompanies(): Collection
-    {
-        return $this->companies;
-    }
-
-    public function addCompany(Company $company): self
-    {
-        if (!$this->companies->contains($company)) {
-            $this->companies[] = $company;
-            $company->addConsulted($this);
-        }
-
-        return $this;
-    }
-
-    public function removeCompany(Company $company): self
-    {
-        if ($this->companies->removeElement($company)) {
-            $company->removeConsulted($this);
         }
 
         return $this;

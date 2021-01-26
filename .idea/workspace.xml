@@ -25,47 +25,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d2282a49-60d9-402f-94b6-733cc1cde81d" name="Default Changelist" comment="This commit, I focused in the essentials parts of the two dashboards (EM, JOS):&#10;- JOS: ADDED Alerts/ Jobs Search/ Jobs Results.&#10;- EM: ADDED Alerts/ Job seekers Search/ Job seekers Results.">
-      <change afterPath="$PROJECT_DIR$/src/Controller/AlertController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/OfferController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/RequestController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Requests.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Event/EnrollEvent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210122171557.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210122220937.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Migrations/Version20210126191051.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/RequestsRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/employer-zone/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/employer-zone/offers.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/employer-zone/requests.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/employer-zone/seeker.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/job-seeker-zone/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/job-seeker-zone/offers.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/job-seeker-zone/requests.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="d2282a49-60d9-402f-94b6-733cc1cde81d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AccessController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AccessController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/EmZoneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EmZoneController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/JoSZoneController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/JoSZoneController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Company.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/JobPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/JobPost.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/JobSeeker.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/JobSeeker.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Event/ApplicationEvent.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Event/ApplicationEvent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RgFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RgFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/REGISTRATION/RgForm.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/REGISTRATION/RgForm.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/employer-zone/alerts.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employer-zone/alerts.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/employer-zone/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employer-zone/homepage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/employer-zone/jobpostForm.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employer-zone/jobpostForm.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/employer-zone/results.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employer-zone/results.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/employer-zone/search.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employer-zone/search.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/job-seeker-zone/alerts.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job-seeker-zone/alerts.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/job-seeker-zone/homepage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job-seeker-zone/homepage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/job-seeker-zone/job.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job-seeker-zone/job.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/job-seeker-zone/results.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job-seeker-zone/results.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/job-seeker-zone/search.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job-seeker-zone/search.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/employer-zone/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/employer-zone/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/job-seeker-zone/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/job-seeker-zone/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -569,7 +536,8 @@
       <workItem from="1611412378360" duration="598000" />
       <workItem from="1611613239009" duration="2063000" />
       <workItem from="1611657093624" duration="5290000" />
-      <workItem from="1611665395940" duration="17895000" />
+      <workItem from="1611665395940" duration="19118000" />
+      <workItem from="1611695725190" duration="68000" />
     </task>
     <task id="LOCAL-00001" summary="nothing special">
       <created>1590252528938</created>
@@ -627,7 +595,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610914043094</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Optimized the templates&#10;Added the offers/requests system&#10;Fixed some bugs">
+      <created>1611692272612</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1611692272612</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,7 +647,8 @@
     <MESSAGE value="Lot of bugs has been fixed&#10;AccessModule Operational" />
     <MESSAGE value="Migration from Symfony 5.0.7 to Symfony 5.2.0" />
     <MESSAGE value="This commit, I focused in the essentials parts of the two dashboards (EM, JOS):&#10;- JOS: ADDED Alerts/ Jobs Search/ Jobs Results.&#10;- EM: ADDED Alerts/ Job seekers Search/ Job seekers Results." />
-    <option name="LAST_COMMIT_MESSAGE" value="This commit, I focused in the essentials parts of the two dashboards (EM, JOS):&#10;- JOS: ADDED Alerts/ Jobs Search/ Jobs Results.&#10;- EM: ADDED Alerts/ Job seekers Search/ Job seekers Results." />
+    <MESSAGE value="Optimized the templates&#10;Added the offers/requests system&#10;Fixed some bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimized the templates&#10;Added the offers/requests system&#10;Fixed some bugs" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

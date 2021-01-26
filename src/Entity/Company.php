@@ -44,11 +44,6 @@ class Company
     private $description;
 
     /**
-     * @ORM\ManyToMany(targetEntity=JobSeeker::class, inversedBy="companies")
-     */
-    private $consulteds;
-
-    /**
      * @ORM\OneToMany(targetEntity=JobPost::class, mappedBy="company")
      */
     private $jobPosts;
@@ -153,30 +148,6 @@ class Company
     public function setDescription(string $description): self
     {
         $this->description = $description;
-
-        return $this;
-    }
-
-    /**
-     * @return Collection|JobSeeker[]
-     */
-    public function getConsulteds(): Collection
-    {
-        return $this->consulteds;
-    }
-
-    public function addConsulted(JobSeeker $consulted): self
-    {
-        if (!$this->consulteds->contains($consulted)) {
-            $this->consulteds[] = $consulted;
-        }
-
-        return $this;
-    }
-
-    public function removeConsulted(JobSeeker $consulted): self
-    {
-        $this->consulteds->removeElement($consulted);
 
         return $this;
     }
