@@ -1,0 +1,47 @@
+{% extends 'job-seeker-zone/base.html.twig' %}
+
+{% block description %}
+    Dashboard
+{% endblock %}
+
+{% block title %}
+    Dashboard
+{% endblock %}
+
+{% block head %}
+    {{ parent() }}
+{% endblock %}
+
+{% block subtitle %}
+    {{ subtitle }}
+{% endblock %}
+
+{% block body %}
+    {% for requests in requests %}
+        <div class="wornak-search-result--core">
+            <a class="wornak-search-results--core_title"
+               href="{{ path('app_joszone_job', {token: requests.jobpost.uid}) }}">
+                {{ requests.title }}
+            </a>
+            <div class="wornak-search-result--core__body">
+                <div class="wornak-search-result--core__summary">
+                    <h4 class="wornak-search-result--core__company">
+                        {{ requests.publishedAt|date }}
+                    </h4>
+                </div>
+                <div class="wornak-search-result--core__details">
+                    <ul class="wornak-search-result--core__details-list">
+                        <li class="wornak-search-result--core__item">
+                            Status: &nbsp; {{ requests.status }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    {% else %}
+        No Request found
+    {% endfor %}
+{% endblock %}
+
+{% block javascript %}
+{{ parent() }}
+{% endblock %}

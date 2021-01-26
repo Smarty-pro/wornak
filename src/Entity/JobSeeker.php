@@ -92,9 +92,19 @@ class JobSeeker
     private $studyLevel;
 
     /**
-     * @ORM\ManyToMany(targetEntity=JobPost::class, inversedBy="jobSeekers")
+     * @ORM\Column(type="text")
      */
-    private $jobPosts;
+    private $presentation;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $country;
+
+    /**
+     * @ORM\OneToOne(targetEntity=Requests::class, mappedBy="jobSeeker")
+     */
+    private $requests;
 
 
     public function __construct()
@@ -102,7 +112,7 @@ class JobSeeker
         $this->users = new ArrayCollection();
         $this->searchs = new ArrayCollection();
         $this->companies = new ArrayCollection();
-        $this->jobPosts = new ArrayCollection();
+        $this->requests = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -338,26 +348,56 @@ class JobSeeker
         return $this;
     }
 
-    /**
-     * @return Collection|JobPost[]
-     */
-    public function getJobPosts(): Collection
+    public function getPresentation(): ?string
     {
-        return $this->jobPosts;
+        return $this->presentation;
     }
 
-    public function addJobPost(JobPost $jobPost): self
+    public function setPresentation(string $presentation): self
     {
-        if (!$this->jobPosts->contains($jobPost)) {
-            $this->jobPosts[] = $jobPost;
+        $this->presentation = $presentation;
+
+        return $this;
+    }
+
+    public function getCountry(): ?string
+    {
+        return $this->country;
+    }
+
+    public function setCountry(string $country): self
+    {
+        $this->country = $country;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Requests[]
+     */
+    public function getRequests(): Collection
+    {
+        return $this->requests;
+    }
+
+    public function addRequest(Requests $request): self
+    {
+        if (!$this->requests->contains($request)) {
+            $this->requests[] = $request;
+            $request->setJobSeeker($this);
         }
 
         return $this;
     }
 
-    public function removeJobPost(JobPost $jobPost): self
+    public function removeRequest(Requests $request): self
     {
-        $this->jobPosts->removeElement($jobPost);
+        if ($this->requests->removeElement($request)) {
+            // set the owning side to null (unless already changed)
+            if ($request->getJobSeeker() === $this) {
+                $request->setJobSeeker(null);
+            }
+        }
 
         return $this;
     }

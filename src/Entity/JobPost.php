@@ -18,10 +18,6 @@ class JobPost
      */
     private $id;
 
-    /**
-     * @ORM\Column(type="string", length=255)
-     */
-    private $Company;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -83,10 +79,26 @@ class JobPost
      */
     private $jobSeekers;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Requests::class, mappedBy="jobpost")
+     */
+    private $requests;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Company::class, inversedBy="jobPosts")
+     */
+    private $company;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $employerName;
+
 
     public function __construct()
     {
         $this->jobSeekers = new ArrayCollection();
+        $this->requests = new ArrayCollection();
     }
 
 
@@ -95,14 +107,14 @@ class JobPost
         return $this->id;
     }
 
-    public function getCompany(): ?string
+    public function getCompany(): Company
     {
-        return $this->Company;
+        return $this->company;
     }
 
-    public function setCompany(string $Company): self
+    public function setCompany(Company $Company): self
     {
-        $this->Company = $Company;
+        $this->company = $Company;
 
         return $this;
     }
@@ -262,6 +274,48 @@ class JobPost
         if ($this->jobSeekers->removeElement($jobSeeker)) {
             $jobSeeker->removeJobPost($this);
         }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Requests[]
+     */
+    public function getRequests(): Collection
+    {
+        return $this->requests;
+    }
+
+    public function addRequest(Requests $request): self
+    {
+        if (!$this->requests->contains($request)) {
+            $this->requests[] = $request;
+            $request->setJobpost($this);
+        }
+
+        return $this;
+    }
+
+    public function removeRequest(Requests $request): self
+    {
+        if ($this->requests->removeElement($request)) {
+            // set the owning side to null (unless already changed)
+            if ($request->getJobpost() === $this) {
+                $request->setJobpost(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function getEmployerName(): ?string
+    {
+        return $this->employerName;
+    }
+
+    public function setEmployerName(string $employerName): self
+    {
+        $this->employerName = $employerName;
 
         return $this;
     }

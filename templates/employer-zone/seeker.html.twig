@@ -25,25 +25,20 @@
         }
     </style>
 
-    <div class="alert {% if compatibility == '33%' %}alert-danger{% elseif compatibility == '66%' %}alert-warning{% elseif compatibility == '100%' %}alert-success{% endif %}"
-         role="alert">
-        your resume is {{ compatibility }} compatible with this job offer
-    </div>
-
-    <h1 class="mt-4">{{ jobpost.jobTitle }}</h1>
+    <h1 class="mt-4">{{ jobseeker.firstName }} {{ jobseeker.lastName }}</h1>
 
 
     <!-- Date/Time -->
-    <p>{{ jobpost.publishedAt|date("d/m/Y") }}</p>
+    <p>{{ jobseeker.birthdayDate|date }}</p>
 
 
     <!-- Post Content -->
-    <p class="lead">{{ jobpost.description }}</p>
+    <p class="lead">{{ jobseeker.presentation }}</p>
 
     <a
             data-toggle="modal"
             data-target="#applyModal"
-            class=" d-sm-inline-block btn  btn-primary shadow-sm align-right"> Apply
+            class=" d-sm-inline-block btn  btn-primary shadow-sm align-right"> Enroll him
     </a>
 
     <!-- Apply modal -->
@@ -52,15 +47,15 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Apply?</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Recruit?</h5>
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
-                <div class="modal-body">Select "Apply" below if you are ready to end your current unemployment.</div>
+                <div class="modal-body">Select "Recruit" below if you are ready to end his current unemployment.</div>
                 <div class="modal-footer">
                     <button class="btn btn-outline-primary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="{{ path('app_joszone_apply', {token: jobpost.uid}) }}">Apply</a>
+                    <a class="btn btn-primary" href="{{ path('app_emzone_enroll', {token: jobseeker.id}) }}">Recruit</a>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-{% extends 'employer-zone/base.html.twig' %}
+{% extends 'job-seeker-zone/base.html.twig' %}
 
 {% block description %}
     Dashboard
@@ -13,42 +13,44 @@
 {% endblock %}
 
 {% block subtitle %}
-    Results
+    Offers
 {% endblock %}
 
 {% block body %}
-    {% for jobSeeker in jobseekers %}
+    {% for requests in offers %}
         <div class="wornak-search-result--core">
-            <a class="wornak-search-results--core_title" href="{{ path('app_emzone_enroll', {token: jobSeeker.id}) }}">
-                {{ jobSeeker.firstName }}
-                {{ jobSeeker.lastName }}
+            <a class="wornak-search-results--core_title"
+               href="#">
+                {{ requests.user.companies.companyName }}
             </a>
             <div class="wornak-search-result--core__body">
                 <div class="wornak-search-result--core__summary">
                     <h4 class="wornak-search-result--core__company">
-                        {{ jobSeeker.birthdayDate|date("d/m/Y") }}
-                    </h4>
-                    <h4 class="wornak-search-result--core__location">
-                        <span class="wornak-search-result--core__location-link">
-                        {{ jobSeeker.address }}
-                        </span>
+                        {{ requests.publishedAt|date }}
                     </h4>
                 </div>
                 <div class="wornak-search-result--core__details">
                     <ul class="wornak-search-result--core__details-list">
-                        <li class="wornak-search-result--core__item">Study Level:
-                            &nbsp {{ jobSeeker.studyLevel }}</li>
+                        <li class="wornak-search-result--core__item">
+                            Status: &nbsp; {{ requests.status }}</li>
+                        <br>
                         <li class="wornak-search-result--core__item wornak-search-result--core__appt-type">
-                            Diploma: &nbsp {{ jobSeeker.diploma }}</li>
+                            <a href="#" class="btn btn-primary">Accept</a>
+                            <a href="#" class="btn btn-danger">Deny</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
     {% else %}
-        No Job Seeker found
+        No Request found
     {% endfor %}
 {% endblock %}
 
 {% block javascript %}
 {{ parent() }}
 {% endblock %}
+
+
+
+

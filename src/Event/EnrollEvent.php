@@ -6,7 +6,7 @@ namespace App\Event;
 
 use App\Entity\User;
 
-class ApplicationEvent
+class EnrollEvent
 {
     protected User $user;
 

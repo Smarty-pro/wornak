@@ -19,7 +19,7 @@ class Company
     private $id;
 
     /**
-     * @ORM\OneToMany(targetEntity="App\Entity\User", mappedBy="companies")
+     * @ORM\OneToOne(targetEntity="App\Entity\User", mappedBy="companies")
      */
     private $users;
 
@@ -48,11 +48,21 @@ class Company
      */
     private $consulteds;
 
+    /**
+     * @ORM\OneToMany(targetEntity=JobPost::class, mappedBy="company")
+     */
+    private $jobPosts;
+
+    /**
+     * @ORM\OneToOne(targetEntity=Requests::class, mappedBy="company", cascade={"persist", "remove"})
+     */
+    private $requests;
+
 
     public function __construct()
     {
-        $this->users = new ArrayCollection();
         $this->consulteds = new ArrayCollection();
+        $this->jobPosts = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -167,6 +177,58 @@ class Company
     public function removeConsulted(JobSeeker $consulted): self
     {
         $this->consulteds->removeElement($consulted);
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|JobPost[]
+     */
+    public function getJobPosts(): Collection
+    {
+        return $this->jobPosts;
+    }
+
+    public function addJobPost(JobPost $jobPost): self
+    {
+        if (!$this->jobPosts->contains($jobPost)) {
+            $this->jobPosts[] = $jobPost;
+            $jobPost->setCompany($this);
+        }
+
+        return $this;
+    }
+
+    public function removeJobPost(JobPost $jobPost): self
+    {
+        if ($this->jobPosts->removeElement($jobPost)) {
+            // set the owning side to null (unless already changed)
+            if ($jobPost->getCompany() === $this) {
+                $jobPost->setCompany(null);
+            }
+        }
+
+        return $this;
+    }
+
+    public function getRequests(): ?Requests
+    {
+        return $this->requests;
+    }
+
+    public function setRequests(?Requests $requests): self
+    {
+        // unset the owning side of the relation if necessary
+        if ($requests === null && $this->requests !== null) {
+            $this->requests->setCompany(null);
+        }
+
+        // set the owning side of the relation if necessary
+        if ($requests !== null && $requests->getCompany() !== $this) {
+            $requests->setCompany($this);
+        }
+
+        $this->requests = $requests;
 
         return $this;
     }

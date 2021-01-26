@@ -51,12 +51,12 @@ class User implements UserInterface
     private $roles;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\Company", inversedBy="users")
+     * @ORM\OneToOne(targetEntity="App\Entity\Company", inversedBy="users")
      */
     private $companies;
 
     /**
-     * @ORM\ManyToOne(targetEntity="App\Entity\JobSeeker", inversedBy="users")
+     * @ORM\OneToOne(targetEntity="App\Entity\JobSeeker", inversedBy="users")
      */
     private $jobseeker;
 
@@ -75,9 +75,15 @@ class User implements UserInterface
      */
     private $isVerified;
 
+    /**
+     * @ORM\OneToMany(targetEntity=Requests::class, mappedBy="user")
+     */
+    private $requests;
+
     public function __construct()
     {
         $this->alerts = new ArrayCollection();
+        $this->requests = new ArrayCollection();
     }
 
 
@@ -288,6 +294,36 @@ class User implements UserInterface
     public function setIsVerified(bool $isVerified): self
     {
         $this->isVerified = $isVerified;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Requests[]
+     */
+    public function getRequests(): Collection
+    {
+        return $this->requests;
+    }
+
+    public function addRequest(Requests $request): self
+    {
+        if (!$this->requests->contains($request)) {
+            $this->requests[] = $request;
+            $request->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeRequest(Requests $request): self
+    {
+        if ($this->requests->removeElement($request)) {
+            // set the owning side to null (unless already changed)
+            if ($request->getUser() === $this) {
+                $request->setUser(null);
+            }
+        }
 
         return $this;
     }

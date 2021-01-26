@@ -3,18 +3,14 @@
 namespace App\Form;
 
 use App\Entity\JobSeeker;
-use App\Entity\User;
 use Symfony\Component\Form\AbstractType;
-use Symfony\Component\Form\FormBuilderInterface;
-use Symfony\Component\OptionsResolver\OptionsResolver;
-use Symfony\Component\Form\Extension\Core\Type\TextType;
-use Symfony\Component\Form\Extension\Core\Type\TextareaType;
-use Symfony\Component\Form\Extension\Core\Type\PasswordType;
 use Symfony\Component\Form\Extension\Core\Type\BirthdayType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
-use Symfony\Component\Form\Extension\Core\Type\EmailType;
-use Symfony\Component\Form\Extension\Core\Type\TelType;
-use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\CountryType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
+use Symfony\Component\Form\FormBuilderInterface;
+use Symfony\Component\OptionsResolver\OptionsResolver;
 
 class RgFormType extends AbstractType
 {
@@ -32,6 +28,7 @@ class RgFormType extends AbstractType
 
             ->add('birthdayDate', BirthdayType::class) //check
             ->add('address', TextareaType::class) //check
+            ->add('country', CountryType::class) //check
             ->add('mobility', ChoiceType::class, [
                 'choices' => [
                     'Local' => 'local',
@@ -48,6 +45,7 @@ class RgFormType extends AbstractType
             ])
             ->add('diploma', TextType::class) //check
             ->add('skills', TextareaType::class) //check
+            ->add('presentation', TextareaType::class) //check
 
         ;
     }

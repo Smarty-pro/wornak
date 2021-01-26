@@ -4,13 +4,16 @@
 namespace App\Controller;
 
 
+use App\Entity\Requests;
 use App\Entity\SearchBar;
 use App\Event\ApplicationEvent;
 use App\Form\SearchBarType;
 use App\Repository\AlertRepository;
 use App\Repository\CompanyRepository;
 use App\Repository\JobPostRepository;
+use App\Repository\RequestsRepository;
 use App\Repository\UserRepository;
+use DateTime;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -49,7 +52,7 @@ class JoSZoneController extends AbstractController
             $hasApplied = $_GET['hasApplied'];
         }
         return $this->render('job-seeker-zone/homepage.html.twig', [
-            'alerts' => $alerts,
+            'alertArr' => $alerts,
             'counter' => $counter,
             'hasApplied' => $hasApplied
         ]);
@@ -91,55 +94,13 @@ class JoSZoneController extends AbstractController
             return $this->render('job-seeker-zone/results.html.twig', [
                 'jobposts' => $jobposts,
                 'counter' => $counter,
-                'alerts' => $alerts,
+                'alertArr' => $alerts,
             ]);
         }
 
         return $this->render('job-seeker-zone/search.html.twig', [
             'form' => $form->createView(),
-            'alerts' => $alerts,
-            'counter' => $counter
-        ]);
-    }
-
-    /**
-     * @Route("/alerts/{token}")
-     * @param $token
-     * @param AlertRepository $alertRepository
-     * @return Response
-     */
-    public function alert($token, AlertRepository $alertRepository): Response
-    {
-        $alert = null;
-        $alertArr = null;
-        if (isset($token) && $token != 'all') {
-            $alert = $alertRepository->findOneBy([
-                'uid' => $token
-            ]);
-        } else {
-            $userId = $this->getUser()->getId();
-
-            $alertArr = $alertRepository->findBy([
-                'user' => $userId
-            ]);
-        }
-
-        $user = $this->getUser();
-        $userId = $user->getId();
-
-        $alerts = $alertRepository->findBy([
-            'user' => $userId
-        ], null, '3');
-
-        $counter = 0;
-        foreach ($alerts as $value) {
-            $counter++;
-        }
-
-        return $this->render('employer-zone/alerts.html.twig', [
-            'alert' => $alert,
-            'alertArr' => $alertArr,
-            'alerts' => $alerts,
+            'alertArr' => $alerts,
             'counter' => $counter
         ]);
     }
@@ -195,7 +156,7 @@ class JoSZoneController extends AbstractController
         } elseif ($compatibility == 0) {
             $compatibility = '0%';
         }
-        dump($compatibility);
+        // dump($compatibility);
 
 
         //**************************************************
@@ -216,7 +177,7 @@ class JoSZoneController extends AbstractController
         return $this->render('job-seeker-zone/job.html.twig', [
             'jobpost' => $jobPost,
             'counter' => $counter,
-            'alerts' => $alerts,
+            'alertArr' => $alerts,
             'compatibility' => $compatibility
         ]);
     }
@@ -230,14 +191,14 @@ class JoSZoneController extends AbstractController
      * @param UserRepository $userRepository
      * @return Response
      */
-    public function apply($token, EventDispatcherInterface $eventDispatcher, JobPostRepository $jobPostRepository, CompanyRepository $companyRepository, UserRepository $userRepository): Response
+    public function apply($token, EventDispatcherInterface $eventDispatcher, JobPostRepository $jobPostRepository, CompanyRepository $companyRepository, UserRepository $userRepository, RequestsRepository $requestsRepository): Response
     {
         // Alert the company
         $jobpost = $jobPostRepository->findOneBy([
             'uid' => $token
         ]);
 
-        $companyName = $jobpost->getCompany();
+        $companyName = $jobpost->getEmployerName();
 
         $company = $companyRepository->findOneBy([
             'companyName' => $companyName
@@ -251,15 +212,21 @@ class JoSZoneController extends AbstractController
 
         $eventDispatcher->dispatch(new ApplicationEvent($user));
 
-        //link the job seeker with the job
+        //Register in the database
+        $request = new Requests();
+        $date = new DateTime("NOW");
 
-        $user = $this->getUser();
-        $jobSeeker = $user->getJobseeker();
+        $request->setUser($this->getUser());
+        $request->setJobpost($jobpost);
+        $request->setStatus('Pending');
+        $request->setPublishedAt($date);
 
-        $jobpost->addJobSeeker($jobSeeker);
+        $title = 'Application for ' . $jobpost->getJobTitle();
+
+        $request->setTitle($title);
 
         $entityManager = $this->getDoctrine()->getManager();
-        $entityManager->persist($jobpost);
+        $entityManager->persist($request);
         $entityManager->flush();
 
         $hasApplied = true;

@@ -103,6 +103,12 @@ class AccessController extends AbstractController
                 dump($jobseeker);
                 dump($uuid);
                 */
+                $presentation = $jobseeker->getPresentation();
+
+                if (!$presentation) {
+                    $jobseeker->setPresentation('Hello, my name is ' . $jobseeker->getFirstName() . '. I am originally from ' . $jobseeker->getCountry() . ' and I currently live in ' . $jobseeker->getAddress() . '. My skills are ' . $jobseeker->getSkills() . '. I possess a ' . $jobseeker->getDiploma() . '.');
+                }
+
                 $entityManager->persist($jobseeker);
                 $entityManager->flush();
 
